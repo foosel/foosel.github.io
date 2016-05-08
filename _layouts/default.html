@@ -5,10 +5,13 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
+	{% capture thetitle %}{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
+	{% capture thedescription %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+	{% capture theimage %}{{ site.author.avatar | prepend: BASE_PATH | prepend: site.external }}{% endcapture %}
 	<meta charset="utf-8" />
 
-	<title>{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+	<title>{{ thetitle }}</title>
+	<meta name="description" content="{{ thedescription }}">
 	<meta name="author" content="{{ site.author.name }}">
 
 	<!-- Enable responsive viewport -->
@@ -17,10 +20,29 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="{{ BASE_PATH }}/assets/css/site.css" />
 
+{% if page.url == "/404.html" %}
 	<!-- 404 handling -->
-	{% if page.url == "/404.html" %}
-		<meta http-equiv="refresh" content="5; url={{ BASE_PATH }}/">
-	{% endif %}
+	<meta http-equiv="refresh" content="5; url={{ BASE_PATH }}/">
+{% else %}
+	<!-- Twitter card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@{{ site.author.twitter }}" />
+	<meta name="twitter:title" content="{{ thetitle }}" />
+	<meta name="twitter:description" content="{{ thedescription }}" />
+	<meta name="twitter:image" content="{{ theimage }}" />
+	<meta name="twitter:image:alt" content="{{ site.author.name }}" />
+
+	<!-- OpenGraph -->
+	<meta property="og:title" content="{{ thetitle }}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="{{ theimage }}" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="240" />
+	<meta property="og:image:height" content="240" />
+	<meta property="og:description" content="{{ thedescription }}" />
+	<meta property="og:site_name" content="{{ site.title }}" />
+	<meta property="og:url" content="{{ page.url | prepend: BASE_PATH | prepend: site.external }}" />
+{% endif %}
 </head>
 
 <body{% if page.body %} class="{{ page.body }}"{% endif %}>
