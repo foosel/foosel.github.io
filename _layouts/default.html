@@ -16,6 +16,11 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="{{ BASE_PATH }}/assets/css/site.css" />
+
+	<!-- 404 handling -->
+	{% if page.url == "/404.html" %}
+		<meta http-equiv="refresh" content="5; url={{ BASE_PATH }}/">
+	{% endif %}
 </head>
 
 <body{% if page.body %} class="{{ page.body }}"{% endif %}>
