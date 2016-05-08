@@ -1,0 +1,25 @@
+---
+layout: default
+body: landing
+---
+
+<div id="landing-wrapper">
+	<div id="landing-about">
+		<div class="name">{{ site.author.name }}</div>
+		<div class="profession">{{ site.author.profession }}</div>
+		<div class="skills">{{ site.author.skills | join: ' &middot; ' }}</div>
+		<div class="social">
+			{% for social in site.author.social %}
+			<a href="{{ social.url }}" target="_blank" rel="noopener noreferrer" title="{{ social.name }}">
+				<span class="fa-stack fa-lg">
+					<i class="fa fa-circle fa-stack-2x"></i>
+					<i class="fa {{ social.icon }} fa-stack-1x fa-inverse"></i>
+				</span>
+			</a>
+			{% endfor %}
+		</div>
+		<div class="legal">
+			<a href="/imprint/">Imprint</a>
+		</div>
+	</div>
+</div>

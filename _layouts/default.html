@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<title>{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="author" content="{{ site.author.name }}">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="{{ BASE_PATH }}/assets/css/site.css" />
+</head>
+
+<body{% if page.body %} class="{{ page.body }}"{% endif %}>
+	<div id="top"></div>
+
+	{{ content }}
+
+	<a href="#top" class="to-top" title="Back to top" data-scroll><i class="fa fa-arrow-up fa-2x"></i></a>
+
+	<script src="{{ BASE_PATH }}/assets/js/jquery-1.9.1.min.js"></script>
+	<script src="{{ BASE_PATH }}/assets/js/bootstrap.min.js"></script>
+	<script src="{{ BASE_PATH }}/assets/js/smooth-scroll.min.js"></script>
+	<script src="{{ BASE_PATH }}/assets/js/site.js"></script>
+</body>
+</html>
