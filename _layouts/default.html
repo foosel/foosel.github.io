@@ -49,17 +49,17 @@
 	<div id="top"></div>
 
 	<input type="checkbox" id="sidebar-checkbox">
-	<label for="sidebar-checkbox" id="sidebar-toggle"><i class="fa fa-bars fa-2x"></i></label>
+	<label for="sidebar-checkbox" id="sidebar-toggle" class="sidebar-move"><i class="fa fa-bars fa-2x"></i></label>
 
-	<div id="sidebar">
+	<div id="sidebar" class="sidebar-move">
 		{% include sidebar.html %}
 	</div>
 
-	<div id="sidebar-wrap">
+	<div id="sidebar-wrap" class="sidebar-move">
 		{{ content }}
 	</div>
 
-	<a href="#top" class="to-top" title="Back to top" data-scroll><i class="fa fa-arrow-up fa-2x"></i></a>
+	<a href="#top" class="to-top sidebar-move" title="Back to top" data-scroll><i class="fa fa-arrow-up fa-2x"></i></a>
 
 	<script src="{{ BASE_PATH }}/assets/js/jquery-1.9.1.min.js"></script>
 	<script src="{{ BASE_PATH }}/assets/js/bootstrap.min.js"></script>

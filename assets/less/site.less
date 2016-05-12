@@ -356,20 +356,16 @@ body.landing #sidebar-toggle {
 	height: 100%;
 }
 
-#sidebar-checkbox:checked ~ #sidebar {
-	visibility: visible;
-}
-
-#sidebar,
-#sidebar-wrap,
-#sidebar-toggle {
+.sidebar-move {
 	-webkit-transition: all .3s ease-in-out;
 	        transition: all .3s ease-in-out;
 }
 
-#sidebar-checkbox:checked ~ #sidebar,
-#sidebar-checkbox:checked ~ #sidebar-wrap,
-#sidebar-checkbox:checked ~ #sidebar-toggle {
+#sidebar-checkbox:checked ~ #sidebar {
+	visibility: visible;
+}
+
+#sidebar-checkbox:checked ~ .sidebar-move {
 	  -webkit-transform: translateX(-@sidebarWidth);
 	      -ms-transform: translateX(-@sidebarWidth);
 	          transform: translateX(-@sidebarWidth);
