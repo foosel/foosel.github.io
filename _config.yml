@@ -28,6 +28,7 @@ author:
   - name: Mail
     icon: fa-envelope
     url: "mailto:gina@foosel.net"
+    notarget: true
   skills:
   - '#python'
   - '#javascript'
