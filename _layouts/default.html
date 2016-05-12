@@ -48,7 +48,16 @@
 <body{% if page.body %} class="{{ page.body }}"{% endif %}>
 	<div id="top"></div>
 
-	{{ content }}
+	<input type="checkbox" id="sidebar-checkbox">
+	<label for="sidebar-checkbox" id="sidebar-toggle"><i class="fa fa-bars fa-2x"></i></label>
+
+	<div id="sidebar">
+		{% include sidebar.html %}
+	</div>
+
+	<div id="sidebar-wrap">
+		{{ content }}
+	</div>
 
 	<a href="#top" class="to-top" title="Back to top" data-scroll><i class="fa fa-arrow-up fa-2x"></i></a>
 

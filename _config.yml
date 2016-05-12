@@ -25,6 +25,9 @@ author:
   - name: Twitter
     icon: fa-twitter
     url: https://twitter.com/foosel
+  - name: Mail
+    icon: fa-envelope
+    url: "mailto:gina@foosel.net"
   skills:
   - '#python'
   - '#javascript'
@@ -34,3 +37,10 @@ author:
   twitter: foosel
   github: foosel
   avatar: /assets/img/card.jpg
+
+sidebar:
+  links:
+    - name: Home
+      link: /
+    - name: Imprint
+      link: /imprint/
