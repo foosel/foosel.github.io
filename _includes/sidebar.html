@@ -1,0 +1,5 @@
+<ul class="sidebar-nav">
+	{% for item in site.sidebar.links %}
+	<li{% if page.url == item.link %} class="active"{% endif %}><a href="{{ BASE_PATH }}{{ item.link }}">{{ item.name }}</a></li>
+	{% endfor %}
+</ul>
