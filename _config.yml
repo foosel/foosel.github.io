@@ -44,5 +44,7 @@ sidebar:
   links:
     - name: Home
       link: /
+    - name: Slides
+      link: /slides/
     - name: Imprint
       link: /imprint/
