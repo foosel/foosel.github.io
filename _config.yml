@@ -33,7 +33,7 @@ author:
     url: https://twitter.com/foosel
   - name: Mail
     icon: fa-envelope
-    url: "mailto:gina@foosel.net"
+    url: "mailto:contact@foosel.net"
     notarget: true
   skills:
   - '#python'
