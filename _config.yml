@@ -4,6 +4,7 @@ exclude:
 - Gemfile.lock
 - vendor
 - "*.iml"
+- fetch_yt_preview
 
 highlighter: rouge
 markdown: kramdown
@@ -50,7 +51,7 @@ sidebar:
   links:
     - name: Home
       link: /
-    - name: Slides
+    - name: Slides & Recordings
       link: /slides/
     - name: Imprint
       link: /imprint/

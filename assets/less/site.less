@@ -1,10 +1,10 @@
 // imports
 
-@import url(https://fonts.googleapis.com/css?family=Economica:400,400italic,700,700italic&subset=latin,latin-ext);
-@import url(https://fonts.googleapis.com/css?family=Palanquin:400,300,700&subset=latin,latin-ext);
-
 @import url(../css/font-awesome-4.6.1.min.css);
 @import url(../css/bootstrap.min.css);
+
+@import "webfonts.less";
+@import "yt-with-consent.less";
 
 // variables
 
@@ -376,3 +376,21 @@ body.landing #sidebar-toggle {
 	          transform: translateX(-@sidebarWidth);
 }
 
+
+// Responsive iframes
+
+.responsive_iframe {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+
+	div.yt-with-consent,
+	iframe {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	}
+}
