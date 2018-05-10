@@ -53,5 +53,7 @@ sidebar:
       link: /
     - name: Slides & Recordings
       link: /slides/
-    - name: Imprint
+    - name: Impressum / Imprint
       link: /imprint/
+    - name: Datenschutzerklärung / Privacy Policy
+      link: /privacy/
