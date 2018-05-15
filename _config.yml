@@ -55,5 +55,7 @@ sidebar:
       link: /slides/
     - name: Impressum / Imprint
       link: /imprint/
+      rel: nofollow
     - name: Datenschutzerklärung / Privacy Policy
       link: /privacy/
+      rel: nofollow

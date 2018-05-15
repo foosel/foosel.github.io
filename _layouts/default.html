@@ -14,6 +14,8 @@
 	<meta name="description" content="{{ thedescription }}">
 	<meta name="author" content="{{ site.author.name }}">
 
+	{% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
+
 	<!-- Enable responsive viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
