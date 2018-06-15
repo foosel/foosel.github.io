@@ -51,11 +51,14 @@ sidebar:
   links:
     - name: Home
       link: /
-    - name: Slides & Recordings
-      link: /slides/
+    - name: Media
+      link: /media/
     - name: Impressum / Imprint
       link: /imprint/
       rel: nofollow
     - name: Datenschutzerklärung / Privacy Policy
       link: /privacy/
       rel: nofollow
+
+plugins:
+  - jekyll-redirect-from
