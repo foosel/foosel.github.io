@@ -23,15 +23,12 @@ author:
   - name: LinkedIn
     icon: fa-linkedin
     url: https://www.linkedin.com/in/ginahaeussge
-  - name: Github
-    icon: fa-github-alt
-    url: https://github.com/foosel
-  - name: Google+
-    icon: fa-google-plus
-    url: https://plus.google.com/+GinaHäußge
   - name: Twitter
     icon: fa-twitter
     url: https://twitter.com/foosel
+  - name: Github
+    icon: fa-github-alt
+    url: https://github.com/foosel
   - name: Mail
     icon: fa-envelope
     url: "mailto:contact@foosel.net"
@@ -53,10 +50,10 @@ sidebar:
       link: /
     - name: Media
       link: /media/
-    - name: Impressum / Imprint
+    - name: Legal Notice
       link: /imprint/
       rel: nofollow
-    - name: Datenschutzerklärung / Privacy Policy
+    - name: Privacy Policy
       link: /privacy/
       rel: nofollow
 
