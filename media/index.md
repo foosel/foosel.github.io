@@ -26,7 +26,7 @@ redirect_from: /slides/
 
 ### OctoPrint related
  
-  * [Developing OctoPrint](https://octoprint.org/slides/3dms19/) (english talk, english slides) on April 27th and 28th 2019 at 3D Meetup Sweden
+  * [Developing OctoPrint](https://octoprint.org/slides/3dms19/) (english talk, english slides) on April 27th and 28th 2019 at 3D Meetup Sweden. Also available on [YouTube](https://www.youtube.com/watch?v=4xUAo8F4jck) and below.
 
   * [OctoPrint in a Nutshell](https://octoprint.org/slides/wmfra77.pdf) (german talk, german slides) on January 11th 2016 at Webmontag Frankfurt. 5min long [Ignite talk](https://en.wikipedia.org/wiki/Ignite_(event)), also available on [YouTube](https://www.youtube.com/watch?v=lhkX18r4Qcc) and below.
 
@@ -39,6 +39,10 @@ redirect_from: /slides/
     * [at OS3DC](https://octoprint.org/slides/os3dc/) (german talk, english slides) on September 21st 2013
 
 ## Videos
+
+### "Developing OctoPrint" (3D Meetup Sweden, 2019)
+
+{% include youtube.html vid="4xUAo8F4jck" %}
 
 ### "OctoPrint wouldn't exist without Open Source - here's why!" (Thomas Sanladerer, 2018)
 
