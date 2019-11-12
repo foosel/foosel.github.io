@@ -25,6 +25,8 @@ redirect_from: /slides/
   * [Mit der Machete in den Lizenzdschungel](./lizenzdschungel/) (german talk, german slides) on May 28th 2016 at Makerfaire Hannover
 
 ### OctoPrint related
+
+  * [Driving 3D Printers with Python - Lessons Learned](https://octoprint.org/slides/pyconde2019/) (english talk, english slides) on October 11th 2019 at PyConDE.
  
   * [Developing OctoPrint](https://octoprint.org/slides/3dms19/) (english talk, english slides) on April 27th and 28th 2019 at 3D Meetup Sweden. Also available on [YouTube](https://www.youtube.com/watch?v=DBFWfXfqS_U) and below.
 
