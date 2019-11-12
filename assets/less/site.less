@@ -11,6 +11,9 @@
 @backgroundLight: #504f4d;
 @backgroundDark: black;
 
+@foregroundPrimary: white;
+@foregroundSecondary: #aaaaaa;
+
 @serifFont: "Economica", serif;
 @sansSerifFont: "Palanquin", sans-serif;
 
@@ -107,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 		-ms-transform: translateY(-50%);
 		transform: translateY(-50%);
 
-		color: white;
+		color: @foregroundPrimary;
 		text-align: center;
 	}
 }
@@ -175,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
 		}
 
 		text-align: center;
-		color: white;
+		color: @foregroundPrimary;
 
 		.name {
 			font-family: @serifFont;
@@ -185,6 +188,12 @@ h1, h2, h3, h4, h5, h6 {
 			@media (max-width: @maxPhone) {
 				font-size: 2.5em;
 			}
+		}
+
+		.pronunciation {
+			font-size: 1em;
+			margin-top: -1em;
+			color: @foregroundSecondary;
 		}
 
 		.profession {
