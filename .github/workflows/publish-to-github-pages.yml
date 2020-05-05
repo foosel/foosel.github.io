@@ -12,9 +12,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: 🔨 Build & publish Jekyll site
-        uses: meitar/jekyll-builder-for-github-pages-action@master
-        with:
-          secret_gh_pages_token: ${{ secrets.GH_PAGES_TOKEN }}
-          gh_pages_publishing_source: published
+      - name: 🔨 Build page
+        run: |
+          docker run \
+          -v ${{ github.workspace }}/site:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+          jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
 
+      - name: 🚀 Deploy page
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: published
+          publish_dir: _site
