@@ -15,6 +15,6 @@ jobs:
       - name: 🔨 Build & publish Jekyll site
         uses: meitar/jekyll-builder-for-github-pages-action@master
         with:
-          secret_gh_pages_token: ${{ secrets.GITHUB_TOKEN }}
+          secret_gh_pages_token: ${{ secrets.GH_PAGES_TOKEN }}
           gh_pages_publishing_source: published
 
