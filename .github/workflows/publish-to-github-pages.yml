@@ -1,0 +1,20 @@
+name: Publish to Github Pages
+
+on:
+  push: 
+    branches:
+      - master
+
+jobs:
+  build-and-publish:
+    name: Publish to Github Pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: 🔨 Build & publish Jekyll site
+        uses: meitar/jekyll-builder-for-github-pages-action@master
+        with:
+          secret_gh_pages_token: ${{ secrets.GITHUB_TOKEN }}
+          gh_pages_publishing_source: published
+
