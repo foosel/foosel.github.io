@@ -1,0 +1,30 @@
+.webfontSingle(@fontName, @fontFile, @fontStyle, @fontWeight) {
+  @font-face {
+    font-family: @fontName;
+    font-style: @fontStyle;
+    font-weight: @fontWeight;
+    src: url('@{fontFile}.eot'); // IE9 Compat Mode
+    src: url('@{fontFile}.eot?#iefix') format('embedded-opentype'), // IE6-IE8
+         url('@{fontFile}.woff2') format('woff2'), // Super Modern Browsers
+         url('@{fontFile}.woff') format('woff'), // Modern Browsers
+         url('@{fontFile}.ttf') format('truetype'),
+         url('@{fontFile}.svg') format('svg'); // Legacy iOS
+  }
+}
+
+.webfont(@fontName, @fontFile) {
+  @fontFileRegular: '../fonts/@{fontFile}-regular';
+  @fontFileItalic: '../fonts/@{fontFile}-italic';
+  @fontFileBold: '../fonts/@{fontFile}-700';
+  @fontFileBoldItalic: '../fonts/@{fontFile}-700italic';
+
+  .webfontSingle(@fontName, @fontFileRegular, normal, 400);
+  .webfontSingle(@fontName, @fontFileItalic, italic, 400);
+  .webfontSingle(@fontName, @fontFileBold, normal, 700);
+  .webfontSingle(@fontName, @fontFileBoldItalic, italic, 700);
+}
+
+.webfontSingle('Palanquin', '../fonts/palanquin-v3-latin-regular', 'regular', 400);
+.webfontSingle('Palanquin', '../fonts/palanquin-v3-latin-300', 'regular', 300);
+.webfontSingle('Palanquin', '../fonts/palanquin-v3-latin-700', 'regular', 700);
+.webfont('Economica', 'economica-v5-latin');

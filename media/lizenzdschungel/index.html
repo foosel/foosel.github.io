@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Mit der Machete in den Lizenzdschungel</title>
+
+		<meta name="author" content="Gina Häußge">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<style>
+			.reveal blockquote footer {
+				text-align: right;
+			}
+
+			.reveal blockquote footer cite {
+				font-size: 50%;
+			}
+
+			.reveal blockquote footer cite:before {
+				content: "\2014";
+			}
+
+			.reveal strong {
+				text-decoration: underline;
+			}
+  		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Mit der Machete in den Lizenzdschungel</h1>
+					<p>Gina Häußge &middot; <a href="https://twitter.com/foosel">@foosel</a></p>
+
+					<aside class="notes">
+						<ul>
+							<li>Herzlich willkommen!</li>
+							<li>Hier geht's heute um Lizenzen</li>
+							<li>Haben eine Stunde Zeit, noch Luft für Fragen/Antworten!</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Wer bin ich?</h2>
+
+					<ul>
+						<li>Kein Anwalt!</li>
+						<li>Softwarearchitektin, Project Lead von <a href="http://octoprint.org">OctoPrint</a></li>
+						<li>Schreibe Open Source Software seit über 10 Jahren</li>
+						<li>Alles hier: Mein persönliches Verständnis, Verwendung auf eigene Gefahr :)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Worum geht es hier?</h2>
+				</section>
+
+				<section>
+					<h2>Maker sind Urheber</h2>
+
+					<ul>
+						<li>Software</li>
+						<li>Hardware</li>
+						<li>Baupläne</li>
+						<li>Schnitt-/Strick-/Stick-/Häkelmuster</li>
+						<li>Koch-/Back-/Grill-/Braurezepte</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>"Urheber"?</h2>
+
+					<blockquote cite="https://de.wikipedia.org/wiki/Urheber">
+						[...] ein menschlicher Schöpfer, der insbesondere auf dem Gebiet der Kunst, Musik oder Wissenschaft ein Werk geschaffen hat, das seine eigene geistige, materielle, intellektuelle, jedenfalls persönliche Schöpfung darstellt und als solche sinnlich wahrnehmbar ist.
+						<footer>
+							<cite><a href="https://de.wikipedia.org/wiki/Urheber">Wikipedia: Urheber</a></cite>
+						</footer>
+					</blockquote>
+
+					<aside class="notes">
+						<ul>
+							<li>Urheber ist, wer ein Werk "erschafft"</li>
+							<li>nur natürliche Personen</li>
+							<li>ggf. diskussionswürdig, ob Werk, aber lassen wir mal außen vor hier</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Was bedeutet das?</h2>
+
+					<ul>
+						<li>Das Urheberrecht greift</li>
+						<li>absolutes Recht, nicht übertragbar</li>
+						<li>Urheberrecht &rarr; Verwertungsrecht</li>
+					</ul>
+
+					<aside class="notes">
+						<ul>
+							<li>nicht übertragbar AFAIK auch "nicht verwerfbar"</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>"Verwertungsrecht"?</h2>
+
+					<blockquote>
+						[...] das ausschließliche Recht eines Urhebers eines Werkes, es zu vervielfältigen, zu verbreiten und öffentlich auszustellen.
+
+						<footer>
+							<cite><a href="https://de.wikipedia.org/wiki/Verwertungsrecht">Wikipedia: Verwertungsrecht</a></cite>
+						</footer>
+					</blockquote>
+
+					<aside class="notes">
+						<ul>
+							<li>siehe auch copyright</li>
+							<li>öffentlich ausstellen: downloads?</li>
+							<li>Stichwort "ausschließlich" ist wichtig hier</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Maker teilen gerne</h2>
+
+					<ul>
+						<li>Online: Thingiverse, Github, Ravelry, Hackaday.io, ...</li>
+						<li>Makerfaires :)</li>
+						<li>gegenseitiges aufeinander aufbauen</li>
+					</ul>
+
+					<aside class="notes">
+						<ul>
+							<li>und das ist auch gut so!</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Wer darf was wie</h2>
+
+					<ul>
+						<li>verbreiten?</li>
+						<li>vervielfältigen?</li>
+						<li>erweitern und/oder woanders einbauen?</li>
+					</ul>
+
+					<p>Ohne Zusatzvereinbarung: Verwertungsrecht!</p>
+
+					<aside class="notes">
+						<ul>
+							<li>woanders einbauen: auch vervielfältigen</li>
+							<li>erweitern: wenn Erweiterung geteilt wird -> Verbreitung &amp; Vervielfältigung!</li>
+							<li>also: standardmässig darf das nur der Urheber!</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Eine Lizenz ist eine Zusatzvereinbarung</h2>
+
+					<ul>
+						<li>ob und wie: Verbreitung, Vervielfältigung, Erweiterung</li>
+						<li>zusätzliche Rechte und Pflichten</li>
+						<li>Auch: "Verwendung auf eigene Gefahr" (Hardware!)</li>
+					</ul>
+
+					<aside class="notes">
+						<ul>
+							<li>wenn - dann: Lizenz spezifiziert Rechte über Standard hinaus, wenn Pflichten erfüllt werden</li>
+							<li>Beispiele für solche Pflichten sehen wir gleich noch, aber z.b. Art des Teilens</li>
+							<li>wenn Pflichten verletzt, erlischt Lizenz!</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Wo kriegt man so eine Lizenz her?</h2>
+
+					<ul>
+						<li>Selber basteln: Rechtlich problematisch</li>
+						<li>Lieber eine passende vorgefertigte nehmen</li>
+						<li>Große Auswahl: Open Source, Creative Commons, ...</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Exkurs: "Open Source"?</h2>
+
+					<ul>
+						<li>Quelldaten liegen Nutzern in menschenlesbarer Form vor</li>
+						<li>beliebiges Kopieren, Verbreiten und Nutzen</li>
+						<li>beliebiges Erweitern und Weitergeben der erweiterten Version</li> 
+					</ul>
+
+					<small>Definition laut <a href="https://opensource.org/">Open Source Initiative (OSI)</a></small>
+
+					<aside class="notes">
+						<ul>
+							<li>Quellcode verfügbar ist nur ein Teilaspekt!</li>
+							<li>menschenlesbare Form: heißt, "jeder sollte die Quellen verarbeiten können"</li>
+							<li>proprietäre Dateiformate (CAD Programm für 5000€) sind da eher fehl am Platz</li>
+							<li>wichtig: "beliebig" - KEINE Einschränkungen jedweder Art!
+							<li>siehe auch: Free Software, Libre Software</li>
+							<li>etwas anderer Hintergrund aber grob selbe Definition, sehr philosophisch, wir ignorieren das jetzt mal (bitte nicht hauen)</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Open Source Lizenzen</h2>
+
+					<ul>
+						<li>hört man oft</li>
+						<li>teilweise als werbewirksames Merkmal</li>
+						<li>viral, "copy left": GPL, AGPL, LGPL, ...</li>
+						<li>nicht viral: MIT, BSD, Apache, ...</li>
+						<li>oft auf Software fokussiert</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Creative Commons Lizenzen</h2>
+
+					<ul>
+						<li>verschiedene "Geschmacksrichtungen"</li>
+						<li>teils Open Source, teils nicht</li>
+						<li>eher auf nicht-Software fokussiert</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Public Domain</h2>
+
+					<ul>
+						<li>Konzept aus der US-Rechtssprechung</li>
+						<li>meines Wissens nach so in Deutschland nicht definiert</li>
+						<li>Im Prinzip: Allgemeingut, "Mach was du willst"</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Ein paar Lizenzen unter der Lupe</h2>
+				</section>
+
+				<section>
+					<h2>GPL, AGPL, LGPL</h2>
+
+					<ul>
+						<li>Sehr viral: Alles, was GPL Werke verwertet, muss auch GPL sein</li>
+						<li>Haftungsausschluss</li>
+						<li>Copyrighthinweise müssen bleiben</li>
+						<li>Kommerzielle Nutzung kein Problem</li>
+						<li>Wirklich Open Source</li>
+						<li>AGPL: Viralität auch bei Nutzung übers Netzwerk</li>
+						<li>LGPL: Keine Viralität bei Linking</li>
+					</ul>
+
+					<aside class="notes">
+						<ul>
+							<li>AGPL: schließt ein Loophole, relevant für Cloudkram</li>
+							<li>LGPL: etwas entschärft, bei Code, der als Bibliothek verwendet wird</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Creative Commons</h2>
+
+					<ul>
+						<li>verschiedene Bausteine</li>
+						<li>"BY": Namensnennung</li>
+						<li>"SA" (Share alike): Viralität, unter den gleichen Bedingungen weiterverbreiten</li>
+						<li>"NC" (non commercial): nur nicht-kommerziell *</li>
+						<li>"ND" (no derivatives): keine Veränderungen *</li>
+						<li>Haftungsausschluss</li>
+					</ul>
+
+					<small>* = nicht Open Source!</small>
+				</section>
+
+				<section>
+					<h2>MIT, BSD, Apache</h2>
+
+					<ul>
+						<li>Copyrighthinweise müssen erhalten bleiben</li>
+						<li>Haftungsauschluss</li>
+						<li>Open Source</li>
+						<li>Unterschiede: Patente, Trademarknutzung, ...</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Wie lizenziert man sein Werk?</h2>
+				</section>
+
+				<section>
+					<h2>Lizenz wählen</h2>
+
+					<ul>
+						<li>Lizenz <strong>durchlesen</strong></li>
+						<li>
+							<strong>gut</strong> überlegen
+							<ul>
+								<li>spätere Änderungen schwierig und aufwändig</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Checkliste</h2>
+
+					<ul>
+						<li>Baue ich auf anderen Werken auf? Greift evtl. Viralität?</li>
+						<li>Habe ich alle Rechte und Pflichten verstanden und fühle mich wohl damit?</li>
+						<li>Kommerzielle Nutzung erlaubt: <strong>wirklich</strong> ok für mich?</li>
+						<li>Bin ich abgesichert gegen Regressansprüche?</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Lizenz gewählt, was nun?</h2>
+
+					<ul>
+						<li>deutlich angeben und vor allem beilegen</li>
+						<li>
+							Open Source? Quellen teilen!
+							<ul>
+								<li>Auf Github hochladen reicht nicht!</li>
+								<li>Lizenz muss klar und sichtbar sein!</li>
+								<li>Und wirklich <strong>Quellen</strong></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Ich will ein lizenziertes Werk weiterverwerten, was nun?</h2>
+					<ul>
+						<li>
+							<strong>Lizenz genau angucken!</strong>
+							<ul>
+								<li>Bsp. GPL: Viralität zu beachten!</li>
+								<li>Bsp. CC-NC: Bin ich nicht-kommerziell?</li>
+								<li>Bsp. CC-ND: Darf ich gar nicht</li>
+							</ul>
+						</li>
+						<li>Teilweise gemeine Inkompatibilitäten: FAQs lesen!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Häufige Missverständnisse</h2>
+				</section>
+
+				<section>
+					<h2>#1</h2>
+					"Open Source heißt, ich kann damit machen was ich will."
+
+					<aside class="notes">
+						<ul>
+							<li>Lizenz lesen, Viralität möglich, Copyrightnotices etc</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h2>#2</h2>
+					"Wenn ich etwas so lizenziere, dass kommerzielle Verwertung 
+					gestattet ist, und eine Firma verwertet mein Werk wirklich 
+					kommerziell, dann kann ich das immer noch verbieten."
+
+					<aside class="notes">
+						<ul>
+							<li>Pflichten aus Lizenz erfüllt? Rechte!</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h2>#3</h2>
+					"Ich kann die Lizenz meines Werks jederzeit ändern."
+
+					<aside class="notes">
+						<ul>
+							<li>nicht retroaktiv!</li>
+							<li>wenn andere bereits zugearbeitet haben: fragen!</li>
+							<li>und erneut Checkliste durchgehen</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h2>#4</h2>
+					"Ich kann bestimmte Rechte bzgl. der Verwertung meines Werks 
+					explizit verbieten, die meine gewählte Lizenz sonst gestattet."
+
+					<aside class="notes">
+						<ul>
+							<li>ist dann eigene Lizenz, NICHT angegebene</li>
+							<li>ggf. rechtlich unhaltbar</li>
+							<li>ggf. Inkompatibilitäten</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h2>#5</h2>
+					"Open Source heißt, weder ich noch irgendwer anderes darf mit 
+					meinem Werk Geld verdienen."
+
+					<aside class="notes">
+						<ul>
+							<li>siehe z.B. FAQ der GPL</li>
+							<li>Geld für Verteilung z.b. rechtens (Linux Distributionen)</li>
+							<li>kommerzielle Verwertung ok solange Quellen mitgeliefert werden!</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h2>Lest die Lizenz, versteht die Lizenz.</h2>
+				</section>
+
+				<section>
+					<h2>Hilfreiche Links (englisch)</h2>
+					<ul>
+						<li><a href="https://tldrlegal.com">tldrlegal.com</a>: Kurzüberblick über sehr viele Lizenzen</li>
+						<li><a href="http://choosealicense.com/">choosealicense.com</a>: Kleine Entscheidungshilfe</li>
+						<li><a href="https://www.gnu.org/licenses/gpl-faq.en.html">www.gnu.org/licenses/gpl-faq.en.html</a>: GPL FAQ</li>
+						<li><a href="https://creativecommons.org/faq/">creativecommons.org/faq/</a>: Creative Commons FAQ</li>
+						<li><a href="https://www.gnu.org/licenses/license-list.html">www.gnu.org/licenses/license-list.html</a>: GPL Kompatibilitätsliste</li>
+					</ul>
+
+					<aside class="notes">
+						<ul>
+							<li>Links müssen nicht abgeschrieben werden, Folien online!</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h1>Vielen Dank für die Aufmerksamkeit!</h1>
+					... insbesondere trotz des trockenen Themas ;)
+
+					<p>
+						<small>
+							Folien: <a href="https://foosel.net/slides/lizenzdschungel/">https://foosel.net/slides/lizenzdschungel/</a><br>
+							Twitter: <a href="https://twitter.com/foosel">@foosel</a>
+						</small>
+					</p>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				],
+
+				keyboard: {
+					// support left/right for prev/next slide (remote compatible)
+					39: "next",
+					37: "prev"
+				}
+			});
+
+		</script>
+
+	</body>
+</html>
