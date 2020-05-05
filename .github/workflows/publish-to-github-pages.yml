@@ -15,7 +15,7 @@ jobs:
       - name: 🔨 Build page
         run: |
           docker run \
-          -v ${{ github.workspace }}/site:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+          -v ${{ github.workspace }}:/srv/jekyll \
           jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
 
       - name: 🚀 Deploy page
