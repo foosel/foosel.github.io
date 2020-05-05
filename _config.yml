@@ -5,6 +5,7 @@ exclude:
 - vendor
 - "*.iml"
 - fetch_yt_preview
+- .github
 
 highlighter: rouge
 markdown: kramdown
