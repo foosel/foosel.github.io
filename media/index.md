@@ -6,6 +6,7 @@ redirect_from: /slides/
 
 ## Articles & Interviews
 
+  * ["HackSpace magazine meets... Gina Häußge"](https://hackspace.raspberrypi.org/issues/32). HackSpace magazine, Issue 32, July 2020
   * ["OctoPrint wouldn't exist without Open Source - here's why!"](https://toms3d.org/2018/11/15/octoprint-wouldnt-exist-without-open-source/). Toms3D, November 15th 2018. Also embedded below.
   * ["Interview: Gina Häußge, creator of OctoPrint, on the RepRap 10th Anniversary"](https://3dprintingindustry.com/news/interview-gina-hausge-creator-octoprint-reprap-10th-anniversary-134013/). 3D Printing Industry, May 31st, 2018
   * ["Women's Day 2018: 50 influential & inspiring women in 3D printing"](https://www.3ders.org/articles/20180308-womens-day-2018-50-influential-and-inspiring-women-in-3d-printing.html). 3ders.org, March 8th 2018
@@ -26,7 +27,7 @@ redirect_from: /slides/
 
 ### OctoPrint related
 
-  * [Driving 3D Printers with Python - Lessons Learned](https://octoprint.org/slides/pyconde2019/) (english talk, english slides) on October 11th 2019 at PyConDE.
+  * [Driving 3D Printers with Python - Lessons Learned](https://octoprint.org/slides/pyconde2019/) (english talk, english slides) on October 11th 2019 at PyConDE. Also available on [YouTube](https://www.youtube.com/watch?v=zlBk5vWwJCs) and below.
  
   * [Developing OctoPrint](https://octoprint.org/slides/3dms19/) (english talk, english slides) on April 27th and 28th 2019 at 3D Meetup Sweden. Also available on [YouTube](https://www.youtube.com/watch?v=DBFWfXfqS_U) and below.
 
@@ -41,6 +42,14 @@ redirect_from: /slides/
     * [at OS3DC](https://octoprint.org/slides/os3dc/) (german talk, english slides) on September 21st 2013
 
 ## Videos
+
+### "3D Drucker Online Lab Night" (Freie Maker e.V., 2020)
+
+{% include youtube.html vid="zlBk5vWwJCs" %}
+
+### "Driving 3D Printers with Python: Lessons Learned" (PyConDE, 2019)
+
+{% include youtube.html vid="9OcVmGbeh8A" %}
 
 ### "Developing OctoPrint" (3D Meetup Sweden, 2019)
 
