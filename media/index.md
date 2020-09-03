@@ -6,6 +6,7 @@ redirect_from: /slides/
 
 ## Articles & Interviews
 
+  * ["Gina Häußge and OctoPrint. How to make a living off of your pet passion projects - An Interview"](https://dot.kde.org/2020/08/15/gina-h%C3%A4u%C3%9Fge-and-octoprint). KDE.news, August 15th 2020
   * ["HackSpace magazine meets... Gina Häußge"](https://hackspace.raspberrypi.org/issues/32). HackSpace magazine, Issue 32, July 2020
   * ["OctoPrint wouldn't exist without Open Source - here's why!"](https://toms3d.org/2018/11/15/octoprint-wouldnt-exist-without-open-source/). Toms3D, November 15th 2018. Also embedded below.
   * ["Interview: Gina Häußge, creator of OctoPrint, on the RepRap 10th Anniversary"](https://3dprintingindustry.com/news/interview-gina-hausge-creator-octoprint-reprap-10th-anniversary-134013/). 3D Printing Industry, May 31st, 2018
