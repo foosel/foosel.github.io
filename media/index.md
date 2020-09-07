@@ -29,6 +29,7 @@ redirect_from: /slides/
 ### OctoPrint related
 
   * [Adventures in Open Source Development](https://octoprint.org/slides/akademy2020.pdf) (english talk, english slides) on September 5th 2020 at Akademy 2020.
+
   * [Driving 3D Printers with Python - Lessons Learned](https://octoprint.org/slides/pyconde2019/) (english talk, english slides) on October 11th 2019 at PyConDE. Also available on [YouTube](https://www.youtube.com/watch?v=zlBk5vWwJCs) and below.
  
   * [Developing OctoPrint](https://octoprint.org/slides/3dms19/) (english talk, english slides) on April 27th and 28th 2019 at 3D Meetup Sweden. Also available on [YouTube](https://www.youtube.com/watch?v=DBFWfXfqS_U) and below.
