@@ -1,0 +1,114 @@
+html {
+    @apply text-base bg-gray-50 dark:bg-gray-700;
+}
+
+@layer components {
+    p,
+    ul,
+    ol,
+    li {
+        @apply text-gray-900 dark:text-gray-50;
+    }
+
+    h6 {
+        @apply text-base font-bold text-gray-900 dark:text-gray-50;
+    }
+
+    h5 {
+        @apply text-lg font-bold text-gray-900 dark:text-gray-50;
+    }
+
+    h4 {
+        @apply text-xl font-bold text-gray-900 dark:text-gray-50;
+    }
+
+    h3 {
+        @apply text-2xl font-bold text-gray-900 dark:text-gray-50;
+    }
+
+    h2 {
+        @apply text-3xl font-extrabold text-gray-900 dark:text-gray-50;
+    }
+
+    h1 {
+        @apply text-4xl font-extrabold text-gray-900 dark:text-gray-50;
+    }
+
+    .prose {
+        @apply p-4 md:p-0;
+    }
+}
+
+@layer utilities {
+    .text-primary {
+        @apply text-gray-900 dark:text-gray-50;
+    }
+
+    .text-secondary {
+        @apply text-gray-800 dark:text-gray-200;
+    }
+
+    .text-tertiary {
+        @apply text-gray-600 dark:text-gray-400;
+    }
+}
+
+body {
+    @apply text-base bg-gray-50 dark:bg-gray-800;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-palanquin;
+}
+
+.prose {
+    max-width: 90ch;
+    padding: 0;
+}
+
+.dark .prose strong {
+    color: rgba(249, 250, 251, var(--tw-text-opacity));
+}
+
+/*
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+    @apply text-center;
+}
+*/
+
+.prose pre {
+    @apply w-full text-sm;
+}
+
+.lg\:prose-xl pre {
+    @apply text-sm;
+}
+
+.prose code::before,
+.prose code::after {
+    content: "";
+}
+
+.prose code {
+    @apply font-normal;
+    color: inherit;
+}
+
+.prose a {
+    @apply text-green-900 dark:text-green-500;
+}
+
+.prose .card,
+.prose .aside {
+    margin-top: 1.6em;
+}
+
+.prose .card a,
+.prose .aside a {
+    color: inherit;
+}

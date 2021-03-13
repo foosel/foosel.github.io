@@ -1,0 +1,33 @@
+external: &external https://foosel.net
+site_name: &site_name foosel.net
+assets: "./public/assets/content/"
+
+blog:
+    count: 10
+
+feeds:
+    blog:
+        title: "foosel.net Blog"
+        description: ""
+        link: "https://foosel.net/blog/"
+        image: ""
+        favicon: "https://foosel.net/favicon.ico"
+        output: "./public/feed/blog"
+
+seo:
+    titleTemplate: "%s | foosel.net"
+    openGraph:
+        type: website
+        locale: en
+        url: *external
+        site_name: *site_name
+    twitter:
+        handle: "@foosel"
+        site: "@foosel"
+        cardType: "summary_large_image"
+
+social:
+    github: https://github.com/foosel
+    twitter: https://twitter.com/foosel
+    linkedin: https://linkedin.com/ginahaeussge
+    mail: "mailto:contact@foosel.net"

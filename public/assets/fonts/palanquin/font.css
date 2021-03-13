@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Palanquin;
+    font-style: "regular";
+    font-weight: 400;
+    src: url('./palanquin-v3-latin-regular.eot');
+    src: url('./palanquin-v3-latin-regular.eot?#iefix') format('embedded-opentype'),
+    url('./palanquin-v3-latin-regular.woff2') format('woff2'),
+    url('./palanquin-v3-latin-regular.woff') format('woff'),
+    url('./palanquin-v3-latin-regular.truetype') format('truetype'),
+    url('./palanquin-v3-latin-regular.svg') format('svg');
+}
+
+@font-face {
+    font-family: Palanquin;
+    font-style: "regular";
+    font-weight: 300;
+    src: url('./palanquin-v3-latin-300.eot');
+    src: url('./palanquin-v3-latin-300.eot?#iefix') format('embedded-opentype'),
+    url('./palanquin-v3-latin-300.woff2') format('woff2'),
+    url('./palanquin-v3-latin-300.woff') format('woff'),
+    url('./palanquin-v3-latin-300.truetype') format('truetype'),
+    url('./palanquin-v3-latin-300.svg') format('svg');
+}
+
+@font-face {
+    font-family: Palanquin;
+    font-style: "regular";
+    font-weight: 700;
+    src: url('./palanquin-v3-latin-700.eot');
+    src: url('./palanquin-v3-latin-700.eot?#iefix') format('embedded-opentype'),
+    url('./palanquin-v3-latin-700.woff2') format('woff2'),
+    url('./palanquin-v3-latin-700.woff') format('woff'),
+    url('./palanquin-v3-latin-700.truetype') format('truetype'),
+    url('./palanquin-v3-latin-700.svg') format('svg');
+}
