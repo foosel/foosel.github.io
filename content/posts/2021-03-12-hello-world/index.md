@@ -4,7 +4,10 @@ subtitle: The long overdue foosel.net reboot
 published: 2021-03-12T23:00:00+0100
 image:
     url: ./new_start.jpg
-    alt: The autumn sun seen through some trees, with the bottom covered in leafs
+    alt: The autumn sun seen through some trees, with the bottom covered in leaves
+ogimage:
+    url: ./new_start.og.jpg
+    alt: The autumn sun seen through some trees, with the bottom covered in leaves
 ---
 
 It's been a couple years since I last tried to maintain a blog. Back then I was still living live as a corporate drone,
