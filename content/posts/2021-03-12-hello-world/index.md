@@ -10,7 +10,7 @@ ogimage:
     alt: The autumn sun seen through some trees, with the bottom covered in leaves
 ---
 
-It's been a couple years since I last tried to maintain a blog. Back then I was still living live as a corporate drone,
+It's been a couple years since I last tried to maintain a blog. Back then I was still living life as a corporate drone,
 employed as a Software Architect to consult other people on their IT problems. I rarely had anything I could blog about
 -- either things were under NDA, or they were simply uninteresting. Since then my life has been turned completely on its head.
 In late 2012 I got myself a 3d printer, spent my Christmas break to develop a small web interface for it, that grew into a full
