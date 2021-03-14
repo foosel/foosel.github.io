@@ -8,7 +8,7 @@ export default function Footer(props) {
             <div className="max-w-screen-sm xl:max-w-screen-md mx-auto flex flex-col">
                 <p className="text-white text-center">
                     Made with ❤ by{" "}
-                    <a href="https://github.com/foosel">Gina Häußge</a>
+                    <a href="/about">Gina Häußge</a>
                 </p>
                 <p className="text-white text-center">
                     <Link href="/legal">Legal Notice</Link> &middot;{" "}
