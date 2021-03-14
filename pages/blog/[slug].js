@@ -66,6 +66,7 @@ export async function getStaticProps({ params }) {
             url: post.image.external,
         });
     }
+    const description = post.description || post.excerpt || post.subtitle || "";
 
     return {
         props: {
@@ -75,11 +76,11 @@ export async function getStaticProps({ params }) {
             },
             seo: {
                 title: post.title,
-                description: post.description || post.excerpt || "",
+                description: description,
                 openGraph: {
                     title: post.title,
                     url: config.external + pathname,
-                    description: post.description || post.excerpt || "",
+                    description: description,
                     images: images,
                     type: "article",
                     article: {
