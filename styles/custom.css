@@ -99,7 +99,8 @@ h6 {
     color: inherit;
 }
 
-.prose a {
+.prose a,
+.prose a code {
     @apply text-green-900 dark:text-green-500;
 }
 
