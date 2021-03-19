@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://foosel.net/blog/</id>
     <title>foosel.net Blog</title>
-    <updated>2021-03-19T15:31:01.699Z</updated>
+    <updated>2021-03-19T21:27:54.955Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Gina Häußge</name>
@@ -55,7 +55,7 @@ index 67191a7af..a6dfc1e24 100644
  				# Apparently we found an utf-8 bom in the file.
 </code></pre>
 <p>The moral of the story? Don't trust your file position calculations. I could have saved myself a lot of time on debugging this if I had just looked there <em>first</em> instead of assuming this code to be fine 😅</p>
-<p>In the end, even a year later, I still have no idea why Cura produced CRLF code for some and LF for me, but I also never really looked hard. A UNIX vs Windows issue can be ruled out here since the affected parties and me were all using Windows. It made me learn something about <code>io.open</code> and was a valuable lesson on wrong assumptions however!</p>
+<p>In the end, even a year later, I still have no idea why Cura produced <code>CRLF</code> code for some and <code>LF</code> for me, but I also never really looked hard. A UNIX vs Windows issue can be ruled out here since the affected parties and me were all using Windows. It made me learn something about <code>io.open</code> and was a valuable lesson on wrong assumptions however!</p>
 ]]></content>
     </entry>
     <entry>
