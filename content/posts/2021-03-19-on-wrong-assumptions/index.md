@@ -65,4 +65,4 @@ index 67191a7af..a6dfc1e24 100644
 
 The moral of the story? Don't trust your file position calculations. I could have saved myself a lot of time on debugging this if I had just looked there *first* instead of assuming this code to be fine 😅
 
-In the end, even a year later, I still have no idea why Cura produced CRLF code for some and LF for me, but I also never really looked hard. A UNIX vs Windows issue can be ruled out here since the affected parties and me were all using Windows. It made me learn something about `io.open` and was a valuable lesson on wrong assumptions however!
+In the end, even a year later, I still have no idea why Cura produced `CRLF` code for some and `LF` for me, but I also never really looked hard. A UNIX vs Windows issue can be ruled out here since the affected parties and me were all using Windows. It made me learn something about `io.open` and was a valuable lesson on wrong assumptions however!
