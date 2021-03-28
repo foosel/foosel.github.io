@@ -4,9 +4,6 @@ subtitle: How I once spent two weeks barking up the wrong tree
 image:
     url: ./screenshot.jpg
     alt: A shot of the screen displaying the diff of the fix
-ogimage:
-    url: ./screenshot.og.jpg
-    alt: A shot of the screen displaying the diff of the fix
 ---
 
 *The original version of this post was published as a [Twitter thread on March 23rd 2020](https://twitter.com/foosel/status/1242121324438355974). I figured I should give it a more permanent home here since IMHO it was a quite fun story.*

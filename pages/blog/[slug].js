@@ -55,12 +55,7 @@ export async function getStaticProps({ params }) {
     ]);
 
     const images = [];
-    if (post.ogimage) {
-        images.push({
-            ...post.ogimage,
-            url: post.ogimage.external,
-        });
-    } else if (post.image) {
+    if (post.image) {
         images.push({
             ...post.image,
             url: post.image.external,
