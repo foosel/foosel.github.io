@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://foosel.net/blog/</id>
     <title>foosel.net Blog</title>
-    <updated>2021-03-28T09:20:50.934Z</updated>
+    <updated>2021-03-30T15:20:47.616Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Gina Häußge</name>
@@ -39,6 +39,7 @@
   <p>The testing operations are different from socket versions of tools connecting to speedtest.net infrastructure. In the many FOSS Go versions, tests are done to find an amount of data that can run for a default of 3 seconds over some TCP connection. In particular, <code>speedtest-cli</code> and <code>speedtest-rs</code> tests with what Ookla calls the <a href="http://www.ookla.com/support/a84541858">"HTTP Legacy Fallback"</a> for hosts that cannot establish a direct TCP connection.</p>
 </blockquote>
 <p>I fear I might have to look into reimplementing the current speedtest-to-mqtt setup with another container utilizing the official (and sadly proprietary) Speedtest CLI tool to mitigate this issue. Thankfully, it should be quite easy to build a drop-in replacement thanks to the modularization in effect.</p>
+<p><em>Update from March 30th 2021</em> I've now done that and <a href="https://gist.github.com/foosel/70ecbeade55cc852dbc0a4f7c4040adc">here's an updated gist</a> that works identically to the <code>speedtest-rs</code> approach, but instead utilizes <a href="https://www.speedtest.net/apps/cli">Ookla's official command line tool</a>. The results are stable numbers that reflect the expected bandwidth and also match the web based test results.</p>
 <h2>Latency and packet loss</h2>
 <p>In addition to the available up- and downstream speeds, I constantly monitor latency and packet loss to a selected number of hosts both external and internal to my network as well. For this I ping some public DNS servers (Google, Cloudflare and Quadnine) and some of my own vservers for the remote side, and the ISP's Fritzbox, my managed network gear and internal servers for the LAN side. I used to do this via <a href="https://oss.oetiker.ch/smokeping/">Smokeping</a>, but when I set up my InfluxDB/Grafana stack I wanted to find a solution to have everything together in one place.</p>
 <p>Thankfully I almost immediately found <a href="https://hveem.no/visualizing-latency-variance-with-grafana">this post by Tor Hveem</a> who solved this with a little custom Go tool to run <code>fping</code> against a number of configurable hosts and push the results right into InfluxDB. This was exactly what I wanted and thus I replicated the outlined setup, albeit with a slightly different color scheme.</p>
