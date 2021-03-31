@@ -1,7 +1,7 @@
 ---
 title: Homelab uplink monitoring
 subtitle: Keeping an eye on my ISP's performance
-updated: 2021-03-30T17:10:00+0200
+updated: 2021-03-31T12:40:00+0200
 image:
     url: ./title.png
     alt: My networking dashboard in Grafana with speed and latency monitoring
@@ -37,6 +37,8 @@ I fear I might have to look into reimplementing the current speedtest-to-mqtt se
 
 _Update from March 30th 2021_ I've now done that and [here's an updated gist](https://gist.github.com/foosel/70ecbeade55cc852dbc0a4f7c4040adc) that works identically to the `speedtest-rs` approach, but instead utilizes [Ookla's official command line tool](https://www.speedtest.net/apps/cli). The results are stable numbers that reflect the expected bandwidth and also match the web based test results.
 
+_Update from March 31st, 2021_ I wasn't too happy with running a proprietary tool for my speed testing, went looking for an OSS alternative, came across [librespeed](https://librespeed.org/) and therefore have now [replicated the setup again using that](https://gist.github.com/foosel/f7d9a08c0445454ab90d6c4974a9e316). You might want to experiment a bit to find a server close to you and define that via `--server <id>`, the auto discovery appears to be a bit wonky. Or just use your own server list via `--server-json` or `--local-json`.
+
 ## Latency and packet loss
 
 In addition to the available up- and downstream speeds, I constantly monitor latency and packet loss to a selected number of hosts both external and internal to my network as well. For this I ping some public DNS servers (Google, Cloudflare and Quadnine) and some of my own vservers for the remote side, and the ISP's Fritzbox, my managed network gear and internal servers for the LAN side. I used to do this via [Smokeping](https://oss.oetiker.ch/smokeping/), but when I set up my InfluxDB/Grafana stack I wanted to find a solution to have everything together in one place.
@@ -69,7 +71,7 @@ All of those trigger a notification to a private Discord server (via Grafana's o
 
 This notification channel has an obvious problem: When the uplink goes out completely, I won't get the notification if my phone is in my LAN. I really need to add a local alert as well at some point 😅
 
-Still, it usually will give me heads-up in time for me to reach out to my ISP on short notice and request they start troubleshooting.
+Still, it usually will give me a heads-up in time for me to reach out to my ISP on short notice and request they start troubleshooting.
 
 ## Conclusion
 
@@ -77,6 +79,8 @@ This monitoring setup has proven valuable in debugging network performance issue
 
 If you want to give this a go yourself, this might be of interest to you:
 
--   [Dockerfile, compose and instructions for speedtest-rs-to-mqtt container](https://gist.github.com/foosel/ef98a5774d1a495ab3781eba8a157fee)
+-   [Dockerfile, compose and instructions for speedtest container](https://gist.github.com/foosel/f7d9a08c0445454ab90d6c4974a9e316)
+    -   [Ookla speedtest based version](https://gist.github.com/foosel/70ecbeade55cc852dbc0a4f7c4040adc)
+    -   [speedtest-rs based version](https://gist.github.com/foosel/ef98a5774d1a495ab3781eba8a157fee)
 -   [Dockerfile, compose and instructions for infping container](https://gist.github.com/foosel/46804306d510d79f14117f95ed64b877)
 -   [Panel JSON for the mentioned visualizations](https://gist.github.com/foosel/ec0b6355d1d0c3ab65ee4df79d795a73)
