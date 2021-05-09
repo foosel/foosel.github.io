@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://foosel.net/blog/</id>
     <title>foosel.net Blog</title>
-    <updated>2021-04-14T09:34:16.046Z</updated>
+    <updated>2021-05-09T15:12:34.179Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Gina Häußge</name>
@@ -13,6 +13,107 @@
     <link rel="self" href="https://foosel.net/feed/blog.atom"/>
     <icon>https://foosel.net/favicon.ico</icon>
     <rights>All rights reserved 2021, Gina Häußge</rights>
+    <entry>
+        <title type="html"><![CDATA[A debugging story]]></title>
+        <id>2021-05-09-a-debugging-story</id>
+        <link href="https://foosel.net/blog/2021-05-09-a-debugging-story"/>
+        <updated>2021-05-09T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[
+<p>About a week ago I got a new <a href="https://github.com/OctoPrint/OctoPrint/issues/4117">bug report</a> on <a href="https://octoprint.org">OctoPrint's</a> issue tracker:</p>
+<blockquote>
+  <p><strong>GCode Viewer Visualisation Problem</strong></p>
+  <p><em>The problem</em></p>
+  <p>
+    The visualisation in GCode viewer ist not correct. The print is OK.
+    See gcode file (zip) on Layer 43 to 47 and 49
+  </p>
+  <p>And screenshot</p>
+</blockquote>
+<p>
+  You already saw the included screenshot, and it shows that there was a spike being visualized in the GCode Viewer that
+  wasn't actually there. My first attempt at reproduction failed spectacularly -- the file looked exactly like
+  it was supposed to. Then I noticed that the OP was using Google Chrome however (adding the detected user agent
+  to the system information contained in OctoPrint's new System Info Bundles already paid off!) and tried with that
+  instead of my usual Firefox, and lo and behold, I saw the issue.
+</p>
+<p>Scrolling a bit through the file revealed further defects, as also mentioned by the OP, e.g. this one:</p>
+<p>
+  <img src="./issue_4117_2.png" alt="Another defect, this time a whole part of the outline is being misplaced">
+</p>
+<p>
+  At this point it was clear that this was a Chrome-only issue. But was it a bug in OctoPrint or possibly a browser
+  bug? More information for that was needed but not readily available, and the file was also too big to quickly
+  gleam anything from the GCode itself that could possibly help to narrow down on the problem.
+</p>
+<p>
+  So the first step was to create a minimal GCode file that showed the same error. For this I took a look at
+  the reported layer height in the viewer on the layer a defect was visible and then narrowed down on the affected lines
+  by using the horizontal command sliders to further limit the view. That way I quickly found that these were the
+  problematic lines:
+</p>
+<pre class="language-gcode"><code class="language-gcode">G1 X173.595 Y103.9 E247.16716
+G3 X173.600 Y126.097 I-105613.507 J39.645 E248.20080
+G1 X169.552 Y126.098 E248.38933
+</code></pre>
+<p>
+  More specifically, the error was caused by the contained <a href="https://reprap.org/wiki/G-code#G2_.26_G3:_Controlled_Arc_Move"><code>G3</code> command</a>,
+  which instructs the printer to move in a counter clockwise arc
+  from its current position to the given X and Y coordinates, with the center of said arc offset by the given I and J
+  parameters. In the case of these lines, that meant to move in an arc from <code>(173.595, 103.0)</code> to <code>(173.600, 126.097)</code>
+  with the arc's center at <code>x = 173.595 + (-105613.507) = -105439.912</code> and <code>y = 103.9 + 39.645 = 143.54500000000002</code>.
+  Or in other words, a rather short arc with an enormous radius of over 105m that was more a straight line than
+  an arc really. And that line was being drawn too long, causing the weird spike in the rendition.
+</p>
+<p>
+  In order to understand how that could happen however we need to take a look at how the GCode viewer is implemented and how
+  arcs work in that implementation. At its core, the GCode viewer is an HTML5 2D canvas on which the path described in
+  a GCode file gets drawn. Commands like <code>G0</code> and <code>G1</code> that describe straight lines are drawn using <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineTo"><code>lineTo</code></a>,
+  arcs as described by <code>G2</code> and <code>G3</code> are drawn using <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc"><code>arc</code></a>.
+</p>
+<p>
+  <code>arc</code> takes six parameters: the <code>x</code> and <code>y</code> coordinate of the center of the arc, the radius <code>r</code>, the <code>startAngle</code> determining from which angle to start
+  drawing the arc and the <code>endAngle</code> until which to draw the arc, and a flag that's <code>true</code> for counter clockwise and <code>false</code> or empty for clockwise.
+  It is obvious this doesn't directly translate to the data contained in the GCode itself, where we rather have three points defining the arc -- a start
+  point, and end point, and the arc's center. So we need to translate this into the data required by the <code>arc</code> method. Using some trigonometry,
+  that is fairly straightforward:
+</p>
+<pre class="language-js"><code class="language-js"><span class="token comment">// given: G2/G3 X&#x3C;endX> Y&#x3C;endY> I&#x3C;i> J&#x3C;j>, &#x3C;startX>, &#x3C;startY></span>
+arcX <span class="token operator">=</span> startX <span class="token operator">+</span> i<span class="token punctuation">;</span>
+arcY <span class="token operator">=</span> startY <span class="token operator">+</span> j<span class="token punctuation">;</span>
+r <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span>i <span class="token operator">*</span> i <span class="token operator">+</span> j <span class="token operator">*</span> j<span class="token punctuation">)</span><span class="token punctuation">;</span>
+startAngle <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">atan2</span><span class="token punctuation">(</span>startY <span class="token operator">-</span> arcY<span class="token punctuation">,</span> startX <span class="token operator">-</span> arcX<span class="token punctuation">)</span><span class="token punctuation">;</span>
+endAngle <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">atan2</span><span class="token punctuation">(</span>endY <span class="token operator">-</span> arcY<span class="token punctuation">,</span> endX <span class="token operator">-</span> arcX<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ccw <span class="token operator">=</span> <span class="token punctuation">(</span>command <span class="token operator">===</span> <span class="token string">"G3"</span><span class="token punctuation">)</span>
+</code></pre>
+<p>
+  <img src="./drawing.png" alt="The parameters and their relation">
+</p>
+<p>
+  My first guess was that the result of this conversion was somehow different between Firefox and Chrome, and so I modified the GCode viewer to log
+  the calculated values and then compared the two outcomes. The values were completely identical between both browsers, so what was being fed
+  into the canvas <code>arc</code> command was identical and yet produces different results. Why?
+</p>
+<p>
+  My next approach was to add some more visual debug output to the viewer itself. I modified it such that the arc parameters as calculated would
+  actually be drawn on the canvas as well, in form of a geometrical pizza slice showing the arc's center, its "legs" and its rim. And this is where
+  I saw a difference in the rendered output. Where in Firefox the arc's rim and its legs met perfectly:
+</p>
+<p>
+  <img src="./arc_ff.png" alt="The arc in Firefox is rendered correctly">
+</p>
+<p>in Chrome the rim overshot:</p>
+<p>
+  <img src="./arc_chrome.png" alt="The same arc in Chrome is rendered wrong">
+</p>
+<p>So while the calculated parameters were correct and in both cases provided to the <code>arc</code> method just the same, Chrome was rendering the wrong segment length!</p>
+<p>I suspected a rounding error and thus started searching for matching reports from other people. I couldn't find a specific bug report, but I came across a post on Stack Overflow that sounded mightily familiar: <a href="https://stackoverflow.com/questions/8603656/html5-canvas-arcs-not-rendering-correctly-in-google-chrome">HTML5 canvas arcs not rendering correctly in Google Chrome</a>, from 2011. A ten year old post... could it be?</p>
+<p>Honestly, I still do not know if this indeed described the same issue or not, or if there's a Chrome ticket describing this behaviour -- I'll continue to look, but first and foremost I was focused on fixing this problem in OctoPrint's GCode viewer. The Stack Overflow post provided a code snippet that reimplements <code>arc</code> utilizing bezier curves, and so I gave this a try. Long story short, OctoPrint's GCode Viewer as part of version 1.7.0+ will ship with a Chrome-only <code>arc</code> replacement that will be enabled by default, but can also be disabled in real time, with great effect:</p>
+<p>
+  <img src="./arc_fix.gif" alt="Enabling and disabling the arc workaround makes the defects disappear and reappear">
+</p>
+<p>And the moral of the story: It rarely is a browser bug. But sometimes, all signs say it indeed <em>is</em> and a workaround is the easiest solution.</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Homelab uplink monitoring]]></title>
         <id>2021-03-28-homelab-uplink-monitoring</id>
