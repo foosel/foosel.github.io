@@ -35,7 +35,7 @@ export function PageHeader(props) {
                         <>
                             Posted on{" "}
                             <DateFormatter dateString={props.published} /> and
-                            updated on{" "}
+                            last updated on{" "}
                             <DateFormatter dateString={props.updated} />
                         </>
                     ) : (
