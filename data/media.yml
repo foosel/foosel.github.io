@@ -33,6 +33,9 @@ articles:
     description: Make, December 9th, 2014
     link: https://makezine.com/2014/12/09/interview-with-octoprints-gina-hausge/
 podcasts:
+  - title: "From a 3D side project to the dream job"
+    description: "The ReadME Podcast #1, May 17th 2021"
+    link: https://github.com/readme/3d-sideproject-octoprint
   - title: "Behind the scenes of OctoPrint (with Gina Häußge)"
     description: "The Meltzone Podcast #39, October 9th 2020"
     link: https://themelt.zone/2020/10/09/behind-the-scenes-of-octoprint-with-gina-hausge/
