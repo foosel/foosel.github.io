@@ -43,6 +43,12 @@ podcasts:
     description: "Hanselminutes #470, April 9th 2015"
     link: https://www.hanselminutes.com/470/building-a-better-3d-printer-with-software-with-octoprints-gina-huge
 talks:
+  - title: How to deal with toxic people
+    description: Upstream 2021, June 7th 2021
+    link: https://upstream.live/speaker-2021/gina-haeussge
+  - title: "What is it like to be an open source maintainer in 2021: A discussion of the Tidelift maintainer survey highlights"
+    description: Upstream 2021, June 7th 2021
+    link: https://upstream.live/speaker-2021/gina-haeussge
   - title: Managing boundaries, balance & funding in OSS
     description: GitHub Universe 2020, December 10th 2020
     link: https://www.youtube.com/watch?v=tcJJkmglPr4
@@ -86,6 +92,12 @@ talks:
     talk: de
     slides: de
 videos:
+  - title: "How to deal with toxic people"
+    description: "Upstream 2021"
+    youtube: Z0azm7YXzME
+  - title: "What is it like to be an open source maintainer in 2021"
+    description: "Upstream 2021"
+    youtube: 0cy3x1C_05s
   - title: "GitHub Stars with Gina Häußge"
     description: "Interview and Q&A with Eddie Jaoude"
     youtube: ptoqXLR3zSU
