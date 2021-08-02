@@ -91,6 +91,7 @@ Return the value (in fractional seconds) of a <strong>performance counter</stron
 <th></th>
 <th>Windows</th>
 <th>Linux</th>
+<th>Linux</th>
 </tr>
 </thead>
 <tbody>
@@ -98,11 +99,13 @@ Return the value (in fractional seconds) of a <strong>performance counter</stron
 <td><code>time.monotonic</code></td>
 <td>54.2 nsec <img class="emoji" draggable="false" alt="👀" src="https://twemoji.maxcdn.com/2/svg/1f440.svg" data-marp-twemoji=""/></td>
 <td>74 nsec</td>
+<td>98.8 nsec</td>
 </tr>
 <tr>
 <td><code>time.perf_counter</code></td>
 <td>84.1 nsec</td>
 <td>73.3 nsec</td>
+<td>94.3 nsec</td>
 </tr>
 </tbody>
 </table>
@@ -111,7 +114,7 @@ Return the value (in fractional seconds) of a <strong>performance counter</stron
 <h1>Summary</h1>
 <ol>
 <li><code>time.monotonic</code> and <code>time.perf_counter</code> are both monotonic.</li>
-<li>Under Windows, <code>time.monotonic</code> has lower resolution and higher performance than <code>time.perf_counter</code>. Under Linux and Mac they are identical.</li>
+<li>Under Windows, <code>time.monotonic</code> has lower resolution and higher performance than <code>time.perf_counter</code>. Under Linux and MacOS they are identical.</li>
 </ol>
 <h1>Links</h1>
 <ul>
