@@ -33,6 +33,7 @@ Return the value (in fractional seconds) of a <strong>performance counter</stron
 <th></th>
 <th>Windows</th>
 <th>Linux</th>
+<th>MacOS</th>
 </tr>
 </thead>
 <tbody>
@@ -40,15 +41,17 @@ Return the value (in fractional seconds) of a <strong>performance counter</stron
 <td><code>time.monotonic</code></td>
 <td>64 Hz <img class="emoji" draggable="false" alt="👀" src="https://twemoji.maxcdn.com/2/svg/1f440.svg" data-marp-twemoji=""/></td>
 <td>1,000,000,000 Hz</td>
+<td>1,000,000,000 Hz</td>
 </tr>
 <tr>
 <td><code>time.perf_counter</code></td>
 <td>10,000,000 Hz</td>
 <td>1,000,000,000 Hz</td>
+<td>1,000,000,000 Hz</td>
 </tr>
 </tbody>
 </table>
-<p>Implementation: <code>GetTickCount64</code>/<code>QueryPerformanceCounter</code> (Windows) vs <code>clock_gettime(CLOCK_MONOTONIC)</code> (Linux)</p>
+<p>Implementation: <code>GetTickCount64</code>/<code>QueryPerformanceCounter</code> (Windows) vs <code>clock_gettime(CLOCK_MONOTONIC)</code> (Linux) vs <code>mach_absolute_time</code> (MacOS)</p>
 <p>Monotonic: <code>true</code></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-class="invert" class="invert" style="--class:invert;">
@@ -60,6 +63,7 @@ Return the value (in fractional seconds) of a <strong>performance counter</stron
 <th></th>
 <th>Windows</th>
 <th>Linux</th>
+<th>MacOS</th>
 </tr>
 </thead>
 <tbody>
@@ -67,9 +71,11 @@ Return the value (in fractional seconds) of a <strong>performance counter</stron
 <td><code>time.monotonic</code></td>
 <td>6811 <img class="emoji" draggable="false" alt="👀" src="https://twemoji.maxcdn.com/2/svg/1f440.svg" data-marp-twemoji=""/></td>
 <td>1,000,000,000</td>
+<td>1,000,000,000</td>
 </tr>
 <tr>
 <td><code>time.perf_counter</code></td>
+<td>1,000,000,000</td>
 <td>1,000,000,000</td>
 <td>1,000,000,000</td>
 </tr>
@@ -105,7 +111,7 @@ Return the value (in fractional seconds) of a <strong>performance counter</stron
 <h1>Summary</h1>
 <ol>
 <li><code>time.monotonic</code> and <code>time.perf_counter</code> are both monotonic.</li>
-<li>Under Windows, <code>time.monotonic</code> has lower resolution and higher performance than <code>time.perf_counter</code>. Under Linux they are identical.</li>
+<li>Under Windows, <code>time.monotonic</code> has lower resolution and higher performance than <code>time.perf_counter</code>. Under Linux and Mac they are identical.</li>
 </ol>
 <h1>Links</h1>
 <ul>
