@@ -32,7 +32,7 @@ export default function Home() {
                 <div className="dark:text-white text-center">
                     <img
                         className="rounded-full mx-auto mb-8"
-                        src="/img/avatar-250x250.jpg"
+                        src="/img/avatar-2021-250x250.jpg"
                     />
                     <h1 className="mb-8">Hi, I'm Gina Häußge aka foosel!</h1>
                     <p className="max-w-sm text-center mx-auto mb-8">
