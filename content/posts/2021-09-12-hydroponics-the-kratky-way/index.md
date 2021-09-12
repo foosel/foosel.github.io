@@ -38,6 +38,6 @@ Sadly, I had to emergency-harvest one of the Basil's today. While topping up the
 
 ![One small jar of freshly made pesto](./pesto.jpg)
 
-Further reading revealed that it's apparently an option to add a teeny time amount of 3% hydrogen peroxide to the nutrient solution itself to help keep any unwelcome guests away (and also help with aeration), so I've now added 0.5ml to my freshly topped off jar of the other Basil and hope that won't do harm but rather good. Wish me luck 😉
+Further reading revealed that it's apparently an option to add a teeny tiny amount of 3% hydrogen peroxide to the nutrient solution itself to help keep any unwelcome guests away (and also help with aeration), so I've now added 0.5ml to my freshly topped off jar of the other Basil and hope that won't do harm but rather good. Wish me luck 😉
 
 All in all, I call this whole first dabbling with hydroponics a great success. The Kratky method allowed me to get up and running quickly without huge investments and space requirements, and the results were amazing. I've also now planted some peppermint seeds and they are already sprouting, so my hopes are high for some amazing fresh trees later this fall! If you've always wanted to experiment with hydroponics but it always felt way too involved, maybe take a look at the Kratky method 😊
