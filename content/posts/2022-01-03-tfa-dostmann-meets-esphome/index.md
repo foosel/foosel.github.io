@@ -95,6 +95,8 @@ but that's only improved things slightly. Due to that I plan to redesign the
 backplate to have the ESP outside the sensor case, in its own compartment. I 
 hope that will solve the "running hot" issue for good then, but we'll see.
 
+*Update from January 27th 2022* I redesigned the backplate and now have a solution that seems to work better, based on the reported temperature and CO2. [I've published it here](https://www.prusaprinters.org/prints/119968-airco2ntrol-mini-backplate-with-wemos-d1-mini).
+
 In any case, for now I at least got a reliable indicator of my office's CO2 levels that also now
 are trackable long term, and I have also forwarded the current values to my [AWTRIX mini](https://awtrixdocs.blueforcer.de/)
 via some NodeRED flow that also takes care of color coding. Further possibilities include
