@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://foosel.net/blog/</id>
     <title>foosel.net Blog</title>
-    <updated>2022-01-18T22:25:10.763Z</updated>
+    <updated>2022-01-27T21:34:37.347Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Gina Häußge</name>
@@ -113,6 +113,7 @@ sensor:
   backplate to have the ESP outside the sensor case, in its own compartment. I
   hope that will solve the "running hot" issue for good then, but we'll see.
 </p>
+<p><em>Update from January 27th 2022</em> I redesigned the backplate and now have a solution that seems to work better, based on the reported temperature and CO2. <a href="https://www.prusaprinters.org/prints/119968-airco2ntrol-mini-backplate-with-wemos-d1-mini">I've published it here</a>.</p>
 <p>
   In any case, for now I at least got a reliable indicator of my office's CO2 levels that also now
   are trackable long term, and I have also forwarded the current values to my <a href="https://awtrixdocs.blueforcer.de/">AWTRIX mini</a>
