@@ -43,6 +43,9 @@ podcasts:
     description: "Hanselminutes #470, April 9th 2015"
     link: https://www.hanselminutes.com/470/building-a-better-3d-printer-with-software-with-octoprints-gina-huge
 talks:
+  - title: How to deal with toxic people
+    description: PyConDE 2022, April 12th 2022
+    link: https://octoprint.org/slides/pyconde2022.pdf
   - title: RPi image customization with GitHub Actions
     description: GitHub Universe 2021, on-demand
     link: https://octoprint.org/slides/universe2021.pdf
