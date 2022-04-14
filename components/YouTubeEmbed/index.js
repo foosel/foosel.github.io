@@ -59,7 +59,7 @@ export function YouTubePlaceholder(props) {
 export default function YouTubeEmbed(props) {
     const domain = "www.youtube-nocookie.com";
     const vid = props.vid;
-    const url = `https://${domain}/embed/${vid}`;
+    const url = `https://${domain}/embed/${vid}` + (props.start ? `?start=${props.start}` + (props.end ? `&end=${props.end}` : "") : "");
 
     const [consent, setConsent] = useState(!!props.consent);
 

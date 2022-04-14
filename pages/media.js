@@ -77,6 +77,8 @@ function Videos(props) {
                         noCookie
                         vid={item.youtube}
                         preview={item.preview}
+                        start={item.start}
+                        end={item.end}
                     />
                 </div>
             ))}

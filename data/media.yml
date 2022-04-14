@@ -53,8 +53,8 @@ talks:
     description: GitHub Nova 2021, October 5th
     link: https://foosel.net/slides/nova2021.pdf
   - title: "time.monotonic vs time.perf_counter: What's the difference?"
-    description: Lightning Talk at EuroPython 2021, July 30th 2021
-    link: https://youtu.be/m07E2S82wM0?t=788
+    description: Lightning Talk at EuroPython 2021, July 30th 2021, in response to Miroslav Šedivý's talk "Should We Return to Python 2?".
+    link: https://github.com/foosel/ep2021lt
   - title: Driving 3D Printers with Python
     description: EuroPython 2021, July 29th 2021
     link: https://ep2021.europython.eu/talks/7LMMN7C-driving-3d-printers-with-python/
@@ -113,6 +113,11 @@ videos:
   - title: "GitHub Stars Stories - are you the next GitHub Star?"
     description: "Panel discussion with fellow GitHub Stars"
     youtube: 9UHDTz5PCkw
+  - title: "time.monotonic vs time.perf_counter: What's the difference?"
+    description: Lightning Talk at EuroPython, 2021
+    youtube: m07E2S82wM0
+    start: 788
+    end: 1116
   - title: "Driving 3D Printers With Python"
     description: Talk at EuroPython, 2021
     youtube: 86T5-G8IDGw
@@ -153,3 +158,4 @@ videos:
   - title: "OctoPrint: 3D printing unchained"
     description: Talk at FabCon.3D, 2014
     youtube: ylmcK-QAPjc
+    preview: https://i.ytimg.com/vi/ylmcK-QAPjc/0.jpg
