@@ -6,7 +6,7 @@ import { PlayButton, Disclaimer } from "./styled";
 export function YouTubePlaceholder(props) {
     const vid = props.vid;
     const preview =
-        props.preview || `https://i.ytimg.com/vi/${vid}/maxresdefault.jpg`;
+        props.preview || `https://i.ytimg.com/vi/${vid}/hqdefault.jpg`;
 
     return (
         <div
