@@ -47,11 +47,17 @@ talks:
     description: PyConDE 2022, April 12th 2022
     link: https://octoprint.org/slides/pyconde2022.pdf
   - title: RPi image customization with GitHub Actions
-    description: GitHub Universe 2021, on-demand
+    description: GitHub Universe 2021, October 27th & 28th 2021 (on-demand)
     link: https://octoprint.org/slides/universe2021.pdf
   - title: How to deal with toxic people
     description: GitHub Nova 2021, October 5th
     link: https://foosel.net/slides/nova2021.pdf
+  - title: "time.monotonic vs time.perf_counter: What's the difference?"
+    description: Lightning Talk at EuroPython 2021, July 30th 2021
+    link: https://youtu.be/m07E2S82wM0?t=788
+  - title: Driving 3D Printers with Python
+    description: EuroPython 2021, July 29th 2021
+    link: https://ep2021.europython.eu/talks/7LMMN7C-driving-3d-printers-with-python/
   - title: How to deal with toxic people
     description: Upstream 2021, June 7th 2021
     link: https://upstream.live/speaker-2021/gina-haeussge
@@ -107,6 +113,9 @@ videos:
   - title: "GitHub Stars Stories - are you the next GitHub Star?"
     description: "Panel discussion with fellow GitHub Stars"
     youtube: 9UHDTz5PCkw
+  - title: "Driving 3D Printers With Python"
+    description: Talk at EuroPython, 2021
+    youtube: 86T5-G8IDGw
   - title: "How to deal with toxic people"
     description: "Talk at Upstream 2021"
     youtube: Z0azm7YXzME
