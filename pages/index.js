@@ -6,6 +6,7 @@ import config from "@data/config.yml";
 
 import GitHubIcon from "mdi-react/GithubIcon";
 import TwitterIcon from "mdi-react/TwitterIcon";
+import MastodonIcon from "mdi-react/MastodonIcon";
 import LinkedInIcon from "mdi-react/LinkedinIcon";
 import MailIcon from "mdi-react/EmailIcon";
 
@@ -17,7 +18,7 @@ function SocialButton(props) {
             className="rounded-full text-white bg-black dark:text-black dark:bg-white p-1 mx-4"
             href={props.link}
             target="_blank"
-            rel="nofollow noreferrer"
+            rel="me nofollow noreferrer"
         >
             {props.children}
         </a>
@@ -46,6 +47,9 @@ export default function Home() {
                         </SocialButton>
                         <SocialButton link={config.social.twitter}>
                             <TwitterIcon />
+                        </SocialButton>
+                        <SocialButton link={config.social.mastodon}>
+                            <MastodonIcon />
                         </SocialButton>
                         <SocialButton link={config.social.linkedin}>
                             <LinkedInIcon />
