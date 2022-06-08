@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://foosel.net/blog/</id>
     <title>foosel.net Blog</title>
-    <updated>2022-06-08T08:15:22.105Z</updated>
+    <updated>2022-06-08T08:17:13.455Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Gina Häußge</name>
