@@ -110,6 +110,9 @@ talks:
     talk: de
     slides: de
 videos:
+  - title: How to deal with toxic people
+    description: Talk at PyConDE, 2022
+    youtube: 7lIpP3GEyXs
   - title: "RPi image customization with GitHub Actions"
     description: "Talk at GitHub Universe 2021"
     youtube: p9Gqmq1yLTc
