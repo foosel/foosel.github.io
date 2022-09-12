@@ -36,6 +36,12 @@ articles:
     description: Make, December 9th, 2014
     link: https://makezine.com/2014/12/09/interview-with-octoprints-gina-hausge/
 podcasts:
+  - title: "OctoPrint With Gina Häußge"
+    description: "The FOSSPod, S1:E13, September 9th 2022"
+    link: https://fosspod.content.town/episodes/octoprint-with-gina-hauge
+  - title: "PSF Survey in Review"
+    description: "Talk Python #374, July 20th 2022"
+    link: https://talkpython.fm/episodes/show/374/psf-survey-in-review
   - title: "Textinator is coming for your text, wherever it is"
     description: "Python Bytes #289, June 22nd 2022"
     link: https://pythonbytes.fm/episodes/show/289/textinator-is-coming-for-your-text-wherever-it-is
