@@ -119,6 +119,9 @@ talks:
     talk: de
     slides: de
 videos:
+  - title: "PSF Survey in Review"
+    description: "Talk Python #374, July 20th 2022"
+    youtube: NQviNLSENhw
   - title: "Textinator is coming for your text, wherever it is - Python Bytes 289"
     description: "Python Bytes #289, June 22nd 2022"
     youtube: UP2JK6ISB9I
