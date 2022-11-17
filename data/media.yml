@@ -1,4 +1,7 @@
 articles:
+  - title: "Interview mit Gina Häußge: OctoPrint - das ist mein Projekt!"
+    description: "IT Spektrum 06/2022"
+    link: https://webreader.itspektrum.de/de/profiles/7d30f3fc5f62-itspektrum/editions/it-spektrum-06-2022
   - title: "🎤 Interview With Gina of OctoPrint"
     description: "Console #108, June 5th 2022"
     link: https://console.substack.com/p/console-108
@@ -36,6 +39,9 @@ articles:
     description: Make, December 9th, 2014
     link: https://makezine.com/2014/12/09/interview-with-octoprints-gina-hausge/
 podcasts:
+  - title: "Mastodon for Python Devs"
+    description: "Talk Python #390, November 15th 2022"
+    link: https://talkpython.fm/episodes/show/390/mastodon-for-python-devs
   - title: "OctoPrint With Gina Häußge"
     description: "The FOSSPod, S1:E13, September 9th 2022"
     link: https://fosspod.content.town/episodes/octoprint-with-gina-hauge
@@ -55,6 +61,9 @@ podcasts:
     description: "Hanselminutes #470, April 9th 2015"
     link: https://www.hanselminutes.com/470/building-a-better-3d-printer-with-software-with-octoprints-gina-huge
 talks:
+  - title: Tying custom hardware testing into GitHub Actions
+    description: GitHub Nova 2022, October 4th
+    link: https://foosel.net/slides/nova2022.pdf
   - title: How to deal with toxic people
     description: PyConDE 2022, April 12th 2022
     link: https://octoprint.org/slides/pyconde2022.pdf
@@ -119,6 +128,9 @@ talks:
     talk: de
     slides: de
 videos:
+  - title: "Mastodon for Python Devs"
+    description: "Talk Python #390, November 15th 2022"
+    youtube: LhBfMoR3bvI
   - title: "PSF Survey in Review"
     description: "Talk Python #374, July 20th 2022"
     youtube: NQviNLSENhw
