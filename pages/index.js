@@ -5,7 +5,7 @@ import { NextSeo } from "next-seo";
 import config from "@data/config.yml";
 
 import GitHubIcon from "mdi-react/GithubIcon";
-import TwitterIcon from "mdi-react/TwitterIcon";
+
 import MastodonIcon from "mdi-react/MastodonIcon";
 import LinkedInIcon from "mdi-react/LinkedinIcon";
 import MailIcon from "mdi-react/EmailIcon";
@@ -45,9 +45,9 @@ export default function Home() {
                         <SocialButton link={config.social.github}>
                             <GitHubIcon />
                         </SocialButton>
-                        <SocialButton link={config.social.twitter}>
-                            <TwitterIcon />
-                        </SocialButton>
+
+
+
                         <SocialButton link={config.social.mastodon}>
                             <MastodonIcon />
                         </SocialButton>
