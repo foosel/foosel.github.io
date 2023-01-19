@@ -30,10 +30,8 @@ In my spare time I love playing (and sometimes [streaming](http://twitch.tv/thef
 games[^2],
 binging various tv shows[^3], cooking &
 baking[^4] and tinkering with electronics. Sometimes I even find the time
-to use my various 3d printers. And I also try to improve my photography skills -- btw,
-here's [my Instagram profile](https://instagram.com/thefoosel).
-When there is no pandemic going on I also try to get better at rock climbing at the boulder gym, go to
-the movies, or play board games or p&p rpgs with friends.
+to use my various 3d printers. And I also try to improve my photography skills, try to get better at 
+rock climbing at the boulder gym, go to the movies, or play board games or p&p rpgs with friends.
 
 Thanks to my open source work I've had quite a number of opportunities to hold talks, give interviews or take part
 in streams and podcasts. You can find a growing collection of these [here](/media).
