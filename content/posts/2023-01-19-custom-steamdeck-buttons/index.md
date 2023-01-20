@@ -131,7 +131,7 @@ part silicone mold for SteamDeck action buttons.
 
 ![The finished two part mold, visibly keyed and interlockable.](./silicone_mold_step7.jpg)
 
-## Resin time, resin time, do do do do do, resin time
+## Resin time, resin time, do do do do, resin time
 
 *Wear gloves and a respirator during this!*
 
