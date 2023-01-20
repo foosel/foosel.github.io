@@ -30,7 +30,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.110.0
-      BASE_URL: https://foosel.github.io
     steps:
       - name: Install Hugo CLI
         run: |
@@ -53,9 +52,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo \
-            --minify \
-            --baseURL "${{ env.BASE_URL }}"
+          hugo --minify
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
