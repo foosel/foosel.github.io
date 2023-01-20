@@ -2,16 +2,11 @@
 title: Legal Notice
 ---
 
-<Card type="critical">
-    <p>
-        <strong>
-            To get support with or answers to any OctoPrint or OctoPi related problems or questions use the <a href="https://community.octoprint.org">Community Forum</a>
-        </strong>
-    </p>
-    <p>
-        The contact information here is <em>only</em> provided to comply with German law. I cannot give individual support by email or other private channels due to sheer volume.
-    </p>
-</Card>
+{{< notice warning >}}
+**To get support with or answers to any OctoPrint or OctoPi related problems or questions use the [Community Forum](https://community.octoprint.org)!**
+
+The contact information here is *only* provided to comply with German law. I cannot give individual support by email or other private channels due to sheer volume.
+{{< /notice >}}
 
 ### Information provided according to Sec. 5 German Telemedia Act (TMG):
 

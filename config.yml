@@ -1,0 +1,71 @@
+baseURL: https://foosel.net
+languageCode: en-us
+title: foosel.net
+theme: 
+  - "hugo-notice"
+  - "PaperMod"
+
+params:
+  env: production
+  defaultTheme: auto
+  showReadingTime: true
+  showBreadCrumbs: true
+  #showShareButtons: true
+  #showToc: true
+  showPostNavLinks: true
+  #showFullTextinRSS: true
+  showRssButtonInSectionTermList: true
+
+  profileMode:
+    enabled: true
+    title: Hi, I'm Gina Häußge aka foosel!
+    subtitle: Passionate code monkey 🐒 Geek 👩‍💻 Gamer 🎮 Hobby baker 👩‍🍳 Creator & maintainer of OctoPrint 🐙 GitHub Star 🌟
+    imageUrl: "img/me.jpg"
+    imageWidth: 250
+    imageHeight: 250
+    imageTitle: Gina Häußge
+
+  socialIcons:
+    - name: GitHub
+      url: "https://github.com/foosel"
+    - name: Mastodon
+      url: "https://chaos.social/@foosel"
+    - name: LinkedIn
+      url: "https://www.linkedin.com/in/ginahaeussge/"
+    - name: Email
+      url: "mailto:gina@foosel.net"
+  
+menu:
+  main:
+    - identifier: about
+      name: About Me
+      url: /about/
+      weight: 10
+    - identifier: blog
+      name: Blog
+      url: /blog/
+      weight: 20
+    #- identifier: til
+    #  name: TIL
+    #  url: /til/
+    #  weight: 30
+    - identifier: talks
+      name: Talks & Co
+      url: /talks/
+      weight: 40
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 50
+
+privacy:
+  youtube:
+    privacyEnhanced: true
+
+outputs:
+  home:
+    - HTML
+    - JSON
+  section:
+    - HTML
+    - RSS
