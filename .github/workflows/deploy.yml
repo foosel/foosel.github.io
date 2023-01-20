@@ -3,7 +3,7 @@ name: Deploy Hugo site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: [$default-branch]
+    branches: ["master"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -30,6 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.110.0
+      BASE_URL: https://foosel.github.io
     steps:
       - name: Install Hugo CLI
         run: |
@@ -54,7 +55,7 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "${{ env.BASE_URL }}"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
