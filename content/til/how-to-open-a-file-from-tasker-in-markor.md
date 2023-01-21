@@ -16,5 +16,4 @@ In order to open a file from Tasker in Markor (e.g. to edit a [newly created blo
 - Package: `net.gsantner.markor`
 - Class: `net.gsantner.markor.activity.DocumentActivity`
 
-
-
+[Source](https://www.reddit.com/r/tasker/comments/xbspjr/send_intent_to_markor/)
