@@ -7,7 +7,7 @@ tags:
 date: 2023-01-21
 ---
 
-In order to open a file from Tasker in Markor (e.g. to edit a [newly created blog post](/blog/2023-01-21-hugo-meet-android/), create a "Send Intent" step with:
+In order to open a file from Tasker in Markor (e.g. to edit a [newly created blog post](/blog/2023-01-21-hugo-meet-android/)), create a "Send Intent" step with:
 
 - Action: `android.intent.action.SEND`
 - Cat: `None`
