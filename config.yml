@@ -15,6 +15,7 @@ params:
   showPostNavLinks: true
   #showFullTextinRSS: true
   showRssButtonInSectionTermList: true
+  showCodeCopyButtons: true
 
   profileMode:
     enabled: true

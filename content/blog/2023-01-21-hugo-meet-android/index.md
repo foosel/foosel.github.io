@@ -1,14 +1,14 @@
 ---
 title: "Hugo, meet Android"
 date: 2023-01-21
+description: Setting up a mobile blogging workflow
 cover:
   image: cover.jpg
   alt: A smartphone lying on a table, showing Markor in editing mode on the Markdown of this blog post.
   relative: true
-draft: true
 ---
 
-One thing that keeps me from blogging more is the difficulty in working on posts from my phone. So after switching this blog over to Hugo I decided to see if I couldn't improve on this situation. 
+One thing that kept me from blogging more so far was the difficulty in working on posts on my phone. So after switching this blog over to Hugo I decided to see if I couldn't improve on this situation. 
 
 I needed a solution that would allow me to 
 
@@ -20,7 +20,7 @@ I needed a solution that would allow me to
 
 I started hunting for options, and I'm happy to report that for now I seem to have found a - quite geeky - solution that involves the use of [Termux](https://termux.dev/en) (Linux terminal environment for Android), [Markor](https://gsantner.net/project/markor.html) (Markdown editor) and [Tasker](https://tasker.joaoapps.com/) (Automation tool)[^1].
 
-I installed Termux, Termux:Tasker, Termux:Widget and Markor via [F-Droid](https://f-droid.org/) - the versions available on Google Play are outdated and no longer updated. I already had Tasker installed, but I made sure to give it the additional permission to send commands to Termux. For Termux, I also made sure to allow it to draw over other apps.
+I installed Termux, Termux:Tasker, Termux:Widget and Markor via [F-Droid](https://f-droid.org/) - the versions available on Google Play are outdated and no longer supported. I already had Tasker installed, but I made sure to give it the additional permission to send commands to Termux. For Termux, I also made sure to allow it to draw over other apps. 
 
 I then fired up Termux and took care of storage access and some packages first:
 
@@ -30,7 +30,7 @@ pkg upgrade
 pkg install git gh hugo iconv vim
 ```
 
-Markor's default folder is located at `Documents/markor` and so this is where I decided to checkout my page's repository to. I also made sure to set some config settings needed for stuff to work:
+Markor's default folder is located at `Documents/markor` and so this is where I decided to checkout my page's repository to. I also made sure to set some config settings needed for stuff to work[^2]:
 
 ```
 gh auth login
@@ -73,7 +73,7 @@ git push
 #!/bin/sh
 
 cd ~/storage/shared/Documents/markor/foosel.github.io
-hugo server -D --noBuildLock
+hugo server -D -F --noBuildLock
 ```
 
 `~/.termux/tasker/new_blog_post`
@@ -117,9 +117,9 @@ git commit -m "$message"
 
 `pull_blog` and `push_blog` take care of git synchronization. 
 
-`serve_blog` runs Hugo with draft posts visible.
+`serve_blog` runs Hugo with draft and future posts visible. The page can be viewed in the browser on the phone at `http://localhost:1313`.
 
-`new_blog_post` takes a post title as its first argument and from that creates the aforementioned folder structure within the `content/blog` folder, including a prefilled `index.md`.[^2]
+`new_blog_post` takes a post title as its first argument and from that creates the aforementioned folder structure within the `content/blog` folder, including a prefilled `index.md`.[^3]
 
 And finally `commit_blog` takes a commit message as its first argument, stages all changes in the checkout and commits them with the supplied message.
 
@@ -186,7 +186,7 @@ Then I opened Tasker and created two new tasks:
 
 "Commit Blog" queries a commit message from the user and calls `commit_blog` with that.
 
-I created desktop shortcuts for these too and placed all of them, together with Markor and Termux, in a new folder "Blog".
+I created desktop shortcuts for these too and placed all of them, together with Markor, Termux and a browser shortcut, in a new folder "Blog".
 
 ![Screenshot of the shortcut folder dedicated to my blog.](shortcuts.jpg)
 
@@ -196,4 +196,6 @@ It's not perfect, and some app that takes care of all of this from a nice UI wou
 
 [^1]: Quick shoutout to [this post by Emanuel Palm](https://pipe.how/write-androidblog/) who found himself in a similar situation (prior to boarding a plane to boot) and showed me the path on which I was then able to set up a neat workflow.
 
-[^2]: Note that I'm aware of the existence of `hugo new`, however it insisted on prefilling the title with the date included and otherwise also felt a bit too inflexible, hence I decided to implement what I wanted directly in bash.
+[^2]: You'll obviously have to adjust that and the following bits with your own repo, name and email.
+
+[^3]: Note that I'm aware of the existence of `hugo new`, however it insisted on prefilling the title with the date included and otherwise also felt a bit too inflexible, hence I decided to implement what I wanted directly in bash.
