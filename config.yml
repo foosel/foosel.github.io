@@ -46,10 +46,10 @@ menu:
       name: Blog
       url: /blog/
       weight: 20
-    #- identifier: til
-    #  name: TIL
-    #  url: /til/
-    #  weight: 30
+    - identifier: til
+      name: TIL
+      url: /til/
+      weight: 30
     - identifier: talks
       name: Talks & Co
       url: /talks/
