@@ -18,7 +18,12 @@ tasks:
         cat > content/blog/{{.TODAY}}-{{.SLUG}}/index.md <<EOF
         ---
         title: "{{.TITLE}}"
+        #description:
         date: {{.TODAY}}
+        cover:
+          image: cover.jpg
+          alt: Add cover.jpg at ~1200x600px and describe it here
+          relative: true
         draft: true
         ---
         
