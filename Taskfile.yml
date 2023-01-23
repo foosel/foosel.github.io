@@ -1,0 +1,40 @@
+version: '3'
+
+tasks:
+  serve:
+    cmds:
+      - hugo serve -D -E -F --noBuildLock
+
+  new-blog:
+    vars:
+      TODAY: '{{now | date "2006-01-02"}}'
+      TITLE: '{{.CLI_ARGS}}'
+      SLUG: '{{trimall "-" (regexReplaceAll "--+" (regexReplaceAll "[^A-Za-z0-9-]" (regexReplaceAll "\\s+" (lower .TITLE) "-") "") "-")}}'
+    cmds:
+      - |
+        mkdir content/blog/{{.TODAY}}-{{.SLUG}}
+        cat > content/blog/{{.TODAY}}-{{.SLUG}}/index.md <<EOF
+        ---
+        title: "{{.TITLE}}"
+        date: {{.TODAY}}
+        draft: true
+        ---
+        
+        EOF
+
+  new-til:
+    vars:
+      TODAY: '{{now | date "2006-01-02"}}'
+      TITLE: '{{.CLI_ARGS}}'
+      SLUG: '{{trimall "-" (regexReplaceAll "--+" (regexReplaceAll "[^A-Za-z0-9-]" (regexReplaceAll "\\s+" (lower .TITLE) "-") "") "-")}}'
+    cmds:
+      - |
+        cat > content/til/{{.SLUG}}.md <<EOF
+        ---
+        title: "{{.TITLE}}"
+        date: {{.TODAY}}
+        tags: []
+        draft: true
+        ---
+        
+        EOF
