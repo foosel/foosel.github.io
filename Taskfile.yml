@@ -2,8 +2,10 @@ version: '3'
 
 tasks:
   serve:
+    vars:
+      TERMUX: '{{and .PREFIX (contains "com.termux" .PREFIX)}}'
     cmds:
-      - hugo serve -D -E -F --noBuildLock
+      - hugo serve -D -E -F {{if .TERMUX}}--noBuildLock{{end}}
 
   new-blog:
     vars:
