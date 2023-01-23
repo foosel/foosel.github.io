@@ -1,21 +1,27 @@
 version: '3'
 
+vars:
+  TERMUX: '{{and .PREFIX (contains "com.termux" .PREFIX)}}'
+  TODAY: '{{now | date "2006-01-02"}}'
+
 tasks:
   serve:
-    vars:
-      TERMUX: '{{and .PREFIX (contains "com.termux" .PREFIX)}}'
+    desc: Runs hugo serve, all posts visible.
     cmds:
       - hugo serve -D -E -F {{if .TERMUX}}--noBuildLock{{end}}
 
   new-blog:
+    desc: Creates a new blog post.
     vars:
-      TODAY: '{{now | date "2006-01-02"}}'
       TITLE: '{{.CLI_ARGS}}'
       SLUG: '{{trimall "-" (regexReplaceAll "--+" (regexReplaceAll "[^A-Za-z0-9-]" (regexReplaceAll "\\s+" (lower .TITLE) "-") "") "-")}}'
     cmds:
       - |
-        mkdir content/blog/{{.TODAY}}-{{.SLUG}}
-        cat > content/blog/{{.TODAY}}-{{.SLUG}}/index.md <<EOF
+        path="content/blog/{{.TODAY}}-{{.SLUG}}"
+        mkdir $path
+
+        file="$path/index.md"
+        cat > $file <<EOF
         ---
         title: "{{.TITLE}}"
         #description:
@@ -28,15 +34,17 @@ tasks:
         ---
         
         EOF
+        echo $file
 
   new-til:
+    desc: Creates a new TIL post.
     vars:
-      TODAY: '{{now | date "2006-01-02"}}'
       TITLE: '{{.CLI_ARGS}}'
       SLUG: '{{trimall "-" (regexReplaceAll "--+" (regexReplaceAll "[^A-Za-z0-9-]" (regexReplaceAll "\\s+" (lower .TITLE) "-") "") "-")}}'
     cmds:
       - |
-        cat > content/til/{{.SLUG}}.md <<EOF
+        file="content/til/{{.SLUG}}.md"
+        cat > $file <<EOF
         ---
         title: "{{.TITLE}}"
         date: {{.TODAY}}
@@ -45,3 +53,4 @@ tasks:
         ---
         
         EOF
+        echo $file
