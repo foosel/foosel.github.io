@@ -10,18 +10,24 @@ tasks:
     cmds:
       - hugo serve -D -E -F {{if .TERMUX}}--noBuildLock{{end}}
 
+  build:
+    desc: Create a production build of the site in ./public.
+    cmds:
+      - hugo --minify {{if .TERMUX}}--noBuildLock{{end}}
+
   new-blog:
     desc: Creates a new blog post.
     vars:
       TITLE: '{{.CLI_ARGS}}'
       SLUG: '{{trimall "-" (regexReplaceAll "--+" (regexReplaceAll "[^A-Za-z0-9-]" (regexReplaceAll "\\s+" (lower .TITLE) "-") "") "-")}}'
+      DIR: 'content/blog/{{.TODAY}}-{{.SLUG}}'
+      FILE: '{{.DIR}}/index.md'
+    preconditions:
+      - sh: '[ ! -d "{{.DIR}}" ]'
     cmds:
       - |
-        path="content/blog/{{.TODAY}}-{{.SLUG}}"
-        mkdir $path
-
-        file="$path/index.md"
-        cat > $file <<EOF
+        mkdir "{{.DIR}}"
+        cat > "{{.FILE}}" <<EOF
         ---
         title: "{{.TITLE}}"
         #description:
@@ -34,17 +40,19 @@ tasks:
         ---
         
         EOF
-        echo $file
+        echo "{{.FILE}}"
 
   new-til:
     desc: Creates a new TIL post.
     vars:
       TITLE: '{{.CLI_ARGS}}'
       SLUG: '{{trimall "-" (regexReplaceAll "--+" (regexReplaceAll "[^A-Za-z0-9-]" (regexReplaceAll "\\s+" (lower .TITLE) "-") "") "-")}}'
+      FILE: 'content/til/{{.SLUG}}.md'
+    preconditions:
+      - sh: '[ ! -f "{{.FILE}}" ]'
     cmds:
       - |
-        file="content/til/{{.SLUG}}.md"
-        cat > $file <<EOF
+        cat > {{.FILE}} <<EOF
         ---
         title: "{{.TITLE}}"
         date: {{.TODAY}}
@@ -53,4 +61,32 @@ tasks:
         ---
         
         EOF
-        echo $file
+        echo {{.FILE}}
+
+  to-bundle:
+    desc: Turns a single page (page.md) into a bundle (page/index.md).
+    vars:
+      PAGE: 'content/{{trimPrefix "content/" .CLI_ARGS}}'
+      DIR: '{{trimSuffix ".md" .PAGE}}'
+    preconditions:
+      - test -f "{{.PAGE}}"
+      - sh: "[ ! -d \"{{.DIR}}\" ]"
+    cmds:
+      - |
+        mkdir "{{.DIR}}"
+        mv "{{.PAGE}}" "{{.DIR}}/index.md"
+
+  to-single:
+    desc: Turns a bundle (page/index.md) into a single page (page.md).
+    vars:
+      BUNDLE: 'content/{{trimPrefix "content/" (trimSuffix "/" .CLI_ARGS)}}'
+      PAGE: '{{.BUNDLE}}.md'
+    preconditions:
+      - test -d "{{.BUNDLE}}"
+      - test -f "{{.BUNDLE}}/index.md"
+      - sh: "[ ! -f \"{{.BUNDLE}}.md\" ]"
+      - sh: "[ -n $(find \"{{.BUNDLE}}\" -mindepth 1 -maxdepth 1 | grep -v index.md) ]"
+    cmds:
+      - |
+        mv "{{.BUNDLE}}/index.md" "{{.PAGE}}"
+        rm -r "{{.BUNDLE}}"
