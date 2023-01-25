@@ -9,7 +9,7 @@ tags:
 
 If you need to detect whether you are running in Termux from a bash script, check if `$PREFIX` contains the string `com.termux`:
 
-```
+``` bash
 echo $PREFIX | grep -o "com.termux"
 
 ```
