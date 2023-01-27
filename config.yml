@@ -11,7 +11,7 @@ params:
   showReadingTime: true
   showBreadCrumbs: true
   #showShareButtons: true
-  #showToc: true
+  showToc: true
   showPostNavLinks: true
   #showFullTextinRSS: true
   showRssButtonInSectionTermList: true
