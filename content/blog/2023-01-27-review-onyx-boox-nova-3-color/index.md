@@ -56,6 +56,12 @@ Now, what makes the display a bit more hit and miss when it comes to things like
 
 When reading e-reader optimized formats like EPUB or MOBI, or in the Amazon Kindle app, and also with PDFs that are more suited for the form factor, the text is great to read. No eye strain, no blurry text. There is however always a bit of a grainy texture to the screen, and that is due to the lower resolution color layer that's on top of the grayscale one. It's not something I notice while reading however. Overall, I'm totally happy with the text quality!
 
+**Update:** [Mihir Joshi asked me on Mastodon how fast  screen refreshes perform on the Nova](https://mastodon.social/@Mihir/109761667962680477), and I made a quick video to demonstrate:
+
+{{< video src="page_change_video" >}}
+
+Imho, the performance is on par with a classic e-ink reader, it certainly doesn't feel slower than my Kindle did.
+
 ## Touch & feel
 
 So, we've covered how it looks, but how does it feel?
