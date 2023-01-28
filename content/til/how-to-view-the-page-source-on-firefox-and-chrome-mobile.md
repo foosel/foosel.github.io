@@ -5,7 +5,6 @@ tags:
 - firefox
 - chrome
 - android
-draft: true
 ---
 
 Viewing the page source on Firefox and Chrome mobile is as easy as prepending `view-source:` to the URL.
