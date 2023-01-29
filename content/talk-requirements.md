@@ -1,5 +1,6 @@
 ---
 title: My minimal requirements for speaking at your event
+description: Let's make sure we are on the same page 😊
 date: 2023-01-29
 url: /talks/requirements/
 # lastMod:
