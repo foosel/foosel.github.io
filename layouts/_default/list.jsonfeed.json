@@ -56,7 +56,7 @@
             "image": {{ (path.Join .RelPermalink $cover) | absURL | jsonify }},
             {{- end }}
             {{- end }}
-            "date_published": {{ .Date.Format "2006-02-01T15:04:05-0700" | jsonify }}
+            "date_published": {{ .Date.Format "2006-01-02T15:04:05Z07:00" | jsonify }}
         }
         {{- end }}
         {{- end }}
