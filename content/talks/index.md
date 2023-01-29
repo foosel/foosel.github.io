@@ -5,6 +5,8 @@ params:
   showReadingTime: false
 ---
 
+*Want me to speak at your event? [Here's my minimal requirements for that](/talks/requirements/).*
+
 2022
 : - 🎤 [Talk Python #390, "Mastodon for Python Devs"](https://talkpython.fm/episodes/show/390/mastodon-for-python-devs)
     
