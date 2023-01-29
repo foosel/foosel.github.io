@@ -6,6 +6,17 @@ cover:
     image: title.png
     alt: My networking dashboard in Grafana with speed and latency monitoring
     relative: true
+tags:
+- project
+- homelab
+- monitoring
+- networking
+- mqtt
+- influxdb
+- grafana
+- docker
+- home assistant
+- home automation 
 ---
 
 For a bit more than two years now I've been closely monitoring my network uplink. In the past I had a ton of issues with up- or download speeds not being what I paid for, packet loss issues and outright full blown outages. In order to put myself into a better position when reaching out to the ISP's support hotline I figured it would be good to be able to proof not only the existence of these issues but to also be able to determine the exact times they happened at and also to verify and show that in fact it was only external connections that were suffering and it was not an issue with my own internal network. Given that I don't trust the cable modem/router they force on me to be my edge router and instead have my own Unifi gear set up behind it (considering anything not exclusively under my control to be part of the hostile public internet) this otherwise will usually lead to endless attempts to blame my LAN when in fact the issue lies outside of my reach.

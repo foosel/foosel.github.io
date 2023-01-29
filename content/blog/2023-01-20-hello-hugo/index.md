@@ -6,6 +6,9 @@ cover:
   image: cover.jpg
   alt: A picture of a coastline. Blue sky with some clouds, dark blue rippled water, and gras growing on the shore.
   relative: true
+tags:
+- hugo
+- meta
 ---
 
 Two years ago I was into learning [React](https://reactjs.org/), since that is what I'm planning to use for a future
@@ -28,4 +31,4 @@ experience for me as the content creator. I didn't even have to touch my posts t
 
 So I went down the rabbit hole further, fine tuned some things, customized some others, and now I'm really happy with the result.
 
-And thus, please say hello to a new version `foosel.net`, now powered by Hugo and PaperMod.
+And thus, please say hello to a new version of  `foosel.net`, now powered by Hugo and PaperMod.

@@ -6,6 +6,12 @@ cover:
     image: poster.jpg
     alt: My two Kratky grown Basil plants, next to the two Kratky grown Oregano plants
     relative: true
+tags:
+- hydroponics
+- project
+- 3d printing
+- freecad
+- making
 ---
 
 Since my partner loves spicy food, earlier this year I got us a chili growing kit. What was meant as an experiment has since become a full blown pepper growing operation that has taken over my livingroom window sills and half the balcony and already yielded its first fruits. And because whenever I try something new I also tend to do way too much research on it, while getting the plants started the normal way in soil (and then promptly running into the first issues with fungus gnats) I started to look deeper into [hydroponics](https://en.wikipedia.org/wiki/Hydroponics). 

@@ -6,6 +6,16 @@ cover:
     image: poster.jpg
     alt: Colorful custom action buttons on the right side of a SteamDeck held up to the camera
     relative: true
+tags:
+- making
+- project
+- resin
+- silicone
+- steamdeck
+- gaming
+- 3d printing
+- cad
+- freecad 
 ---
 
 My partner and I both got ourselves SteamDecks in 2022. Since then he's repeatedly mentioned that he'd love to have

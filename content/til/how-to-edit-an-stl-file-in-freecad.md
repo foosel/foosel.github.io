@@ -4,7 +4,7 @@ date: 2022-09-30
 tags:
 - freecad
 - stl
-- 3dprinting
+- 3d printing
 ---
 
 1. Create a new file

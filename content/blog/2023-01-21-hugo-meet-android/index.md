@@ -6,6 +6,12 @@ cover:
   image: cover.jpg
   alt: A smartphone lying on a table, showing Markor in editing mode on the Markdown of this blog post.
   relative: true
+tags:
+- hugo
+- android
+- markor
+- termux
+- tasker
 ---
 
 One thing that kept me from blogging more so far was the difficulty in working on posts on my phone. So after switching this blog over to Hugo I decided to see if I couldn't improve on this situation. 

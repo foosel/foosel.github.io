@@ -7,6 +7,14 @@ cover:
     image: tfa-dostmann-front.jpg
     alt: A TFA Dostmann CO2 sensor
     relative: true
+tags:
+- project
+- making
+- electronics
+- home automation
+- esphome
+- home assistant
+- 3d printing
 ---
 
 I attended RC3 from December 27th until December 30th. While it was (once again)

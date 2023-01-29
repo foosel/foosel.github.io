@@ -6,6 +6,8 @@ cover:
     image: new_start.jpg
     alt: The autumn sun seen through some trees, with the bottom covered in leaves
     relative: true
+tags:
+- meta
 ---
 
 It's been a couple years since I last tried to maintain a blog. Back then I was still living life as a corporate drone,

@@ -6,6 +6,11 @@ cover:
     image: office.jpg
     alt: My workplace - three monitors, desk, chair, keyboard, mouse, trackball
     relative: true
+tags:
+- workplace
+- productivity
+- keyboards
+- health
 ---
 
 I've been working full time from my home office since mid-2014 now. At the time of writing this post this is nearing 7 years. Naturally, considering how much time I spend there, I've also spent a lot of thought and money on making sure my workplace helps to keep the usual side effects of the mostly sedentary lifestyle of a developer at bay.

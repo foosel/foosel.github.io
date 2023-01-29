@@ -6,6 +6,11 @@ cover:
     image: issue_4117.png
     alt: The screenshot showing the issue -- a rendering defect in OctoPrint's GCode viewer
     relative: true
+tags:
+- debugging
+- js
+- chrome
+- story
 ---
 
 About a week ago I got a new [bug report](https://github.com/OctoPrint/OctoPrint/issues/4117) on [OctoPrint's](https://octoprint.org) issue tracker:

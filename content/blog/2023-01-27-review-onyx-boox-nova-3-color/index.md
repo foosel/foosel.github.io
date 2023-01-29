@@ -6,6 +6,11 @@ cover:
   image: cover.jpg
   alt: A picture of the Onyx Boox Nova 3 Color e-reader lying on a table. It's sleeping and its display is showing a fake book cover in the style of the O'Reilly programming books.
   relative: true
+tags:
+- review
+- reading
+- e-reader
+- android
 ---
 
 I've always been a bookworm. As a child, my favourite past time was reading. I usually dragged my current book with me *everywhere* and would read at any opportunity[^1]. So, when e-readers became a thing, I was very excited to save on a ton of shelf space in the future and got myself an Amazon Kindle at the first chance I got. Back then in 2010 I actually had to import my Kindle 3 Keyboard from the US since it wasn't available in Germany yet. And since then I've gone through a couple of e-readers, all of them Kindles. But all the time I was a bit annoyed at two things:

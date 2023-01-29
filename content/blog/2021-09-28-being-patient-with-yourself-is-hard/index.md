@@ -6,6 +6,9 @@ cover:
     image: poster.jpg
     alt: Two crutches leaning on a couch
     relative: true
+tags:
+- health
+- self discovery 
 ---
 
 I've been having knee issues all my life. I can't remember a time when the occasional pain, stiffness and crunchy noises in both knees weren't part of my regular experience. The past three years however the left knee got a ton worse, frequently hurting for days on end, getting hot, and overall just being a literal pain. That is why earlier this year I finally decided, enough is enough, got another opinion from my orthopedist and we scheduled a key hole surgery to fix what was suspected to be a very active plica syndrome. This surgery happened on September 20th and it made me learn a LOT about myself.
