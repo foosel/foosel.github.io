@@ -1,0 +1,65 @@
+{{- $pctx := . -}}
+{{- if .IsHome -}}{{ $pctx = site }}{{- end -}}
+{{- $pages := slice -}}
+{{- if or $.IsHome $.IsSection -}}
+{{- $pages = $pctx.RegularPages -}}
+{{- else -}}
+{{- $pages = $pctx.Pages -}}
+{{- end -}}
+{{- $limit := site.Config.Services.RSS.Limit -}}
+{{- if ge $limit 1 -}}
+{{- $pages = $pages | first $limit -}}
+{{- end -}}
+{{- $title := "" }}
+{{- if eq .Title .Site.Title }}
+{{- $title = .Site.Title }}
+{{- else }}
+{{- with .Title }}
+{{- $title = print . " on "}}
+{{- end }}
+{{- $title = print $title .Site.Title }}
+{{- end }}
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "title": {{ $title | jsonify }},
+    "home_page_url": {{ .Permalink | jsonify }},
+    {{- with  .OutputFormats.Get "jsonfeed" }}
+    "feed_url": {{ .Permalink | jsonify  }},
+    {{- end }}
+    {{- if (or .Site.Params.author .Site.Params.author_url) }}
+    "authors": [{
+      {{- if .Site.Params.author }}
+        "name": {{ .Site.Params.author | jsonify }},
+      {{- end }}
+      {{- if .Site.Params.author_url }}
+        "url": {{ .Site.Params.author_url | jsonify }}
+      {{- end }}
+    }],
+    {{- end }}
+    {{- if $pages }}
+    "items": [
+        {{- range $index, $element := $pages }}
+        {{- with $element }}
+        {{- if $index }},{{end}} {
+            "title": {{ .Title | jsonify }},
+            "id": {{ .Permalink | jsonify }},
+            "url": {{ .Permalink | jsonify }},
+            {{- if .Site.Params.showFullTextinJSONFeed }}
+            "summary": {{ with .Description }}{{ . | jsonify }}{{ else }}{{ .Summary | jsonify }}{{ end -}},
+            "content_html": {{ .Content | jsonify }},
+            {{- else }}
+            "content_text": {{ with .Description }}{{ . | jsonify }}{{ else }}{{ .Summary | jsonify }}{{ end -}},
+            {{- end }}
+            {{- if .Params.cover.image }}
+            {{- $cover := (.Resources.ByType "image").GetMatch (printf "*%s*" (.Params.cover.image)) }}
+            {{- if $cover }}
+            "image": {{ (path.Join .RelPermalink $cover) | absURL | jsonify }},
+            {{- end }}
+            {{- end }}
+            "date_published": {{ .Date.Format "2006-02-01T15:04:05-0700" | jsonify }}
+        }
+        {{- end }}
+        {{- end }}
+    ]
+    {{ end }}
+}
