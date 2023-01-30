@@ -2,6 +2,7 @@
 title: Homelab uplink monitoring
 description: Keeping an eye on my ISP's performance
 date: 2021-03-28
+lastmod: 2021-03-31
 cover:
     image: title.png
     alt: My networking dashboard in Grafana with speed and latency monitoring
