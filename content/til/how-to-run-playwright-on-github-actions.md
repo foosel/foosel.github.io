@@ -7,7 +7,9 @@ tags:
 - ci
 ---
 
-Running Playwright on GitHub Actions is fairly straight forward at first glance, however it becomes a bit more tricky when you don't want to download the whole browser binary zoo on every single CI build. Looking around a bit on how to go about caching these, I came across various approaches listed in [this GitHub issue on the Playwright repo](https://github.com/microsoft/playwright/issues/7249). Below is the result of reading through most of them and figuring out what works best for me and my use case (OctoPrint's E2E tests, `npm` based test project).
+Running Playwright on GitHub Actions is fairly straightforward at first glance, however it becomes a bit more tricky when you don't want to download the whole browser binary zoo on every single CI build. 
+
+Looking around a bit on how to go about caching these, I came across various approaches listed in [this GitHub issue on the Playwright repo](https://github.com/microsoft/playwright/issues/7249). Below is the result of reading through most of them and figuring out what works best for me and my use case (OctoPrint's E2E tests, `npm` based test project).
 
 These steps make sure to install Playwright, fetching the browser binaries from cache if possible, in any case installing the OS depencies, running the tests (replace `./path/to/tests` accordingly for your setup) and finally upload the generated report as artifact, regardless of whether the tests succeeded or not:
 
