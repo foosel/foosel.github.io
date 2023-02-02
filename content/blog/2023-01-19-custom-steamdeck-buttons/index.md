@@ -2,6 +2,7 @@
 title: Custom SteamDeck Buttons
 description: Color coded for your convenience
 date: 2023-01-19
+lastmod: 2023-02-02
 cover:
     image: poster.jpg
     alt: Colorful custom action buttons on the right side of a SteamDeck held up to the camera
@@ -17,6 +18,8 @@ tags:
 - cad
 - freecad 
 ---
+
+*Update from 2023-02-02: To answer the most common question I've gotten after publishing this right away: No, I do not plan on selling these. This is something I did for fun and out of love, I'm not interested in making money off of it, and I frankly already have my hands full enough as is without adding a custom button business to the mix as well. I've provided this write-up to give you an idea of how to do it yourself, and I hope you'll enjoy it.*
 
 My partner and I both got ourselves SteamDecks in 2022. Since then he's repeatedly mentioned that he'd love to have
 colored buttons on his, matching the XBox controller layout, as many PC games use these colors for their
