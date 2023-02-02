@@ -82,7 +82,7 @@ Let's walk through this:
 - `-o` only outputs the matched part of the line (otherwise we'd get the whole file printed out)
 - `(?m)` enables multiline mode
 - `^\N+\- ERROR \-\N*\n` matches the first line of the error, which is the one that starts with the timestamp and package and contains the word `ERROR`
-- `(^\N*?\n)*?` non-greedily matches all following lines of the error, which are indented by a single space and end with a newline
+- `(^\N*?\n)*?` non-greedily matches all following lines of the error, which are anything but a newline followed by a newline
 - `(?=\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3} \- )` is a positive look-ahead that matches a line starting with a timestamp again, which signifies the end of the error's lines
 
 Hooray, it works 🥳:
