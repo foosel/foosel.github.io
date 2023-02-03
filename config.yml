@@ -16,7 +16,7 @@ params:
   #showShareButtons: true
   showToc: true
   showPostNavLinks: true
-  #showFullTextinRSS: true
+  showFullTextinRSS: true
   showFullTextinJSONFeed: true
   showRssButtonInSectionTermList: true
   showCodeCopyButtons: true
