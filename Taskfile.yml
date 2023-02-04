@@ -90,3 +90,28 @@ tasks:
       - |
         mv "{{.BUNDLE}}/index.md" "{{.PAGE}}"
         rm -r "{{.BUNDLE}}"
+
+  redate:
+    vars:
+      PATH: 'content/{{trimPrefix "content/" (trimSuffix "/" .CLI_ARGS)}}'
+    cmds:
+      - |
+        if [ -d "{{.PATH}}" ]; then
+          # bundle
+          file="{{.PATH}}/index.md"
+          path="{{.PATH}}"
+        elif [ -f "{{.PATH}}.md" ]; then
+          # page
+          file="{{.PATH}}.md"
+          path="$file"
+        fi
+
+        current=$(yq -f extract '.date | format_datetime("2006-01-02")' $file)
+        echo $current
+        yq -i -f process '.date=now' $file
+        now=$(yq -f extract '.date | format_datetime("2006-01-02")' $file)
+        echo $now
+        rename="${path//$current/$now}"
+        echo $rename
+        mv "$path" "$rename" || true
+        
