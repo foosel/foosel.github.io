@@ -7,6 +7,7 @@ tags:
 - regex
 - python
 - octoprint
+- command line
 ---
 
 I just found myself in the position to have to `grep` an OctoPrint log file for error log entries with attached Python stack traces. I wanted to not only get the starting line where the exception log output starts, but the full stack trace up until the next regular log line. 

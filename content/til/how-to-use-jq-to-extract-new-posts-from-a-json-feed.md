@@ -5,6 +5,7 @@ tags:
 - bash
 - jq
 - jsonfeed
+- command line
 ---
 
 I'm currently looking into ways to automate some stuff around new posts on this page (be it blog or TIL post) directly during the page build on GitHub Actions. For this, I first need to be able to reliably *detect* new posts, from a bash run step. So here's how to do that with [`jq`](https://stedolan.github.io/jq/).

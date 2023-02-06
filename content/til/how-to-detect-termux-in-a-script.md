@@ -6,6 +6,7 @@ tags:
 - termux
 - android
 - taskfile
+- command line
 ---
 
 If you need to detect whether you are running in Termux from a bash script, check if `$PREFIX` contains the string `com.termux`:
