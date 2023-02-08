@@ -7,6 +7,11 @@ params:
 
 *Want me to speak at your event? [Here's my minimal requirements for that](/talks/requirements/).*
 
+2023
+: - 👩‍🏫 "How to deal with toxic people" @ OOP 2023
+
+    (February 7th 2023)
+
 2022
 : - 🎤 [Talk Python #390, "Mastodon for Python Devs"](https://talkpython.fm/episodes/show/390/mastodon-for-python-devs)
     
