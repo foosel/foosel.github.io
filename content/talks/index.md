@@ -8,6 +8,8 @@ events:
   - title: '"How to deal with toxic people" @ OOP 2023'
     date: 2023-02-07
     type: talk
+    content: |
+      [Slides](oop2023.pdf)
   - title: 'Talk Python #390, "Mastodon for Python Devs"'
     link: https://talkpython.fm/episodes/show/390/mastodon-for-python-devs
     date: 2022-11-15
