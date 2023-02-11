@@ -15,7 +15,7 @@ I came across [this gist by pegasd](https://gist.github.com/pegasd/048bd5d53558f
 1. I had to make sure that I selected the option to make Steam create uncompressed screenshots.
 2. I had to manually start the path watcher.
 
-Here's a quick summary of how I managed to make things work on my deck (all credits to to [@pegasd](https://github.com/pegasd), replicating things here mostly so they don't get lost in the future).
+Here's a quick summary of how I managed to make things work on my deck (all credits go to [@pegasd](https://github.com/pegasd), replicating things here mostly so they don't get lost in the future).
 
 ## Prerequisites
 
