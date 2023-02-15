@@ -12,9 +12,10 @@ by trade and a nerd by choice, born, raised and also living in Germany, close to
 probably best known for being the creator and maintainer of [OctoPrint](https://octoprint.org),
 a web interface and print server for 3d printers.
 
-I know that a lot of people wonder how to pronounce my last name, so let's get this out
-of the way first. Here's the IPA transcript: `[dʒiːna hɔʏsɡə]`.
-And since I'm aware that that was probably too nerdy, [here's also a video of me saying it](https://twitter.com/foosel/status/1316753643077611520).
+I know that a lot of people wonder how to pronounce my name, so let's get this out of the way first. Here's the IPA transcript: `[dʒiːna hɔʏsɡə]`. And since I'm aware that that was probably too nerdy, here's a recording of me saying it:
+
+{{< audio src="my_name" >}}
+
 Even though it may seem like it (and confuses a lot of people), no, that "ß"
 there is in fact not even remotely related to a B but is rather pronounced like a very sharp s --
 it's called an Eszett and has a [quite interesting backstory](https://en.m.wikipedia.org/wiki/%C3%9F).

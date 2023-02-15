@@ -1,0 +1,59 @@
+{{- /*  hugo-audio shortcode
+/*    Based on hugo-video shortcode by Nicolas Martignoni (https://github.com/martignoni/hugo-video)
+*/ -}}
+
+{{- $audio_src := .Get "src" -}}
+{{- $audio_mp3 := "" -}}
+{{- $audio_webm := "" -}}
+{{- $audio_ogg := "" -}}
+{{- $audio_dl := "" -}}
+{{- $filenotfound := true -}}
+{{- $unsupportedfile := true -}}
+
+{{- /* Find all files with filename (without suffix) matching "src" parameter. */ -}}
+{{- $audio_files := (.Page.Resources.Match (printf "%s*" $audio_src)) -}}
+
+{{- /* Find first image file with filename (without suffix) matching "src" parameter. */ -}}
+{{- $poster := ((.Page.Resources.ByType "image").GetMatch (printf "%s*" $audio_src)) -}}
+
+{{- /* Find in page bundle all valid audio files with matching name. */ -}}
+{{- with $audio_files -}}
+  {{- $filenotfound = false -}}
+  {{- range . -}}
+    {{- if or (in .MediaType.Suffixes "mp3") (in .MediaType.Suffixes "m4v") -}}
+      {{- $unsupportedfile = false -}}
+      {{- $audio_mp3 = . -}}
+    {{- end -}}
+    {{- if or (in .MediaType.Suffixes "webm") (in .MediaType.Suffixes "opus") -}}
+      {{- $unsupportedfile = false -}}
+      {{- $audio_webm = . -}}
+    {{- end -}}
+    {{- if (in .MediaType.Suffixes "ogg") -}}
+      {{- $unsupportedfile = false -}}
+      {{- $audio_ogg = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $filenotfound -}}
+  {{- /* No file of given name was found, we stop here. */ -}}
+  {{- errorf "No file with filename %q found." $audio_src -}}
+{{- else if $unsupportedfile -}}
+  {{- errorf "No valid audio file with filename %q found." $audio_src -}}
+{{- else -}}
+<audio {{ if ne (.Get "controls") "false" }}controls {{ end }}preload="auto" {{ if eq (.Get "autoplay") "true" }}autoplay {{ end }}{{ if eq (.Get "loop") "true" }}loop {{ end }}{{ if eq (.Get "muted") "true" }}muted {{ end }}playsinline class="html-audio">
+  {{- with $audio_webm }}
+    <source src="{{ .RelPermalink }}" type="audio/webm">
+    {{- $audio_dl = . -}}
+  {{- end }}
+  {{- with $audio_ogg }}
+    <source src="{{ .RelPermalink }}" type="audio/ogg">
+    {{- $audio_dl = . -}}
+  {{- end }}
+  {{- with $audio_mp3 }}
+    <source src="{{ .RelPermalink }}" type="audio/mp3">
+    {{- $audio_dl = . -}}
+  {{- end }}
+  <span>Your browser doesn't support embedded audios, but don't worry, you can <a href="{{ $audio_dl.RelPermalink }}">download it</a> and watch it with your favorite audio player!</span>
+</audio>
+{{- end -}}
