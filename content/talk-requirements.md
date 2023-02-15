@@ -3,7 +3,7 @@ title: My minimal requirements for speaking at your event
 description: Let's make sure we are on the same page 😊
 url: /talks/requirements/
 date: 2023-01-29
-lastmod: 2023-02-06
+lastmod: 2023-02-15
 params:
   showReadingTime: false
 ---
@@ -26,11 +26,13 @@ Before we continue in clarifying my availability and hammering out the details b
 
    In case of virtual talks, I expect to be able to share my screen with your chosen conferencing tool during my presentation, to share my slides from my own device.
 
-7. **Deadlines**: I need to receive your request to give a talk at your event at least three months before its first day.
+7. **Deadlines**: I need to receive your request to give a talk at your event at least three months before its first day, one month for virtual talks. The later you get in touch, the less likely it is that I'll be able to make it.
 
-   I expect to receive any information required to give my talk (which room, virtual or otherwise, exact time to be present before/after agreed upon talk time, any kind of other necessary things like login data, upload folders, tech requirements to give my talk, presentation formats, mandatory slide templates, etc) until four weeks before the talk appointment.
+   I expect to receive any information required to give my talk (which room, virtual or otherwise, exact time to be present before/after agreed upon talk time, any kind of other necessary things like login data, upload folders, tech requirements to give my talk, presentation formats, mandatory slide templates, etc) until four weeks before the talk appointment, two weeks for virtual talks.
 
-   For virtual talks, if you use anything other than Zoom, Skype, Google Meet, Microsoft Teams, Jitsi, BigBlueButton, Discord or Streamyard, I require an introduction to and an appointment for a tech check of your platform until two weeks before the talk appointment.
+   For virtual talks, if you use anything other than Zoom, Skype, Google Meet, Microsoft Teams, Jitsi, BigBlueButton, Discord or Streamyard, I require an introduction to and an appointment for a tech check of your platform until one week before the talk appointment.
+
+   Failure to meet these deadlines (or alternative ones we've worked out and agreed upon *beforehand*) will result in me cancelling my talk, even on short notice. I understand that issues can arise when organising an event, and I'm happy to work with you to find a solution, but please also respect my time and allow me to prepare myself properly.
 
 If all of these points are agreeable, I'm happy to continue the conversation about me speaking at your event. If not, then I'm sorry but please understand that speaking at your event will not be possible for me.
 
