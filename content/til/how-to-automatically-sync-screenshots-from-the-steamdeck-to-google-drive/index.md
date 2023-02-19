@@ -1,6 +1,7 @@
 ---
 title: "How to automatically sync screenshots from the Steamdeck to Google Drive"
 date: 2023-02-11
+lastmod: 2023-02-19
 tags:
 - steamdeck
 - google drive
@@ -40,7 +41,7 @@ Next, still on the deck, I [downloaded rclone](https://rclone.org/downloads/) ("
 I then went back to the terminal, ran `~/bin/rclone config` and configured a new remote `gdrive` following [these steps](https://rclone.org/drive/). Quick summary:
 
 1. `New remote`
-2. `drive`
+2. `gdrive`
 3. Empty application ID and secret
 4. Full access to all files
 5. No service account credentials file
@@ -116,3 +117,5 @@ Finally I booted back into Game mode, took a screenshot there as well with `Stea
 ![A freshly synced screenshot of my Steamdeck's home screen](screenshot.png)
 
 Success!
+
+*Update 2023-02-19*: There is now also a [TIL on how to do the same for Google Photos](/til/how-to-automatically-sync-screenshots-from-the-steamdeck-to-google-photos/).
