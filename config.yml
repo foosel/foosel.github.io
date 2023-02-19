@@ -80,6 +80,12 @@ mediaTypes:
   application/feed+json:
     suffixes:
       - json
+  audio/mp3:
+    suffixes:
+      - mp3
+  audio/ogg:
+    suffixes:
+      - ogg
 
 outputFormats:
   jsonfeed:
