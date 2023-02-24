@@ -17,7 +17,7 @@ Sounds reasonable to go with the Windows version then, so I followed the post an
 
 - In desktop mode, download the Windows installer from https://itch.io/app, add it as a non steam game, configure stable Proton for it, launch it, complete the installer and log in.
 - Open Dolphin, navigate to `home/deck/.steam/steam/steamapps/compatdata`
-- Click on the search icon, check "From here", search for `itch` and enter the first found folder of that name. Look at the address bar, you'll be in a subfolder of something like `/home/deck/.steam/steam/steamapps/compatdata/<number>` for a random `number`, this parent folder is what to use for `<basefolder>` in any following steps.
+- Click on the search icon, check "From here", search for `itch` and enter the first found folder of that name. Look at the address bar, you'll be in a subfolder of something like `/home/deck/.steam/steam/steamapps/compatdata/<number>` for a random `<number>`, this parent folder is what to use for `<basefolder>` in any following steps.
 - In desktop Steam, open the preferences of your non-steam itch.io installer "game". Replace "Target" with `<basefolder>/pfx/drive_c/users/steamuser/Desktop/itch.lnk` and "Start in" with `<basefolder>/pfx/drive_c/users/steamuser/AppData/Local/Itch`. Rename it to "itch.io" or whatever else you want it to be called[^2].
 
 I then followed the steps to also allow [Steam Rom Manager](https://steamgriddb.github.io/steam-rom-manager/) to detect my itch.io games, and created a custom itch.io parser. Here I had to slightly deviate from the suggested steps. Again, summarised here for reference:
