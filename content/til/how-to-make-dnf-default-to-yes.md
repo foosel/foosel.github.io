@@ -5,6 +5,7 @@ tags:
 - fedora
 - linux
 - dnf
+- framework laptop
 ---
 
 I'm currently in the process of setting up my new [Frame.work laptop](https://frame.work), and since I've been using Debian-derivatives for the past two decades now, I decided to use the opportunity, try something new for once and installed [Fedora](https://fedoraproject.org)[^1].

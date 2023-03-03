@@ -5,6 +5,7 @@ tags:
 - linux
 - wayland
 - keyd
+- framework laptop
 ---
 
 As a German living in Germany with umlauts in my last name and a US ANSI keyboard layout on all my devices[^1] I need to remap some stuff to be able to easily type ä, ö, ü and ß. On Windows I solved this with [Autohotkey](https://www.autohotkey.com/), mapping `AltGr`+`a` to `ä`, `AltGr`+`o` to `ö`, `AltGr`+`u` to `ü` and `AltGr`+`s` to `ß` (well, technically `RAlt` - the right `Alt` key). That has burned itself into my muscle memory now, and so while currently setting up my new Framework laptop under Linux, with Gnome running on Wayland, I was looking for a way to remap the keys to this layout as well.
