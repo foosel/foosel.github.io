@@ -37,3 +37,5 @@ You can also create a shortcut to fire up RadioDelay with the right devices sele
 `in` and `out` are the positions of the audio device in the drop-down list. `delay` is the delay in seconds.
 
 Can of course also be used without OBS.
+
+*edit 2023-03-11:* [Here's how I solved the same problem under Linux](../how-to-add-an-audio-delay-for-video-conferencing-on-linuxpulseaudio).
