@@ -10,10 +10,10 @@ The contact information here is *only* provided to comply with German law. I can
 
 ### Information provided according to Sec. 5 German Telemedia Act (TMG):
 
-Gina Häußge
-c/o IP-Management #11901
-Ludwig-Erhard-Str. 18
-20459 Hamburg
+Gina Häußge  
+c/o IP-Management #11901  
+Ludwig-Erhard-Str. 18  
+20459 Hamburg  
 Germany
 
 ### Contact
@@ -27,10 +27,10 @@ VAT Id number according to Sec. 27 a German Value Added Tax Act: `DE306757045`
 
 ### Responsible for contents acc. to Sec. 55, para. 2 German Federal Broadcasting Agreement (RstV)
 
-Gina Häußge
-c/o IP-Management #11901
-Ludwig-Erhard-Str. 18
-20459 Hamburg
+Gina Häußge  
+c/o IP-Management #11901  
+Ludwig-Erhard-Str. 18  
+20459 Hamburg  
 Germany
 
 ### Dispute resolution

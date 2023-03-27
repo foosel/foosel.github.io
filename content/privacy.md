@@ -32,10 +32,10 @@ Please note that data transmitted via the internet (e.g. via email communication
 
 The party responsible for processing data on this website is:
 
-Gina Häußge
-c/o IP-Management #11901
-Ludwig-Erhard-Str. 18
-20459 Hamburg
+Gina Häußge  
+c/o IP-Management #11901  
+Ludwig-Erhard-Str. 18  
+20459 Hamburg  
 Germany
 
 Telephone: +49 6104 6893863
