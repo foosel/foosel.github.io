@@ -32,12 +32,13 @@ Please note that data transmitted via the internet (e.g. via email communication
 
 The party responsible for processing data on this website is:
 
-Gina Häußge  
-Goethestraße 5  
-63179 Obertshausen  
+Gina Häußge
+c/o IP-Management #11901
+Ludwig-Erhard-Str. 18
+20459 Hamburg
 Germany
 
-Telephone: +49 6104 9872629  
+Telephone: +49 6104 6893863
 Email: privacy@foosel.net
 
 The responsible party is the natural or legal person who alone or jointly with others decides on the purposes and means of processing personal data (names, email addresses, etc.).

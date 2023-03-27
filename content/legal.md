@@ -10,15 +10,16 @@ The contact information here is *only* provided to comply with German law. I can
 
 ### Information provided according to Sec. 5 German Telemedia Act (TMG):
 
-Gina Häußge  
-Goethestraße 5  
-63179 Obertshausen  
+Gina Häußge
+c/o IP-Management #11901
+Ludwig-Erhard-Str. 18
+20459 Hamburg
 Germany
 
 ### Contact
 
-Email: [contact@octoprint.org](mailto:contact@octoprint.org) (**Not for support!**)  
-Tel: `06104 6872629` (**Not for support!**)
+Email: [contact@foosel.net](mailto:contact@foosel.net) (**Not for support!**)  
+Tel: `+49 6104 6893863` (**Not for support!**)
 
 ### VAT
 
@@ -26,9 +27,10 @@ VAT Id number according to Sec. 27 a German Value Added Tax Act: `DE306757045`
 
 ### Responsible for contents acc. to Sec. 55, para. 2 German Federal Broadcasting Agreement (RstV)
 
-Gina Häußge  
-Goethestraße 5  
-63179 Obertshausen  
+Gina Häußge
+c/o IP-Management #11901
+Ludwig-Erhard-Str. 18
+20459 Hamburg
 Germany
 
 ### Dispute resolution
