@@ -33,7 +33,7 @@ eDP-1: connected
 In my case that turned out to be `DP-6`[^1]. Next I quickly dumped the EDID information to a new file `/usr/lib/firmware/edid/dell-24-1200p.bin`:
 
 ```
-sudo mkdir -p /usr/lib/firmware
+sudo mkdir -p /usr/lib/firmware/edid
 sudo cp /sys/class/drm/card1-DP-6/edid /usr/lib/firmware/edid/dell-24-1200p.bin
 ```
 
