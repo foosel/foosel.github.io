@@ -1,5 +1,6 @@
 ---
 title: Legal Notice
+showReadingTime: false
 ---
 
 {{< notice warning >}}

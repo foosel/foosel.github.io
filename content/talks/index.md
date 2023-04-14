@@ -1,8 +1,7 @@
 ---
 title: Talks & Co
 description: "A collection of 👩‍🏫 talks, 📰 articles, 🎤 podcasts and 📺 videos by and with me."
-params:
-  showReadingTime: false
+showReadingTime: false
 
 events:
   - title: '"How to deal with toxic people" @ OOP 2023'

@@ -1,5 +1,6 @@
 ---
 title: Privacy Policy
+showReadingTime: false
 ---
 
 {{< notice warning >}}

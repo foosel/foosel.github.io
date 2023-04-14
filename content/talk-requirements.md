@@ -4,8 +4,7 @@ description: Let's make sure we are on the same page 😊
 url: /talks/requirements/
 date: 2023-01-29
 lastmod: 2023-02-15
-params:
-  showReadingTime: false
+showReadingTime: false
 ---
 
 Hi! So you are interested in me speaking at your event! Great!
