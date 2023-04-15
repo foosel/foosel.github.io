@@ -5,6 +5,7 @@ tags:
 - steamdeck
 - itch.io
 - srm
+- linux
 ---
 
 I'm currently setting up some alternative game stores on my Steamdeck, specifically [Emudeck](https://www.emudeck.com/) for my retro collection, [Heroic Launcher](https://heroicgameslauncher.com/)[^1] for GOG and Epic, and also [itch.io](https://itch.io). 

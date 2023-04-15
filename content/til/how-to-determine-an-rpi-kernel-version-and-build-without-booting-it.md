@@ -6,6 +6,7 @@ tags:
 - bash
 - rpi
 - command line
+- linux
 ---
 
 To figure out the kernel version and build without booting it, e.g. to install matching device drivers during an automated image build in something like [CustoPiZer](https://github.com/OctoPrint/CustoPiZer), use something like this:

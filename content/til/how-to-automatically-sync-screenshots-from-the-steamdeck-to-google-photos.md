@@ -6,6 +6,7 @@ tags:
 - google photos
 - rclone
 - bash
+- linux
 ---
 
 As a follow-up to [my earlier post about how to sync screenshots to Google Drive](/til/how-to-automatically-sync-screenshots-from-the-steamdeck-to-google-drive/) here's how to achieve the same but with a dedicated "Steamdeck" album on Google Photos instead.
