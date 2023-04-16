@@ -38,7 +38,7 @@ Next - while my partner was making a deep dive into some pixel art courses - I d
 
 At some point, my bullet spawning code was broken, making my ship lay eggs, which nicely fit the fact that we were doing this event over the Easter holidays 😉
 
-![A small space scene with a space ship and a planet. The space ship spawns bullet, but instead of them shooting forward from it, it looks more like it's laying them as if they were eggs.](physics-experiments-bug.gif)
+{{< video src="physics-experiments-bug" autoplay="true" loop="true" >}}
 
 Originally I also wanted to have the planets excert gravity on the ship and the bullets, and initially that did work, but at some point it stopped working. I still haven't figured out why 😅 I ended the first day with pew-pew-pew.
 
@@ -48,9 +48,9 @@ Originally I also wanted to have the planets excert gravity on the ship and the 
 
 For the second day, we had planned creating two simple prototypes, one Pong like game and one basic platformer.
 
-We started with the Pong like game and agreed on a slightly futuristic but pixel based graphics style and the name "Neon Pong". As my partner was still working through some more pixel art courses I started with some basic placeholder graphics (white rectangles ftw). My idea was to use [Godot's physics engine](), and my first implementation attempt led to yet another hilarious bug:
+We started with the Pong like game and agreed on a slightly futuristic but pixel based graphics style and the name "Neon Pong". As my partner was still working through some more pixel art courses I started with some basic placeholder graphics (white rectangles ftw). My idea was to use [Godot's physics engine](https://docs.godotengine.org/en/stable/tutorials/physics/index.html), and my first implementation attempt led to yet another hilarious bug:
 
-![A simple pong game. The ball starts from the center and hits the left paddle. Instead of bouncing however, it pushes the paddle off the screen.](neon-pong-bug.gif)
+{{< video src="neon-pong-bug" autoplay="true" loop="true" >}}
 
 After ironing that out, I got some simple two player controls implemented, as well as a slightly randomised spawning angle for the ball, scoring and win and lose detection. That involved figuring out how to detect when the ball goes out of bounds (which I already had learned during the tutorial: [`VisibleOnScreenNotifier2D`](https://docs.godotengine.org/en/4.0/classes/class_visibleonscreennotifier2d.html)) and some other stuff. I also added some sound effects for the ball bouncing off of obstacles, courtesy of [sfxr](https://www.drpetter.se/project_sfxr.html) and some light effects that turned out to be less visible than I had hoped for.
 
@@ -62,7 +62,7 @@ At that point my partner communicated that he'd be quite busy for yet a while to
 
 I didn't manage to implement a proper jump-on-top-the-enemy-to-kill-them mechanic as it was growing quite late already (and we had set ourselves fixed hours to not overdo it), but that led to yet another fun little bug with my character riding on top of a pathing enemy which gave me a good laugh at the end of day 2:
 
-![A pixel art dungeon with several enemies pathing from left to right. The player character jumps on top of an enemy slime, but instead of killing it it starts riding on it.](yap-yap-yap.gif)
+{{< video src="yap-yap-yap" autoplay="true" loop="true" >}}
 
 ## Day 3
 
