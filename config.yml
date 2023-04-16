@@ -53,10 +53,6 @@ menu:
       name: TIL
       url: /til/
       weight: 30
-    - identifier: projects
-      name: Projects
-      url: /projects/
-      weight: 40
     - identifier: talks
       name: Talks & Co
       url: /talks/
