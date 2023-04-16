@@ -4,7 +4,6 @@ title: foosel.net
 #copyright: foosel.net © Gina Häußge
 theme: 
   - "hugo-notice"
-  - "hugo-video"
   - "PaperMod"
 
 params:
@@ -54,14 +53,18 @@ menu:
       name: TIL
       url: /til/
       weight: 30
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 40
     - identifier: talks
       name: Talks & Co
       url: /talks/
-      weight: 40
+      weight: 50
     - identifier: search
       name: Search
       url: /search/
-      weight: 50
+      weight: 60
 
 privacy:
   youtube:
