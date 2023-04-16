@@ -7,6 +7,7 @@ tags:
 - diablo
 - starcraft
 - lutris
+- linux
 ---
 
 Battle.net is currently having a spring sale and I've been eyeing Diablo II: Resurrected for a while now, so I jumped on the chance (and while at it also got StarCraft Remastered). But given that these days I primarily game on the Steamdeck, I needed to find a way to install Battle.net on my deck and also install individual launchers for the games.

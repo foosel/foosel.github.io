@@ -7,6 +7,7 @@ tags:
 - google drive
 - rclone
 - bash
+- linux
 ---
 
 I wanted to automatically sync the screenshots I take on my Steamdeck to some cloud, without having to manually do it for every single one in the Steamdeck's own uploader. 
