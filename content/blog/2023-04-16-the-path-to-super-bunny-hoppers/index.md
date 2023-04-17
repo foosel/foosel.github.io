@@ -34,7 +34,7 @@ I also added some very basic sound effects to the game, which was not very trick
 
 {{< video src="dodge-the-creeps" >}}
 
-Next - while my partner was making a deep dive into some pixel art courses - I decided to play around a bit with the physics engine, particle system, sound effects etc by building a small Asteroid-like playground thingy that consisted of just one screen with a little player controlled space ship, two small planets that the spaceship could shoot at (doubtlessly a morally highly questionable mechanic) and some wrap-around behaviour.
+Next - while my partner was making a deep dive into some pixel art courses - I decided to play around a bit with the physics engine, particle system, sound effects etc by building a small Asteroid-like playground thingy that consisted of just one screen with a little player controlled [space ship](https://www.kenney.nl/assets/pixel-shmup), [two small planets](https://faktory.itch.io/pixel-planets) that the spaceship could shoot at (doubtlessly a morally highly questionable mechanic) and some wrap-around behaviour.
 
 At some point, my bullet spawning code was broken, making my ship lay eggs, which nicely fit the fact that we were doing this event over the Easter holidays 😉
 
