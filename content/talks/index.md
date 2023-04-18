@@ -4,6 +4,10 @@ description: "A collection of 👩‍🏫 talks, 📰 articles, 🎤 podcasts an
 showReadingTime: false
 
 events:
+  - title: 'Fossified S01E03, "Women in Open Source"'
+    link: https://pod.fossified.com/2023/04/05/s01e03.html
+    date: 2023-04-05
+    type: podcast
   - title: '"How to deal with toxic people" @ OOP 2023'
     date: 2023-02-07
     type: talk
