@@ -1,9 +1,10 @@
 ---
-title: "How to reduce the titlebar size of Gnome"
+title: "How to reduce the titlebar size of Gnome 43"
 date: 2023-04-11
 tags:
 - linux
 - gnome
+- gnome 43
 - framework laptop
 ---
 
@@ -31,5 +32,7 @@ That resulted in this:
 ![After: The title bar reduced to the bare minimum in height, with only a minimal amount of padding, no more wasting space](after.png)
 
 And now I'm happy, at least with non-Gnome apps, my chosen development environment VSCode included.
+
+*Update 2023-04-30: Alas, that no longer works under Gnome 44, so for now I'm stuck with oversized titlebars again.*
 
 [^1]: Currently Gnome 43.3 running under Wayland on Fedora Workstation 37
