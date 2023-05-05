@@ -4,6 +4,10 @@ description: "A collection of 👩‍🏫 talks, 📰 articles, 🎤 podcasts an
 showReadingTime: false
 
 events:
+  - title: 'InfoQ, "How Open-Source Maintainers Can Deal with Toxic Behavior"'
+    link: https://www.infoq.com/news/2023/05/open-source-toxic-behavior/
+    date: 2023-05-05
+    type: article
   - title: 'Fossified S01E03, "Women in Open Source"'
     link: https://pod.fossified.com/2023/04/05/s01e03.html
     date: 2023-04-05
