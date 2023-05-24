@@ -1,6 +1,7 @@
 ---
 title: "How to override the EDID data of a monitor under Linux"
 date: 2023-04-11
+updated: 2023-05-24
 tags:
 - linux
 - wayland
@@ -44,5 +45,11 @@ sudo grubby --update-kernel=ALL --args="drm.edid_firmware=DP-6:edid/dell-24-1200
 ```
 
 And one reboot later I could finally select 1920x1200 for my display! 🥳
+
+*Addendum from 2023-05-24**: Recently the display's identifier's started switching between `DP-6` and `DP-8`, sometimes even when waking up from sleep. I'm not sure why, and I so far did not have time to investigate, but just so I or anyone else stumbling over this knows how to do this in the future, it's easy to set custom edid data on multiple devices as well, in my case:
+
+```
+sudo grubby --update-kernel=ALL --args="drm.edid_firmware=DP-6:edid/dell-24-1200p.bin,DP-8:edid/dell-24-1200p.bin"
+```
 
 [^1]: `DP-2` is the primary and `eDP-1` the laptop's internal display
