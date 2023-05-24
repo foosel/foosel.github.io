@@ -11,3 +11,7 @@ hugo.linux
 
 # Temporary lock file while building
 /.hugo_build.lock
+
+# Temporary files from various editors
+*.swp
+*~
