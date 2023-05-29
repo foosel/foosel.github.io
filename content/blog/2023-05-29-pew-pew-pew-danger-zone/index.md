@@ -12,9 +12,11 @@ draft: true
 As hinted at to be my plan in [one of my last posts](/blog/2023-04-16-the-path-to-super-bunny-hoppers/), I recently took part in my first
 ever gamejam, [Go Godot Jam 4](https://itch.io/jam/go-godot-jam-4), and during that built a game called "Pew Pew Pew: Danger Zone!". In this post I want to share a bit of a devlog and post mortem of that experience and will make heavy use of the [Mastodon thread I maintained throughout](https://chaos.social/@foosel/110321340611941751).
 
-## Submission phase
+## Development
 
 The submission phase (so the time I had for developing and submitting a game fitting the theme) was 9 days, from Friday, May 5th at 22:00 UTC to Sunday, May 14th at 22:00 UTC. Since the start wasn't until midnight in my timezone and after yet another intense work week I was quite exhausted on that Friday evening, I didn't stay up for the theme announcement. So it wasn't before the morning of Satuday May 6th for me to learn about the theme **LESS IS MORE**, right after waking up.
+
+### Saturday, May 6th: Let's go!
 
 During my morning routine I got an idea on what game to create[^1]: A little shoot-em-up (shmup) with minimalistic graphics, slightly bullet hell-ish, where the only way to upgrade your weapon and shoot more bullets was to lose health. The challenge would be balancing health vs damage output, possibly even dodging health pickups to stay at a higher bullet output with the risk of dying.
 
@@ -34,6 +36,8 @@ All of that took me the better part of Saturday, but by the time evening got aro
 
 {{< video src="ggj4-day1" autoplay="true" loop="true" >}}
 
+### Sunday, May 7th: Let's add some game juice!
+
 Sunday began with a trip to a doc to get my sixth COVID shot[^2]. After that I sat down again in front of the laptop to implement as much as I could before the by now customary post-vaccination-headache would start haunting me.
 
 It turned out to be a quite busy day, as I implemented:
@@ -48,15 +52,19 @@ It turned out to be a quite busy day, as I implemented:
 
 I was quite happy with that kind of progress and went to sleep with a good feeling, despite dreading the next day a bit due to the expected side effects of the vaccination.
 
+### Monday, May 8th: It's got a name!
+
 But when I woke up on Monday morning, I happily realized that this time I had gotten away with just a bit of a headache and some tiredness, but nothing more. Alas, that still didn't allow me to continue to work on the game - it was a regular work day after all! And so I had to wait until the evening to continue and was able to implement some pluggable enemy behaviour (for now only following the player at an offset, but with an underlying code structure that would allow to quickly implement other behaviours as well) and also a first version of the HUD with health bar, damage output bar, life counter and score display. Also, I whipped up some background graphic in Inkscape and put that in as well. But most importantly I came up with a name for my creation: **Pew Pew Pew: Danger Zone!**
 
 {{< video src="ggj4-day3" >}}
+
+### Tuesday, May 9th: Pickups!
 
 Just as Monday, Tuesday would also be a slower day with regards to progress on the game - working on OctoPrint all day didn't leave much time and energy in the evenings to make huge steps forward, but I got some more stuff done nevertheless and was able to add various pickups to the game: a health pickup that would recover one hit point for the player (which of course would reduce the damage output), a shield pickup that would protect the player from bullet damage for a few seconds, point pickups and a pickup that would add a little drone circling around the player which for now did nothing but in the future I wanted to have shoot homing missiles at the closest enemy. Almost all of that would of course see further fine tuning during the next few days, but it was a good start on the pickups.
 
 {{< video src="ggj4-day4" >}}
 
-*TODO: Wednesday*
+### Wednesday, May 10th: Refactoring & doubting myself!
 
 ![](ggj4-day5.png)
 
@@ -64,7 +72,7 @@ Just as Monday, Tuesday would also be a slower day with regards to progress on t
 
 {{< toot "https://chaos.social/@foosel/110346083410061910" >}}
 
-*TODO: Thursday*
+### Thursday, May 11th: Menus, bombs, game over!
 
 {{< toot "https://chaos.social/@foosel/110351139814746655" >}}
 
@@ -74,27 +82,27 @@ Just as Monday, Tuesday would also be a slower day with regards to progress on t
 
 {{< video src="ggj4-day6" >}}
 
-*TODO: Friday*
+### Friday, May 12th: We've got a first level!
 
 {{< toot "https://chaos.social/@foosel/110357894701554845" >}}
 
 {{< video src="ggj4-day7" >}}
 
-*TODO: Saturday*
+### Saturday, May 13th: Content done!
 
 {{< toot "https://chaos.social/@foosel/110362364305310898" >}}
 
 {{< toot "https://chaos.social/@foosel/110362764232694746" >}}
 
-*TODO: Sunday*
+### Sunday, May 14th: Day of the Deadline!
 
 {{< toot "https://chaos.social/@foosel/110366992289097709" >}}
 
 {{< toot "https://chaos.social/@foosel/110367608340282718" >}}
 
-## Rating period
+## Feedback & lessons learned
 
-## Final results and the future of PPP:DZ
+## Final results & the future of PPP:DZ
 
 [^1]: Yes, indeed, it was an actual shower thought.
 [^2]: I plan to attend [GPN21](https://entropia.de/GPN21) next week and wanted to get another booster shot before that just in case - as much as everyone seems to pretend it is, no, COVID is not over, and the last thing that I need in my extremely stressful and busy life is to get sick, possibly even long term. 
