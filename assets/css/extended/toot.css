@@ -1,0 +1,126 @@
+blockquote.toot-blockquote {
+    width: 90%;
+    margin: var(--gap) auto;
+
+    border: 2px solid;
+    border-color: var(--border);
+    border-radius: var(--radius);
+
+    background: var(--code-bg);
+
+    overflow: hidden;
+}
+
+.toot-header {
+    display: flex;
+}
+
+.toot-header a, .toot-header a:hover, .toot-footer a, .toot-footer a:hover {
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.toot-header .toot-profile {
+    margin-right: 0.5em;
+    flex-shrink: 0;
+}
+
+.toot-header .toot-profile img {
+    width: 3em;
+    height: 3em;
+    border-radius: var(--radius);
+}
+
+.toot-header .toot-author {
+    margin: auto 0;
+}
+
+.toot-header .toot-author .toot-author-name {
+    display: block;
+    font-weight: bold;
+}
+
+.toot-header .toot-author .toot-author-handle {
+    display: block;
+    font-size: 0.8em;
+    color: var(--secondary)
+}
+
+.toot-footer {
+    margin: 0.5em 0;
+    color: var(--secondary);
+    font-size: 0.8em;
+}
+
+/* media */
+
+.toot-img-grid-1 {
+    display: block;
+    overflow: hidden;
+}
+
+.toot-img-grid-2, 
+.toot-img-grid-3, 
+.toot-img-grid-4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.toot-img-grid-2 .toot-media-img, 
+.toot-img-grid-3 .toot-media-img, 
+.toot-img-grid-4 .toot-media-img {
+    width: calc(50% - .5em);
+    margin: 0;
+}
+
+.toot-img-grid-3 .toot-media-img:nth-child(3) {
+    width: 100%;
+}
+
+.toot-media-img {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.toot-media-img .blur-text {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+/* cards */
+
+.toot-card {
+    padding: 0.5em;
+    display: flex;
+    border: 2px solid;
+    border-color: var(--border);
+    border-radius: var(--radius);
+    font-size: 0.9em;
+}
+
+.toot-card-image {
+    display: block;
+    width: 25%;
+}
+
+.toot-card-image img {
+    margin: 0;
+}
+
+.toot-card-content {
+    display: block;
+    width: 75%;
+    padding-left: 1em;
+}
+
+.toot-card-content .card-title {
+    font-weight: bold;
+}
+
+.toot-card-content .card-description {
+    font-size: 0.8em;
+}

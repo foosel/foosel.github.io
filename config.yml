@@ -6,6 +6,9 @@ theme:
   - "hugo-notice"
   - "PaperMod"
 
+ignoreErrors:
+  - "error-remote-getjson"
+
 params:
   author: Gina Häußge
   env: production
