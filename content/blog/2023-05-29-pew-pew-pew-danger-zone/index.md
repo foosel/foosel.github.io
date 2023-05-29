@@ -20,7 +20,7 @@ During my morning routine I got an idea on what game to create[^1]: A little sho
 
 After breakfast I sat down to sketch out this idea a bit further.
 
-![My handwritten and handrawn notes of the game idea](ggj4_notes.webp)
+![My handwritten and handrawn notes of the game idea](ggj4-notes.webp)
 
 The originally plan was to have the player be a triangle pointing upwards, and several enemy types also based on geometric shapes. The player would have three hit points and thus three difference bullet emitter configurations. I jotted down some ideas for collectable power-ups (a shield, health, little shooting satellites, homing missiles), did some initial UI sketches and also laid out a rough plan for the interactive tutorial I wanted to include, by already leaving myself a plan B in case I wouldn't have enough time to implement it. Not written down in my notes but already quite clear in my head was the plan to have the game have 2-3 levels and a final boss to defeat, which felt like a good scope for the time I had available.
 
@@ -32,7 +32,7 @@ My first task was getting a player scene created and basic 2d movement controls 
 
 All of that took me the better part of Saturday, but by the time evening got around I had a very basic prototype with bullet emitters and patterns on the (still static) enemies and some basic shooting logic on the player. There was no sound yet, no game juice, nothing like that, but it was a start!
 
-{{< toot "https://chaos.social/@foosel/110323019006170859" >}}
+{{< video src="ggj4-day1" autoplay="true" loop="true" >}}
 
 Sunday began with a trip to a doc to get my sixth COVID shot[^2]. After that I sat down again in front of the laptop to implement as much as I could before the by now customary post-vaccination-headache would start haunting me.
 
@@ -44,21 +44,27 @@ It turned out to be a quite busy day, as I implemented:
 - some basic sound effects for shooting and the explosions, whipped up in [gdfxr](https://github.com/timothyqiu/gdfxr)
 - a simple shadow effect for the player and enemies to simulate height (really just the same sprite with a modulate color applied and offset by a few pixels)
 
-{{< toot "https://chaos.social/@foosel/110329345228446580" >}}
+{{< video src="ggj4-day2" >}}
 
 I was quite happy with that kind of progress and went to sleep with a good feeling, despite dreading the next day a bit due to the expected side effects of the vaccination.
 
 But when I woke up on Monday morning, I happily realized that this time I had gotten away with just a bit of a headache and some tiredness, but nothing more. Alas, that still didn't allow me to continue to work on the game - it was a regular work day after all! And so I had to wait until the evening to continue and was able to implement some pluggable enemy behaviour (for now only following the player at an offset, but with an underlying code structure that would allow to quickly implement other behaviours as well) and also a first version of the HUD with health bar, damage output bar, life counter and score display. Also, I whipped up some background graphic in Inkscape and put that in as well. But most importantly I came up with a name for my creation: **Pew Pew Pew: Danger Zone!**
 
-{{< toot "https://chaos.social/@foosel/110334891011118096" >}}
+{{< video src="ggj4-day3" >}}
 
 Just as Monday, Tuesday would also be a slower day with regards to progress on the game - working on OctoPrint all day didn't leave much time and energy in the evenings to make huge steps forward, but I got some more stuff done nevertheless and was able to add various pickups to the game: a health pickup that would recover one hit point for the player (which of course would reduce the damage output), a shield pickup that would protect the player from bullet damage for a few seconds, point pickups and a pickup that would add a little drone circling around the player which for now did nothing but in the future I wanted to have shoot homing missiles at the closest enemy. Almost all of that would of course see further fine tuning during the next few days, but it was a good start on the pickups.
 
-{{< toot "https://chaos.social/@foosel/110340627008320474" >}}
+{{< video src="ggj4-day4" >}}
+
+*TODO: Wednesday*
+
+![](ggj4-day5.png)
 
 {{< toot "https://chaos.social/@foosel/110346077218566834" >}}
 
 {{< toot "https://chaos.social/@foosel/110346083410061910" >}}
+
+*TODO: Thursday*
 
 {{< toot "https://chaos.social/@foosel/110351139814746655" >}}
 
@@ -66,11 +72,21 @@ Just as Monday, Tuesday would also be a slower day with regards to progress on t
 
 {{< toot "https://chaos.social/@foosel/110352075533808125" >}}
 
+{{< video src="ggj4-day6" >}}
+
+*TODO: Friday*
+
 {{< toot "https://chaos.social/@foosel/110357894701554845" >}}
+
+{{< video src="ggj4-day7" >}}
+
+*TODO: Saturday*
 
 {{< toot "https://chaos.social/@foosel/110362364305310898" >}}
 
 {{< toot "https://chaos.social/@foosel/110362764232694746" >}}
+
+*TODO: Sunday*
 
 {{< toot "https://chaos.social/@foosel/110366992289097709" >}}
 
