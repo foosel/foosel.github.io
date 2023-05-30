@@ -54,25 +54,44 @@ I was quite happy with that kind of progress and went to sleep with a good feeli
 
 ### Monday, May 8th: It's got a name!
 
-But when I woke up on Monday morning, I happily realized that this time I had gotten away with just a bit of a headache and some tiredness, but nothing more. Alas, that still didn't allow me to continue to work on the game - it was a regular work day after all! And so I had to wait until the evening to continue and was able to implement some pluggable enemy behaviour (for now only following the player at an offset, but with an underlying code structure that would allow to quickly implement other behaviours as well) and also a first version of the HUD with health bar, damage output bar, life counter and score display. Also, I whipped up some background graphic in Inkscape and put that in as well. But most importantly I came up with a name for my creation: **Pew Pew Pew: Danger Zone!**
+But when I woke up on Monday morning, I happily realized that this time I had gotten away with just a bit of a headache and some tiredness, but nothing more. Alas, that still didn't allow me to continue to work on the game - it was a regular work day after all! And so I had to wait until the evening to continue and was able to implement some pluggable enemy behaviour (for now only following the player at an offset, but with an underlying code structure that would allow to quickly implement other behaviours as well) and also a first version of the HUD with health bar, damage output bar, life counter and score display. Also, I whipped up a background graphic in Inkscape and put that in as well. But most importantly I came up with a name for my creation: **Pew Pew Pew: Danger Zone!**
 
 {{< video src="ggj4-day3" >}}
 
 ### Tuesday, May 9th: Pickups!
 
-Just as Monday, Tuesday would also be a slower day with regards to progress on the game - working on OctoPrint all day didn't leave much time and energy in the evenings to make huge steps forward, but I got some more stuff done nevertheless and was able to add various pickups to the game: a health pickup that would recover one hit point for the player (which of course would reduce the damage output), a shield pickup that would protect the player from bullet damage for a few seconds, point pickups and a pickup that would add a little drone circling around the player which for now did nothing but in the future I wanted to have shoot homing missiles at the closest enemy. Almost all of that would of course see further fine tuning during the next few days, but it was a good start on the pickups.
+Just as Monday, Tuesday would also be a slower day with regards to progress on the game - working on OctoPrint all day didn't leave much time and energy in the evenings to make huge steps forward, but I got some more stuff done nevertheless and was able to add various pickups to the game: 
+
+- a health pickup that would recover one hit point for the player (which of course would reduce the damage output), 
+- a shield pickup that would protect the player from bullet damage for a few seconds, 
+- point pickups and 
+- a pickup that would add a little drone circling around the player which for now did nothing but in the future I wanted to have shoot homing missiles at the closest enemy
+
+Almost all of that would of course see further fine tuning during the next few days, but it was a good start on the pickups.
 
 {{< video src="ggj4-day4" >}}
 
 ### Wednesday, May 10th: Refactoring & doubting myself!
 
+Wednesday was the worse day of the jam for me. Work was tough, I was really out of energy in the evening, and the time that I did have after work was spent on refactoring the bullet emitters on the enemies so that I could also use them for the player and setting up some more bullet patterns, during which I managed to introduce a hilarious bug that double all of the emitted bullets, making the game incredibly hard.
+
 ![](ggj4-day5.png)
 
-{{< toot "https://chaos.social/@foosel/110346077218566834" >}}
-
-{{< toot "https://chaos.social/@foosel/110346083410061910" >}}
+That was also the day I spent a lot of time on trying to get the drone to work and failing miserably - the homing missiles just didn't feel right, a circular pattern I tried as an alternative felt even worse, and all in all it simply was not coming together. I knew I still didn't have a single level, the drone idea was failing and I was starting to think I'd have to pull it, and things just still didn't feel very fun. All in all, I was starting to seriously doubt whether I'd be able to submit something to the jam that I could be proud of. I went to bed quite frustrated and in doubt with myself.
 
 ### Thursday, May 11th: Menus, bombs, game over!
+
+Thursday was a way better day however! I woke up very early, and when I realized I could no longer sleep got up and went through my morning routine. I was still thinking a lot about the drone and how to fix it, when suddenly a shower thought struck. I'd implement another pickup, a little bomb that you'd be able to trigger with a button press and which would then damage all enemies in its radius for a large amount of points and eradicate all bullets and pickups. 
+
+I finished my routine, sat down in front of the computer and started working on that - even before work! It was around 7am and I figured I should be able to get that implemented before I had to start working on OctoPrint, and it turns out I indeed managed to pull that off! I created a small effect to indicate the damage radius of the bomb that would get attached to the player when the bomb was picked up, and a small animation that would make this light up and vanish when the bomb was set off via the `Shift` key, together with a new sound effect. And doing that was fun! I was starting to feel optimistic again and started on my work day.
+
+I finished that a bit earlier than usual because I had accumulated some overtime the past few weeks and got back into working on PPP:DZ. I fixed the homing missiles on the drone - they were not perfect, but they were finally homing! I also created a title graphic, the game's menu, a pause menu, a game over and a winning screen, some pickup indicators for the HUD, and made level switching work. I think this was also the day I had the idea to give the player a bit of gravity for pulling in pickups, and that also made things finally feel way nicer!
+
+It was an incredibly productive day, and I knew I'd be able to fully concentrate on the game for Friday, Saturday and Friday. I set myself the goal to finish a first level by the end of the next day, add two more levels and a boss fight on Saturday, and do nothing but testing and bug fixing for all of Sunday.
+
+I went to bed feeling like I might actually be able to pull this off after all!
+
+{{< video src="ggj4-day6" >}}
 
 {{< toot "https://chaos.social/@foosel/110351139814746655" >}}
 
