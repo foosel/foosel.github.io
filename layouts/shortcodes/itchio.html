@@ -1,0 +1,4 @@
+{{ $id := .Get "id" }}
+{{ $width := or (.Get "width") 552 }}
+{{ $height := or (.Get "height") 167 }}
+<iframe style="margin: 1em auto" src="https://itch.io/embed/{{ $id }}?dark=true" width="{{ $width }}" height="{{ $height }}" frameborder="0"></iframe>
