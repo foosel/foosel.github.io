@@ -1,6 +1,7 @@
 ---
 title: "How to add Battle.net games to the Steamdeck"
 date: 2023-04-15
+lastmod: 2023-06-07
 tags:
 - steamdeck
 - battle.net
@@ -9,6 +10,8 @@ tags:
 - lutris
 - linux
 ---
+
+*Update 2023-06-07: It turns out that these days, the by far easiest way to get Battle.net on the SteamDeck is using [NonSteamLaunchers-On-Steam-Deck](https://github.com/moraroy/NonSteamLaunchers-On-Steam-Deck), as I recently saw on [Gaming On Linux](https://www.gamingonlinux.com/2023/05/get-battlenet-ea-epic-games-and-more-on-steam-deck-the-easy-way/). I haven't gotten a chance to try this myself yet, but it certainly looks very much straight forward, albeit not featuring individual game entries in Steam. For your quick Diablo fix, it should hopefully be just fine though.*
 
 Battle.net is currently having a spring sale and I've been eyeing Diablo II: Resurrected for a while now, so I jumped on the chance (and while at it also got StarCraft Remastered). But given that these days I primarily game on the Steamdeck, I needed to find a way to install Battle.net on my deck and also install individual launchers for the games.
 
