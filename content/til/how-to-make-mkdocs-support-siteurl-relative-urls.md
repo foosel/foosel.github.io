@@ -1,6 +1,7 @@
 ---
 title: "How to make MkDocs support site_url relative URLs"
 date: 2023-07-27
+lastmod: 2023-07-28
 tags:
 - python
 - mkdocs
@@ -74,5 +75,14 @@ hooks:
 ```
 
 Seems to work just fine, both for images and links! 😄
+
+**Update 2023-07-28**: I've now published this as a proper plugin on PyPI, see [mkdocs-site-urls](https://pypi.org/project/mkdocs-site-urls/).
+With that, all you need to do - given you are already on MkDocs 1.5 or newer - is installing the plugin via `pip install mkdocs-site-urls` and 
+then adding this to your `mkdocs.yaml`:
+
+```yaml
+plugins:
+  - site-urls
+```
 
 [^1]: As I found out when I wanted to add a `version_added` macro, which simply didn't render.
