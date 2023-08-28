@@ -1,5 +1,5 @@
 ---
-title: "How to do monitor network traffic on my USG via Wireshark"
+title: "How to monitor network traffic on my USG via Wireshark"
 date: 2023-08-28
 tags:
 - ssh
