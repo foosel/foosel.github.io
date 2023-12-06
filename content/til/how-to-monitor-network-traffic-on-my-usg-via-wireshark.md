@@ -27,5 +27,7 @@ ssh usg "$TCPDUMP" | wireshark -k -i -
 
 This now allows me to easily run `tcpdump` remotely with custom arguments, e.g. `gatedump -i eth1 host 192.168.1.123`, and have it fire up Wireshark automatically. Wish me luck I'll now be able to figure out what's going on on my network, because it's driving me up the wall.
 
+*Update from 2023-12-06*: In case you are wondering how this story ended, the issue resolved itself with the next OS update of my partner's iPhone. So whatever caused it, it's gone now, and I hope for good.
+
 [^1]: The iPhone of my partner seems to do something that makes my ISP's router freak out and drop packets every couple of minutes. No issue when he's not here or doesn't have it connected to the WiFi, immediate packet loss when it's on the WiFi. It started at the start of this month and we are both currently out of explanations.
 [^2]: `ssh usg` does automatically use the correct host, port and user thanks to an entry in `~/.ssh/config`.
