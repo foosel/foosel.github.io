@@ -2,7 +2,7 @@
 title: Custom SteamDeck Buttons
 description: Color coded for your convenience
 date: 2023-01-19
-lastmod: 2023-02-02
+lastmod: 2024-02-14
 cover:
     image: poster.jpg
     alt: Colorful custom action buttons on the right side of a SteamDeck held up to the camera
@@ -16,7 +16,8 @@ tags:
 - gaming
 - 3d printing
 - cad
-- freecad 
+- freecad
+
 ---
 
 ***Update from 2023-02-02** To answer the most common question I've gotten after publishing this right away: No, I do not plan on selling these. This is something I did for fun and out of love, I'm not interested in making money off of it, and I frankly already have my hands full enough as is without adding a custom button business to the mix as well. I've provided this write-up to give you an idea of how to do it yourself, and I hope you'll enjoy it.*
@@ -208,6 +209,8 @@ finished buttons on our anniversary. He was and is in awe 😊
 However, single colored buttons with rubbed on letters sealed in with UV resin is not my end goal here. After seeing the amazing results one can
 achieve with inlaying in EJ's videos, I'm really looking forward to trying that out. So the next step will be to cast some inlayed buttons
 with the same mold. And I have already printed out the letters on my resin printer 😁
+
+*Update from 2024-12-14*: The buttons I have now been in *very heavy* use by my partner for over a year, and they still look the same as on day 1! No changes on the letters that I rubbed on and sealed with UV resin, and no changes on the buttons themselves either. 👍
 
 [^1]: To be more precise, FreeCAD Link Branch version 2022.09.07
 [^2]: If one of the buttons slips out of the mold, you can just press it back in. Just make sure it really slots right back in
