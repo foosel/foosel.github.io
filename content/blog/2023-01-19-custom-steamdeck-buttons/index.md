@@ -210,7 +210,7 @@ However, single colored buttons with rubbed on letters sealed in with UV resin i
 achieve with inlaying in EJ's videos, I'm really looking forward to trying that out. So the next step will be to cast some inlayed buttons
 with the same mold. And I have already printed out the letters on my resin printer 😁
 
-*Update from 2024-12-14*: The buttons I have now been in *very heavy* use by my partner for over a year, and they still look the same as on day 1! No changes on the letters that I rubbed on and sealed with UV resin, and no changes on the buttons themselves either. 👍
+***Update from 2024-12-14**: The buttons have now been in **very heavy** use by my partner for over a year, and they still look the same as on day 1! No changes on the letters that I rubbed on and sealed with UV resin, and no changes on the buttons themselves either. 👍*
 
 [^1]: To be more precise, FreeCAD Link Branch version 2022.09.07
 [^2]: If one of the buttons slips out of the mold, you can just press it back in. Just make sure it really slots right back in
