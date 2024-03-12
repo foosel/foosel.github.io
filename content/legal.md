@@ -36,7 +36,7 @@ Germany
 
 ### Postcards, letters, fanpost?
 
-If you want to send me a postcard or a letter, you can do so at the following address:
+If you want to send me a postcard or a letter, please use the following address:
 
 Gina Häußge  
 Postfach 11 24  
