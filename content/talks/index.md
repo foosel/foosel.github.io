@@ -4,6 +4,30 @@ description: "A collection of 👩‍🏫 talks, 📰 articles, 🎤 podcasts an
 showReadingTime: false
 
 events:
+  - title: 'Ship It! #107, "3d printed infrastructure"'
+    link: https://changelog.com/shipit/107
+    date: 2024-06-07
+    type: podcast
+  - title: 'FLOSS Weekly #778, "People are amazing at breaking things"'
+    link: https://hackaday.com/2024/04/10/floss-weekly-episode-778-octoprint-people-are-amazing-at-breaking-things/
+    date: 2024-04-10
+    type: podcast
+  - title: 'Behind the scenes of creating OctoPrint'
+    link: https://youtu.be/WjeVNsL1s9U?si=QnMDqXMSHo5Lgz18
+    date: 2024-02-23
+    type: video
+  - title: 'Talk Python #448, "Full-Time Open Source Devs Panel"'
+    link: https://talkpython.fm/episodes/show/448/full-time-open-source-devs-panel
+    date: 2024-02-08
+    type: podcast
+  - title: 'Focus on Linux, "3d-Druck und OctoPrint"'
+    link: https://focusonlinux.podigee.io/88-3d-druck-und-octoprint
+    date: 2023-12-16
+    type: podcast
+  - title: 'dl043, "perspektiven auf data science"'
+    link: https://www.datenleben.de/index.php/2023/10/14/dl043-perspektiven-auf-data-science/
+    date: 2023-10-16
+    type: podcast
   - title: 'InfoQ, "How Open-Source Maintainers Can Deal with Toxic Behavior"'
     link: https://www.infoq.com/news/2023/05/open-source-toxic-behavior/
     date: 2023-05-05
