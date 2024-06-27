@@ -1,0 +1,21 @@
+.post-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.post-grid .page-header,
+.post-grid .page-footer {
+    width: 100%
+}
+
+.post-grid .post-entry {
+    width: calc((var(--main-width) - var(--gap)) / 2);
+}
+
+@media (max-width: 720px)  {
+    .post-grid .post-entry {
+        width: 100%;
+    }
+}

@@ -1,0 +1,13 @@
+{{- $scratch := newScratch }}
+
+{{- if .Params.Created -}}
+{{- if .Params.Ongoing }}
+{{- $scratch.Add "meta" (slice (printf "<span title='%s'>since %s</span>" (.Params.Created) (.Params.Created | time.Format (default "January 2, 2006" site.Params.DateFormat)))) }}
+{{- else }}
+{{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Params.Created) (.Params.Created | time.Format (default "January 2, 2006" site.Params.DateFormat)))) }}
+{{- end }}
+{{- end }}
+
+{{- with ($scratch.Get "meta") }}
+{{- delimit . "&nbsp;·&nbsp;" -}}
+{{- end -}}
