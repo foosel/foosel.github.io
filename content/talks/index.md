@@ -4,6 +4,10 @@ description: "A collection of 👩‍🏫 talks, 📰 articles, 🎤 podcasts an
 showReadingTime: false
 
 events:
+  - title: 'C-RadaR Juni 2024, "Datenzwerge, clubsAREculture, Verstehbahnhof, EMF Camp"'
+    link: https://www.c-radar.de/2024/06/c-radar-juni-2024-datenzwerge-clubsareculture-verstehbahnhof-emf-camp/
+    date: 2024-06-22
+    type: podcast
   - title: 'Ship It! #107, "3d printed infrastructure"'
     link: https://changelog.com/shipit/107
     date: 2024-06-07
@@ -12,7 +16,7 @@ events:
     link: https://hackaday.com/2024/04/10/floss-weekly-episode-778-octoprint-people-are-amazing-at-breaking-things/
     date: 2024-04-10
     type: podcast
-  - title: 'Behind the scenes of creating OctoPrint'
+  - title: '"Behind the scenes of creating OctoPrint"'
     link: https://youtu.be/WjeVNsL1s9U?si=QnMDqXMSHo5Lgz18
     date: 2024-02-23
     type: video
