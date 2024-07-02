@@ -64,10 +64,10 @@ menu:
       name: Talks & Co
       url: /talks/
       weight: 50
-    - identifier: search
-      name: Search
-      url: /search/
-      weight: 60
+    #- identifier: search
+    #  name: Search
+    #  url: /search/
+    #  weight: 60
 
 privacy:
   youtube:
