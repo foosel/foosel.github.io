@@ -10,7 +10,7 @@ tags:
 - health
 ---
 
-I'm on day 4 of my desperately needed summer vacation[^1], and twice already I got pinged on my personal social media accounts about OctoPrint related stuff. This happens on every vacation that I take, and during shorter breaks like weekends or just after hours as well, so much so that I've pinned a post about it to my Mastodon account: 
+I'm on day 4 of my desperately needed summer vacation[^1], and twice already I got pinged on my personal social media accounts about OctoPrint related stuff. This happens on every vacation that I take, and during shorter breaks like weekends or just after hours as well, so much so that I've pinned a post about it to my Mastodon account (that now also cross references this very blog post): 
 
 {{< toot "https://chaos.social/@foosel/109245619011351909" >}}
 
