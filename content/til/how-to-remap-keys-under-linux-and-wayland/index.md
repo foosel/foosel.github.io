@@ -1,12 +1,15 @@
 ---
 title: "How to remap keys under Linux and Wayland"
 date: 2023-03-03
+lastmod: 2024-09-09
 tags:
 - linux
 - wayland
 - keyd
 - framework laptop
 ---
+
+*Edit 2024-09-09: Please be advised that this post refers to an older version of `keyd` that still used a different configuration format. An older version also stated the config file was stored at `~/.config/keyd`, that was an error on my part. Thanks to a reader for the related heads-up!*
 
 As a German living in Germany with umlauts in my last name and a US ANSI keyboard layout on all my devices[^1] I need to remap some stuff to be able to easily type ä, ö, ü and ß. On Windows I solved this with [Autohotkey](https://www.autohotkey.com/), mapping `AltGr`+`a` to `ä`, `AltGr`+`o` to `ö`, `AltGr`+`u` to `ü` and `AltGr`+`s` to `ß` (well, technically `RAlt` - the right `Alt` key). That has burned itself into my muscle memory now, and so while currently setting up my new Framework laptop under Linux, with Gnome running on Wayland, I was looking for a way to remap the keys to this layout as well.
 
@@ -16,7 +19,7 @@ First of all, in Gnome I set the keyboard layout to "English (intl., with AltGr 
 
 ![A screenshot of the US international keyboard layout in the Gnome Settings. It's visible that on the third level ä is on q, ö on p, ü on y and ß on s.](us-intl-layout.png)
 
-Then I downloaded, compiled and installed `keyd` and created a config file at `~/.config/keyd/default.cfg` with the following contents:
+Then I downloaded, compiled and installed `keyd` and created a config file at `/etc/keyd/default.cfg` with the following contents:
 
 ```
 [ids]
