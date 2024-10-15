@@ -1,5 +1,5 @@
 ---
-title: "How to make transparent GIFs easier shareable by adding a checkerboard background"
+title: "How to make transparent GIFs more easily sharable by adding a checkerboard background"
 date: 2024-10-15
 tags:
 - imagemagick
