@@ -3,7 +3,7 @@ title: My minimal requirements for speaking at your event
 description: Let's make sure we are on the same page 😊
 url: /talks/requirements/
 date: 2023-01-29
-lastmod: 2023-02-15
+lastmod: 2024-11-28
 showReadingTime: false
 ---
 
@@ -11,7 +11,7 @@ Hi! So you are interested in me speaking at your event! Great!
 
 Before we continue in clarifying my availability and hammering out the details by [email](mailto:gina@octoprint.org), let me tell you about some minimal requirements I have for speaking engagements:
 
-1. **Health guidelines**: I'm a signatory of the [Public Health Pledge](https://phpledge.com/) and have thus pledged to only speak at or otherwise participate in in-person events that have guidelines in place tailored towards limiting the spread of transmittable diseases like COVID-19 among their visitors. You can find suggestions on how to go about that for your event on the page of the Public Health Pledge. I need you to explain to me what you are doing to reduce the risk of infection for your visitors and how you plan to enforce that. A link to your event's guidelines is sufficient.
+1. **Health guidelines**: I'm a signatory of the [Public Health Pledge](https://phpledge.com/) and have thus pledged to only speak at or otherwise participate in in-person events that have guidelines in place tailored towards limiting the spread of transmittable diseases like COVID-19 among their visitors. You can find suggestions on how to go about that for your event on the page of the Public Health Pledge. I need you to explain to me what you are doing to reduce the risk of infection for your visitors and how you plan to enforce that. A link to your event's guidelines is sufficient. Even just something simple like "Please don't attend if you feel sick, test yourself regularly, and it would be great if you'd mask" will already go a long way.
 
 2. **Code of Conduct**: I will only attend your event if you have a Code of Conduct in place and are able to enforce it.
 
