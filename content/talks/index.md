@@ -4,6 +4,20 @@ description: "A collection of 👩‍🏫 talks, 📰 articles, 🎤 podcasts an
 showReadingTime: false
 
 events:
+  - title: '"Adventures in Open Source Development" @ tech&talk meets Women in Tech®'
+    link: https://www.meetup.com/tech-n-talk-frankfurt/events/305224609/
+    date: 2025-01-29
+    type: talk
+    content: |
+      [Slides](20250129-tt-wit-adventures.pdf)
+  - title: 'Focus on Linux, "Lessons Learned: Dokumentation"'
+    link: https://focusonlinux.podigee.io/126-lessons-learned-dokumentation
+    date: 2024-12-08
+    type: podcast
+  - title: 'SustainOSS #251, "Gina Häußge of OctoPrint on Crowd-funding OSS"'
+    link: https://podcast.sustainoss.org/251
+    date: 2024-10-11
+    type: podcast
   - title: 'C-RadaR Juni 2024, "Datenzwerge, clubsAREculture, Verstehbahnhof, EMF Camp"'
     link: https://www.c-radar.de/2024/06/c-radar-juni-2024-datenzwerge-clubsareculture-verstehbahnhof-emf-camp/
     date: 2024-06-22
