@@ -5,6 +5,8 @@ tags:
 - linux
 - fedora
 - virtualbox
+aliases:
+- how-to-fix-virtualbox-on-fedora38-with-kernel-6410
 ---
 
 I recently did a software update on my laptop running Fedora 38, and that also brought in a kernel update. Starting my Win10 VirtualBox VM afterwards no longer worked as it needed the kernel module to be recompiled. However, that failed:
