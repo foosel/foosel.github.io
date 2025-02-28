@@ -38,3 +38,7 @@ and the folder will be deleted. Note that this will not work if the page bundle 
 ### `task to-bundle -- <path>`
 
 Converts the given single page to a page bundle. The single page's `content/<slug>.md` will be moved to `content/<slug>/index.md`.
+
+### `task redate -- <path>`
+
+Change the given single page's or bundle's date to today.
