@@ -1,19 +1,24 @@
 version: '3'
 
+dotenv: ['.env']
+
 vars:
   TERMUX: '{{and .PREFIX (contains "com.termux" .PREFIX)}}'
   TODAY: '{{now | date "2006-01-02"}}'
+  HUGO: '{{default "hugo" .HUGO}}'
 
 tasks:
   serve:
     desc: Runs hugo serve, all posts visible.
     cmds:
-      - hugo serve -D -E -F {{if .TERMUX}}--noBuildLock{{end}} --bind=0.0.0.0 --baseURL=http://0.0.0.0:1313
+      - |
+        {{.HUGO}} serve -D -E -F {{if .TERMUX}}--noBuildLock{{end}} --bind=0.0.0.0 --baseURL=http://0.0.0.0:1313
 
   build:
     desc: Create a production build of the site in ./public.
     cmds:
-      - hugo --minify {{if .TERMUX}}--noBuildLock{{end}}
+      - |
+        {{.HUGO}} --minify {{if .TERMUX}}--noBuildLock{{end}}
 
   new-blog:
     desc: Creates a new blog post.
@@ -92,6 +97,7 @@ tasks:
         rm -r "{{.BUNDLE}}"
 
   redate:
+    desc: Redates a page to today's date.
     vars:
       PATH: 'content/{{trimPrefix "content/" (trimSuffix "/" .CLI_ARGS)}}'
     cmds:
@@ -115,3 +121,8 @@ tasks:
         echo $rename
         mv "$path" "$rename" || true
         
+  update-mods:
+    desc: Updates all submodules.
+    cmds:
+      - cd themes/PaperMod && git pull origin master
+      - cd themes/hugo-notice && git pull origin main

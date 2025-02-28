@@ -6,9 +6,6 @@ theme:
   - "hugo-notice"
   - "PaperMod"
 
-ignoreErrors:
-  - "error-remote-getjson"
-
 params:
   author: Gina Häußge
   env: production
@@ -45,6 +42,10 @@ params:
     - name: Email
       url: "mailto:gina@foosel.net"
   
+  mainSections:
+    - blog
+    - til
+
 menu:
   main:
     - identifier: about
@@ -102,3 +103,8 @@ outputFormats:
     baseName: feed
     rel: alternate
     isPlainText: true
+
+security:
+  http:
+    mediaTypes:
+      - ^application/json(;.+)?$
