@@ -9,6 +9,9 @@ hugo.exe
 hugo.darwin
 hugo.linux
 
+# env file
+/.env
+
 # Temporary lock file while building
 /.hugo_build.lock
 
