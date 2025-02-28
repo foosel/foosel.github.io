@@ -1,6 +1,8 @@
 ---
 title: Legal Notice
 showReadingTime: false
+showPostNavLinks: false
+showToc: false
 ---
 
 {{< notice warning >}}

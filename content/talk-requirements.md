@@ -5,6 +5,8 @@ url: /talks/requirements/
 date: 2023-01-29
 lastmod: 2024-11-28
 showReadingTime: false
+showPostNavLinks: false
+showToc: false
 ---
 
 Hi! So you are interested in me speaking at your event! Great!

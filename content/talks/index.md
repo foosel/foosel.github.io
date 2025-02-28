@@ -2,6 +2,8 @@
 title: Talks & Co
 description: "A collection of 👩‍🏫 talks, 📰 articles, 🎤 podcasts and 📺 videos by and with me."
 showReadingTime: false
+showPostNavLinks: false
+showToc: false
 
 events:
   - title: '"Adventures in Open Source Development" @ tech&talk meets Women in Tech®'

@@ -1,7 +1,7 @@
 baseURL: https://foosel.net
 languageCode: en-us
 title: foosel.net
-#copyright: foosel.net © Gina Häußge
+copyright: Gina Häußge (foosel)
 theme: 
   - "hugo-notice"
   - "PaperMod"
@@ -13,6 +13,7 @@ params:
   showReadingTime: true
   showBreadCrumbs: true
   #showShareButtons: true
+  hideAuthor: true
   showToc: true
   showPostNavLinks: true
   showFullTextinRSS: true

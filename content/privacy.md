@@ -1,6 +1,8 @@
 ---
 title: Privacy Policy
 showReadingTime: false
+showPostNavLinks: false
+showToc: false
 ---
 
 {{< notice warning >}}
