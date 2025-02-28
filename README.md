@@ -42,3 +42,7 @@ Converts the given single page to a page bundle. The single page's `content/<slu
 ### `task redate -- <path>`
 
 Change the given single page's or bundle's date to today.
+
+### `task update-mods`
+
+Updates the installed git submodules.

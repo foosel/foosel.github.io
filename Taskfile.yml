@@ -124,5 +124,6 @@ tasks:
   update-mods:
     desc: Updates all submodules.
     cmds:
+      - git submodule update --remote --merge
       - cd themes/PaperMod && git pull origin master
       - cd themes/hugo-notice && git pull origin main
