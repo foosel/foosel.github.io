@@ -38,3 +38,5 @@ REMOTE_DIR='album/Steamdeck'
 That was all.
 
 Obviously the same can be done with any of the other sync targets that `rclone` supports, of which [there are many](https://rclone.org/overview/). For ownCloud or NextCloud it looks like [WebDAV](https://rclone.org/webdav/) is the right option to choose.
+
+*Update 2025-03-25*: There's now also a [TIL on how to do the same for Immich](/til/how-to-automatically-sync-screenshots-from-the-steamdeck-to-immich/).

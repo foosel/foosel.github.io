@@ -120,3 +120,4 @@ Finally I booted back into Game mode, took a screenshot there as well with `Stea
 Success!
 
 *Update 2023-02-19*: There is now also a [TIL on how to do the same for Google Photos](/til/how-to-automatically-sync-screenshots-from-the-steamdeck-to-google-photos/).
+*Update 2025-03-25*: And now there's also a [TIL on how to do the same for Immich](/til/how-to-automatically-sync-screenshots-from-the-steamdeck-to-immich/).
