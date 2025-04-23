@@ -6,6 +6,10 @@ showPostNavLinks: false
 showToc: false
 
 events:
+  - title: 'Wild Wild Web - Geschichten aus dem Internet, "Das wichtigste Hobby der Welt"'
+    link: https://www.ardaudiothek.de/episode/wild-wild-web-geschichten-aus-dem-internet/das-wichtigste-hobby-der-welt/br/14442077/
+    date: 2025-04-17
+    type: podcast
   - title: '"Adventures in Open Source Development" @ tech&talk meets Women in Tech®'
     link: https://www.meetup.com/tech-n-talk-frankfurt/events/305224609/
     date: 2025-01-29
