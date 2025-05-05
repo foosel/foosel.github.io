@@ -6,6 +6,10 @@ showPostNavLinks: false
 showToc: false
 
 events:
+  - title: 'Talk Python #504, "Developer Trends in 2025"'
+    link: https://talkpython.fm/episodes/show/504/developer-trends-in-2025
+    date: 2025-05-05
+    type: podcast
   - title: 'Wild Wild Web - Geschichten aus dem Internet, "Das wichtigste Hobby der Welt"'
     link: https://www.ardaudiothek.de/episode/wild-wild-web-geschichten-aus-dem-internet/das-wichtigste-hobby-der-welt/br/14442077/
     date: 2025-04-17
