@@ -32,18 +32,6 @@ Tel: `+49 6104 6893863` (**Not for support!**)
 
 VAT Id number according to Sec. 27 a German Value Added Tax Act: `DE306757045`
 
-
-## Postcards, letters, fanpost?
-
-If you want to send me a postcard or a letter, please use the following address:
-
-Gina Häußge  
-Postfach 11 24  
-63166 Obertshausen  
-Germany
-
-Please note that this is a PO box. I cannot accept packages or other deliveries there, only letters or postcards. If you want to send me something else, please contact me via email first.
-
 ## Dispute resolution
 
 The European Commission provides a platform for online dispute resolution (OS): [https://ec.europa.eu/consumers/odr](https://ec.europa.eu/consumers/odr).
