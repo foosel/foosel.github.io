@@ -21,8 +21,6 @@ Ludwig-Erhard-Str. 18
 20459 Hamburg  
 Germany
 
-(For postcards, letters, fanpost and the like, [please see below](#postcards-letters-fanpost).)
-
 ### Contact
 
 Email: [contact@foosel.net](mailto:contact@foosel.net) (**Not for support!**)  
