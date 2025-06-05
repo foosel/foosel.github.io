@@ -7,7 +7,7 @@ cover:
   relative: true
 tags:
 - lifehack
-- neurodivergent
+- neurodivergence
 ---
 
 For a couple of years now I've had the sneaking suspicion that I'm neurodivergent. And while I still don't have a diagnosis, there are several things
