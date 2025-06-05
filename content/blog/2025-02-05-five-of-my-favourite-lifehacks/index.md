@@ -7,10 +7,10 @@ cover:
   relative: true
 tags:
 - lifehack
-- neurodiversity
+- neurodivergent
 ---
 
-For a couple of years now I've had the sneaking suspicion that I'm neurodiverse. And while I still don't have a diagnosis, there are several things
+For a couple of years now I've had the sneaking suspicion that I'm neurodivergent. And while I still don't have a diagnosis, there are several things
 I use to cope with my brain constantly going *BRRRRRR*, thinking (and worrying) about everything while forgetting important things, and I thought some of those
 might also be helpful to others.
 
