@@ -32,10 +32,6 @@ VAT Id number according to Sec. 27 a German Value Added Tax Act: `DE306757045`
 
 ## Dispute resolution
 
-The European Commission provides a platform for online dispute resolution (OS): [https://ec.europa.eu/consumers/odr](https://ec.europa.eu/consumers/odr).
-
-Please find my email in the impressum/legal notice.
-
 I do not take part in online dispute resolutions at consumer arbitration boards.
 
 ## Liability for Contents
