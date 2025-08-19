@@ -32,12 +32,12 @@ params:
     imageTitle: Gina Häußge
 
   socialIcons:
-    - name: GitHub
-      url: "https://github.com/foosel"
     - name: Mastodon
       url: "https://chaos.social/@foosel"
     - name: Bluesky
       url: "https://bsky.app/profile/foosel.net"
+    - name: GitHub
+      url: "https://github.com/foosel"
     - name: LinkedIn
       url: "https://www.linkedin.com/in/ginahaeussge/"
     - name: Email
