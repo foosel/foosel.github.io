@@ -25,7 +25,7 @@ params:
     enabled: true
     title: Hi, I'm Gina Häußge aka foosel!
     subtitle: >
-      Passionate code monkey 🐒 Geek 👩‍💻 Gamer 🎮 Bouldering apprentice 🧗‍♀️ Problem solver 💡 Creator & maintainer of OctoPrint 🐙 GitHub Star 🌟 PSF Fellow 🐍
+      🐒 Passionate code monkey 👩‍💻 Geek 🎮 Gamer 🧗‍♀️ Bouldering apprentice 💡 Problem solver 🐍 Python wrangler 🐙 Creator & maintainer of OctoPrint
     imageUrl: "img/me.jpg"
     imageWidth: 250
     imageHeight: 250
