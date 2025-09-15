@@ -17,8 +17,8 @@ so please spare me that! 😅*
 I have had a chronic vertigo since fall of 2000 now. It's not a case of issues with low blood pressure ("blackness in front of the eyes") or some
 light-headedness or something like that, but rather a case of
 the same sensoric input being generated somewhere between my [vestibular system](https://en.wikipedia.org/wiki/Vestibular_system) and my brain as if I was on a roller coaster or sitting on
-a merry-go-around. During acute episodes this leads to problems walking, a very insecure feeling when standing and sometimes also nausea
-and [nystagmus](https://en.wikipedia.org/wiki/Nystagmus), not to mention exhaustion while trying to compensate for all of that.
+a merry-go-around. During acute episodes which last hours to days (and sometimes even weeks) this leads to unstable walking, a very insecure feeling when standing and sometimes also nausea
+and [nystagmus](https://en.wikipedia.org/wiki/Nystagmus), not to mention exhaustion while trying to compensate for all of that. Thankfully, it's "just" vertigo, my hearing is perfectly fine.
 
 This crap started with a really bad respiratory infection that gave me a high fever and put me into bed
 for almost two weeks. After the fever went down I had a constant vertigo. This was right during my last two years at 
@@ -43,7 +43,7 @@ I learned after yet another lengthy research session, I'm now tracking my sympto
 (vertigo, headache, tinnitus, nausea, plus stress & weather) in preparation for yet *another* round of 
 trying to get a proper diagnosis and ideally working treatment for this shit from a neurologist.
 
-**tldr:** It's not low blood pressure, it's not just "a bit dizzy", it's not BPPV (so Epley etc don't help).
+**tldr:** It's not low blood pressure, it's not just "a bit dizzy", it's not BPPV (so Epley etc don't help), no hearing loss is involved.
 It might be a weird version of migraines, I'm currently tracking things in preparation for another attempt at getting to the bottom of this. 
 I won't die from it and have well working coping strategies but on some days it just plain sucks.
 
