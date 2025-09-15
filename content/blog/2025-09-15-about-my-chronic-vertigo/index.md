@@ -5,6 +5,8 @@ cover:
   image: cover.jpg
   alt: Three stones balancing on each other on a wooden railing somewhere outdoors.
   relative: true
+aliases:
+- /vertigo
 ---
 
 *I finally decided to write the following post as every time I have an acute episode of my chronic vertigo
