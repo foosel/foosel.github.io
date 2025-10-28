@@ -6,6 +6,12 @@ showPostNavLinks: false
 showToc: false
 
 events:
+  - title: '"How to deal with toxic people" @ EuroPython 2025'
+    link: https://ep2025.europython.eu/session/how-to-deal-with-toxic-people
+    date: 2025-07-16
+    type: talk
+    content: |
+      [Slides](https://foosel.github.io/ep2025/), [Recording](https://www.youtube.com/watch?v=60aKbhAtLjY)
   - title: 'Talk Python #504, "Developer Trends in 2025"'
     link: https://talkpython.fm/episodes/show/504/developer-trends-in-2025
     date: 2025-05-05
