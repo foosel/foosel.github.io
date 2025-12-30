@@ -10,7 +10,6 @@ tags:
 - projects
 - events
 - retrospective
-draft: true
 ---
 
 Just like [last year](https://foosel.net/blog/2024-12-30-2024-retrospective/) I've decided to sit down today and write my very own retrospective. The year has been difficult in several ways, but whenever I took another look at last year's post it put a smile on my face, remembering the good things about life in general.
