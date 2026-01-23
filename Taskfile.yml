@@ -12,7 +12,7 @@ tasks:
     desc: Runs hugo serve, all posts visible.
     cmds:
       - |
-        {{.HUGO}} serve -D -E -F {{if .TERMUX}}--noBuildLock{{end}} --bind=0.0.0.0 --baseURL=http://0.0.0.0:1313
+        {{.HUGO}} serve -D -E -F {{if .TERMUX}}--noBuildLock{{end}} --bind=127.0.0.1 --baseURL=http://127.0.0.1:1313
 
   build:
     desc: Create a production build of the site in ./public.
@@ -127,3 +127,8 @@ tasks:
       - git submodule update --remote --merge
       - cd themes/PaperMod && git pull origin master
       - cd themes/hugo-notice && git pull origin main
+
+  fetch-toots:
+    desc: Updates data of all toot shortcodes.
+    cmds:
+      - bash fetch-toots.sh

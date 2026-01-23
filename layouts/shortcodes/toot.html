@@ -14,16 +14,16 @@
 {{ $mediaMD5 := "" }}
 {{ $imageCount := 0 }}
 {{ $votesCount := 0 }}
-{{ $urlToGet := print "https://" $masIns "/api/v1/statuses/" $id }}
+{{ $fileToRead := print "toots/" $masIns "/" $id ".json" }}
 
-{{- with try (resources.GetRemote $urlToGet) -}}
+{{- with try (resources.Get $fileToRead ) -}}
     {{ with .Err }}
         <blockquote class="toot-blockquote">
-            <p class="ctr legal">[Could not load resource at time of site build.]</p>
+            <p class="ctr legal">[Could not load resource at time of site build, toots fetched?]</p>
         </blockquote>
         {{ errorf "%s" . }}
     {{ else with .Value }}
-        {{ $json := unmarshal .Content }}
+        {{ $json := unmarshal . }}
         {{ $jsonHolder := $json }}{{/* Being safe */}}
 
         {{ if isset $json "account" }}
