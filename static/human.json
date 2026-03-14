@@ -1,0 +1,18 @@
+{
+    "version": "0.1.1",
+    "url": "https://foosel.net",
+    "vouches": [
+        {
+            "url": "https://food.foosel.net",
+            "vouched_at": "2026-03-14"
+        },
+        {
+            "url": "https://chaos.social/@foosel",
+            "vouched_at": "2026-03-14"
+        },
+        {
+            "url": "https://octoprint.org",
+            "vouched_at": "2026-03-14"
+        }
+    ]
+}
