@@ -13,6 +13,10 @@
         {
             "url": "https://octoprint.org",
             "vouched_at": "2026-03-14"
+        },
+        {
+            "url": "https://sethmlarson.dev/",
+            "vouched_at": "2026-03-14"
         }
     ]
 }
