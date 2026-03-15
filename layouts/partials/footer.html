@@ -6,23 +6,27 @@
         {{- else }}
         <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
         {{- end }}
-        {{- print " · "}}
     {{- end }}
 
     {{- with site.Params.footer.text }}
+        <br>
         {{ . | markdownify }}
-        {{- print " · "}}
     {{- end }}
+    <br>
+    <span>
+        <a href="{{ "/legal/" | absLangURL }}">Legal Notice</a>
+    </span>
+    <span>
+        &middot; <a href="{{ "/privacy/" | absLangURL }}">Privacy Policy</a>
+    </span>
+    <span>
+        &middot; <a href="{{ "/ai/" | absLangURL }}">AI Usage Policy</a>
+    </span>
+    <br>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener noreferrer" target="_blank">PaperMod</a>
-    </span>
-    <span>
-        &middot; <a href="{{ "/legal/" | absLangURL }}">Legal Notice</a>
-    </span>
-    <span>
-        &middot; <a href="{{ "/privacy/" | absLangURL }}">Privacy Policy</a>
     </span>
 </footer>
 {{- end }}
