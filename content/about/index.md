@@ -4,6 +4,7 @@ cover:
   image: about.jpg
   alt: Me with a self baked bread
 showReadingTime: false
+showPostNavLinks: false
 ---
 
 👋 Hi there!
