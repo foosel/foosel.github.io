@@ -15,8 +15,24 @@
             "vouched_at": "2026-03-14"
         },
         {
-            "url": "https://sethmlarson.dev/",
+            "url": "https://sethmlarson.dev",
             "vouched_at": "2026-03-14"
+        },
+        {
+            "url": "https://hynek.me",
+            "vouched_at": "2026-03-16"
+        },
+        {
+            "url": "https://jugmac00.github.io",
+            "vouched_at": "2026-03-16"
+        },
+        {
+            "url": "https://www.judy.co.uk",
+            "vouched_at": "2026-03-16"
+        },
+        {
+            "url": "https://www.paulox.net",
+            "vouched_at": "2026-03-16"
         }
     ]
 }
