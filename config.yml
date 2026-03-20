@@ -82,6 +82,7 @@ outputs:
   home:
     - HTML
     - JSON
+    - humanjson
   section:
     - HTML
     - RSS
@@ -104,6 +105,12 @@ outputFormats:
     baseName: feed
     rel: alternate
     isPlainText: true
+  humanjson:
+    mediaType: application/json
+    baseName: human
+    rel: human-json
+    isPlainText: true
+    root: true
 
 security:
   http:

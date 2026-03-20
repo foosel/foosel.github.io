@@ -1,0 +1,15 @@
+{
+    "version": "0.1.1",
+    "url": {{ .Site.BaseURL | jsonify }},
+    "vouches": [
+    {{- range $index, $vouch := hugo.Data.vouches }}
+    {{- with $vouch }}
+        {{- if $index }},{{end}}
+        {
+            "url": {{ .url | jsonify }},
+            "vouched_at": {{ .date | jsonify }}
+        }
+    {{- end }}
+    {{- end }}
+    ]
+}
