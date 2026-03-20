@@ -45,9 +45,6 @@ jobs:
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
 
-      - name: Install validation tooling
-        run: "pip install check-jsonschema"
-
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
@@ -55,6 +52,15 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo --minify
+
+      - name: Install validation tooling
+        run: "pip install check-jsonschema"
+
+      - name: Validation tooling cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/check_jsonschema/
+          key: validation_tooling
 
       - name: Validate page build
         run: |
