@@ -108,9 +108,8 @@ outputFormats:
   humanjson:
     mediaType: application/json
     baseName: human
-    rel: human-json
     isPlainText: true
-    root: true
+    notAlternative: true
 
 security:
   http:
