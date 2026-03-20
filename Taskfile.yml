@@ -18,7 +18,7 @@ tasks:
     desc: Clean the page build folder.
     cmds:
       - |
-        rm -r ./public
+        rm -r ./public || true
 
   build:
     desc: Create a production build of the site in ./public.
