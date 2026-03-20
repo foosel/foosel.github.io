@@ -14,8 +14,16 @@ tasks:
       - |
         {{.HUGO}} serve -D -E -F {{if .TERMUX}}--noBuildLock{{end}} --bind=127.0.0.1 --baseURL=http://127.0.0.1:1313
 
+  clean:
+    desc: Clean the page build folder.
+    cmds:
+      - |
+        rm -r ./public
+
   build:
     desc: Create a production build of the site in ./public.
+    deps:
+      - clean
     cmds:
       - |
         {{.HUGO}} --minify {{if .TERMUX}}--noBuildLock{{end}}
@@ -128,7 +136,20 @@ tasks:
         rename="${path//$current/$now}"
         echo $rename
         mv "$path" "$rename" || true
-        
+
+  add-vouch:
+    desc: Adds a new vouch to human.json.
+    vars:
+      PAGE: '{{.CLI_ARGS}}'
+      FILE: 'data/vouches.yaml'
+    cmds:
+      - |
+        cat >> {{.FILE}} <<EOF
+        - url: {{.PAGE}}
+          date: "{{.TODAY}}"
+        EOF
+        echo {{.FILE}}
+
   update-mods:
     desc: Updates all submodules.
     cmds:
