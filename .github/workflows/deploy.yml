@@ -29,17 +29,25 @@ jobs:
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
       - name: Install Dart Sass Embedded
         run: sudo snap install dart-sass-embedded
+
       - name: Checkout
         uses: actions/checkout@v3
         with:
           submodules: recursive
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+
+      - name: Install validation tooling
+        run: "pip install check-jsonschema"
+
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
@@ -47,9 +55,11 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo --minify
+
       - name: Validate page build
         run: |
           bash validate.sh
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

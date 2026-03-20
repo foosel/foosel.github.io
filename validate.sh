@@ -13,4 +13,10 @@ pushd $BASE
     jq . "$json" 1> /dev/null
   done
 
+  if command -v check-jsonschema >/dev/null 2>&1; then
+    echo
+    echo "Validating human.json against JSON schema..."
+    check-jsonschema --schemafile https://codeberg.org/robida/human.json/raw/branch/main/schema/0.1.1.json human.json
+  fi
+
 popd
