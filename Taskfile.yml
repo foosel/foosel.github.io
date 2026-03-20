@@ -19,6 +19,14 @@ tasks:
     cmds:
       - |
         {{.HUGO}} --minify {{if .TERMUX}}--noBuildLock{{end}}
+        
+  validate:
+    desc: Validates the page build.
+    deps:
+      - build
+    cmds:
+      - |
+        bash validate.sh
 
   new-blog:
     desc: Creates a new blog post.
