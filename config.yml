@@ -38,6 +38,8 @@ params:
       url: "https://bsky.app/profile/foosel.net"
     - name: GitHub
       url: "https://github.com/foosel"
+    - name: Codeberg
+      url: "https://codeberg.org/foosel"
     - name: LinkedIn
       url: "https://www.linkedin.com/in/ginahaeussge/"
     - name: Email
