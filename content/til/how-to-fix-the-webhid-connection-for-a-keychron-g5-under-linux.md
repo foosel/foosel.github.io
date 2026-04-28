@@ -23,8 +23,8 @@ Those turned out to be vendor `0x3434` and products `0xd06f` (wired mouse) and `
 
 ```
 # Keychron G5 (WebHID)
-KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}="3434", ATTRS{idProduct}=="d06f", MODE="0666", TAG+="uaccess", TAG+="udev-acl"
-KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}="3434", ATTRS{idProduct}=="d028", MODE="0666", TAG+="uaccess", TAG+="udev-acl"
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3434", ATTRS{idProduct}=="d06f", MODE="0666", TAG+="uaccess", TAG+="udev-acl"
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3434", ATTRS{idProduct}=="d028", MODE="0666", TAG+="uaccess", TAG+="udev-acl"
 ```
 
 then refreshed `udev`:
