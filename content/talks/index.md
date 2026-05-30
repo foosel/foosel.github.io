@@ -6,6 +6,12 @@ showPostNavLinks: false
 showToc: false
 
 events:
+  - title: '"Basic Security for Open Source Maintainers" @ PyCon Italia 2026'
+    link: https://2026.pycon.it/en/event/basic-security-for-open-source-maintainers
+    date: 2026-05-28
+    type: talk
+    content: |
+      [Slides](https://foosel.github.io/pyconit2026/)
   - title: '"How to deal with toxic people" @ EuroPython 2025'
     link: https://ep2025.europython.eu/session/how-to-deal-with-toxic-people
     date: 2025-07-16
