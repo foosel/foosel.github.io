@@ -1,5 +1,5 @@
 ---
-title: "Hello Hugo!"
+title: "Meta: Hello Hugo!"
 description: Trying another static site generator in 2023
 date: 2023-01-20
 cover:

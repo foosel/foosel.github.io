@@ -1,5 +1,5 @@
 ---
-title: Hello World!
+title: "Meta: Hello World!"
 description: The long overdue foosel.net reboot
 date: 2021-03-12
 cover:
