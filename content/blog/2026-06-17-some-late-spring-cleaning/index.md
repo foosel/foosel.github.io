@@ -6,7 +6,6 @@ cover:
   image: cover.jpg
   alt: Some small white flowers on a green plant
   relative: true
-draft: true
 tags:
 - hugo
 - meta
