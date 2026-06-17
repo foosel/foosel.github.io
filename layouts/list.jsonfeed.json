@@ -1,11 +1,13 @@
-{{- $pctx := . -}}
-{{- if .IsHome -}}{{ $pctx = site }}{{- end -}}
-{{- $pages := slice -}}
-{{- if or $.IsHome $.IsSection -}}
-{{- $pages = $pctx.RegularPages -}}
-{{- else -}}
-{{- $pages = $pctx.Pages -}}
-{{- end -}}
+{{- $pctx := . }}
+{{- if .IsHome }}{{ $pctx = site }}{{ end }}
+{{- $pages := slice }}
+{{- if $.IsHome }}
+{{- $pages = (where site.RegularPages "Section" "in" .Site.MainSections) }}
+{{- else if $.IsSection }}
+{{- $pages = $pctx.RegularPages }}
+{{- else }}
+{{- $pages = $pctx.Pages }}
+{{- end }}
 {{- $limit := site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
 {{- $pages = $pages | first $limit -}}
@@ -29,7 +31,10 @@
     {{- if (or .Site.Params.author .Site.Params.author_url) }}
     "authors": [{
       {{- if .Site.Params.author }}
-        "name": {{ .Site.Params.author | jsonify }},
+        "name": {{ .Site.Params.author | jsonify }}
+      {{- end }}
+      {{- if (and .Site.Params.author .Site.Params.author_url) }}
+      ,
       {{- end }}
       {{- if .Site.Params.author_url }}
         "url": {{ .Site.Params.author_url | jsonify }}

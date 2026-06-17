@@ -1,7 +1,6 @@
-.dark {
+:root[data-theme="dark"] {
     --theme: #111827;
     --entry: #1f2937;
     --tertiary: #4b5563;
     --border: #374151;
-
 }

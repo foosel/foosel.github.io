@@ -1,7 +1,7 @@
 baseURL: https://foosel.net
 languageCode: en-us
 title: foosel.net
-copyright: Gina Häußge (foosel)
+copyright: "Gina Häußge (foosel)"
 theme: 
   - "hugo-notice"
   - "PaperMod"
@@ -20,6 +20,7 @@ params:
   showFullTextinJSONFeed: true
   showRssButtonInSectionTermList: true
   showCodeCopyButtons: true
+  disableLangToggle: true
 
   profileMode:
     enabled: true
@@ -34,8 +35,8 @@ params:
   socialIcons:
     - name: Mastodon
       url: "https://chaos.social/@foosel"
-    - name: Bluesky
-      url: "https://bsky.app/profile/foosel.net"
+    #- name: Bluesky
+    #  url: "https://bsky.app/profile/foosel.net"
     - name: GitHub
       url: "https://github.com/foosel"
     - name: Codeberg
@@ -44,6 +45,13 @@ params:
       url: "https://www.linkedin.com/in/ginahaeussge/"
     - name: Email
       url: "mailto:gina@foosel.net"
+    - name: RSS
+      url: "https://foosel.net/feed.xml"
+
+  footer:
+    hideCopyright: true
+    text: >
+      &copy; by Gina Häußge (foosel) · [Legal Notice](/legal/) · [Privacy Policy](/privacy/) · [AI Policy](/ai/)
   
   mainSections:
     - blog
@@ -84,10 +92,11 @@ outputs:
   home:
     - HTML
     - JSON
+    - rss
     - humanjson
   section:
     - HTML
-    - RSS
+    - rss
     - jsonfeed
 
 mediaTypes:
@@ -111,6 +120,9 @@ outputFormats:
     mediaType: application/json
     baseName: human
     isPlainText: true
+    notAlternative: true
+  rss:
+    baseName: feed
     notAlternative: true
 
 security:
