@@ -1,0 +1,43 @@
+div.bubbles-vote {
+    display: inline-block;
+    position: relative;
+    right: 0; 
+
+    a.bubbles-vote-btn {
+        position: relative;
+        font-weight: 600;
+        transform-origin: center center;
+        text-decoration: none;
+ 
+        &:hover {
+            &::before {
+                animation: floatUp 1.2s ease-out infinite;
+            }
+    
+            &::after {
+                animation: floatUp 1.2s ease-out infinite 0.6s;
+            }
+        }
+ 
+        /* small bubbles */
+        &::before,
+        &::after {
+            content: "🫧";
+            position: absolute;
+            right: 0;
+            font-size: 0.7em;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        &::before {
+            left: 0;
+        }
+     }
+}
+
+@keyframes floatUp {
+  0%   { opacity: 0; transform: translateY(0) scale(0.4); }
+  20%  { opacity: 0.9; }
+  100% { opacity: 0; transform: translateY(-30px) scale(1) translateX(8px); }
+}
