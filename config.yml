@@ -22,6 +22,8 @@ params:
   showCodeCopyButtons: true
   disableLangToggle: true
 
+  canonicalBase: "https://foosel.net"
+
   profileMode:
     enabled: true
     title: Hi, I'm Gina Häußge aka foosel!
