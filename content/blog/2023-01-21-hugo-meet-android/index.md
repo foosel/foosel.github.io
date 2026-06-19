@@ -1,6 +1,7 @@
 ---
 title: "Hugo, meet Android"
 date: 2023-01-21
+lastmod: 2026-06-19
 description: Setting up a mobile blogging workflow
 cover:
   image: cover.jpg
@@ -13,6 +14,8 @@ tags:
 - termux
 - tasker
 ---
+
+***Update from 2026-06-19**: I went through these steps again after getting a new phone and had to change some things here and there while also improving other bits. You can find an update [here](/til/how-to-manage-this-page-from-my-phone-in-2026/).*
 
 One thing that kept me from blogging more so far was the difficulty in working on posts on my phone. So after switching this blog over to Hugo I decided to see if I couldn't improve on this situation. 
 
