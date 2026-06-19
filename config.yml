@@ -126,6 +126,9 @@ outputFormats:
     notAlternative: true
 
 security:
+  allowContent:
+    - 'text/html'
+    - 'text/markdown'
   http:
     mediaTypes:
       - ^application/json(;.+)?$
