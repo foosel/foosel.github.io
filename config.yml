@@ -2,6 +2,7 @@ baseURL: https://foosel.net
 languageCode: en-us
 title: foosel.net
 copyright: "Gina Häußge (foosel)"
+capitalizeListTitles: false
 theme: 
   - "hugo-notice"
   - "PaperMod"
@@ -23,6 +24,7 @@ params:
   disableLangToggle: true
 
   canonicalBase: "https://foosel.net"
+  showRelated: true
 
   profileMode:
     enabled: true
@@ -89,6 +91,36 @@ menu:
 privacy:
   youtube:
     privacyEnhanced: true
+
+related:
+  includeNewer: true
+  indices:
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: keywords
+    pattern: ''
+    toLower: false
+    type: basic
+    weight: 100
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: date
+    pattern: ''
+    toLower: false
+    type: basic
+    weight: 10
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: tags
+    pattern: ''
+    toLower: false
+    type: basic
+    weight: 80
+  - name: fragmentrefs
+    type: fragments
+    weight: 80
+  threshold: 80
+  toLower: false
 
 outputs:
   home:
