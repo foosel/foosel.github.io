@@ -10,6 +10,8 @@ tags:
 - life
 - learning
 - making
+- self discovery
+- genAI
 ---
 
 When I was a kid in the 1980s, it was quite common for "My friends" books to make their rounds on the schoolyard. These books consisted of two page questionnaires for your buddies to fill out so you could remember them all. One of the more common questions was "What are your hobbies" and I can't remember when I started putting "learning" in there but I sure did.
