@@ -68,7 +68,7 @@ tasks:
     vars:
       TITLE: '{{.CLI_ARGS}}'
       SLUG: '{{trimall "-" (regexReplaceAll "--+" (regexReplaceAll "[^A-Za-z0-9-]" (regexReplaceAll "\\s+" (lower .TITLE) "-") "") "-")}}'
-      FILE: 'content/til/{{.SLUG}}.md'
+      FILE: 'content/til/{{.TODAY}}-{{.SLUG}}.md'
     preconditions:
       - sh: '[ ! -f "{{.FILE}}" ]'
     cmds:
