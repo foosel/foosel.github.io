@@ -159,6 +159,10 @@ outputFormats:
     baseName: feed
     notAlternative: true
 
+services:
+  rss:
+    limit: 10
+
 security:
   allowContent:
     - 'text/html'
