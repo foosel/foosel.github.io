@@ -1,0 +1,13 @@
+{{/* Make sure to always use absolute image URLs in RSS feeds. */}}
+{{- $u := urls.Parse .Destination }}
+{{- $hrefUrl := "" -}}
+{{- if $u.Scheme -}}
+  {{ $hrefUrl = .Destination }}
+{{- else -}}
+  {{ $hrefUrl = absURL .Destination }}
+{{- end -}}
+<a href="{{ $hrefUrl | safeURL }}"
+    {{- with .Title }} title="{{ . }}"{{ end -}}
+>
+    {{- with .Text }}{{ . }}{{ end -}}
+</a>

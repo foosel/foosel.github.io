@@ -1,0 +1,15 @@
+{{/* Make sure to always use absolute image URLs in RSS feeds. */}}
+{{- $srcUrl := "" -}}
+{{- if or (hasPrefix .Destination "http://") (hasPrefix .Destination "https://") -}}
+  {{ $srcUrl = .Destination }}
+{{- else if hasPrefix .Destination "/" -}}
+  {{ $srcUrl = absURL .Destination }}
+{{- else -}}
+  {{ $imageResource := .Page.Resources.Get .Destination }}
+  {{- if $imageResource -}}
+    {{ $srcUrl = $imageResource.Permalink }}
+  {{- else -}}
+    {{ $srcUrl = .Destination }}
+  {{- end -}}
+{{- end -}}
+<img src="{{ $srcUrl | safeURL }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy">

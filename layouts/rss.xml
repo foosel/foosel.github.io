@@ -58,14 +58,26 @@
     {{- range $pages }}
     {{- if and (ne .Layout `search`) (ne .Layout `archives`) }}
     <item>
-      <title>{{ .Title }}</title>
+      <title>{{ if eq .Section "til"}}TIL: {{ end }}{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
       <guid>{{ .Permalink }}</guid>
       <description>{{ with .Description | html }}{{ . }}{{ else }}{{ .Summary | html }}{{ end -}}</description>
       {{- if and site.Params.ShowFullTextinRSS .Content }}
-      <content:encoded>{{ (printf "<![CDATA[%s]]>" .Content) | safeHTML }}</content:encoded>
+        {{- $prefix := "" }}
+        {{- if .Params.cover.image }}
+          {{- $alt := (.Params.cover.alt | plainify) }}
+          {{- $cover := (.Resources.ByType "image").GetMatch (printf "*%s*" (.Params.cover.image)) }}
+          
+          {{- $src := (.Params.cover.image) | absURL }}
+          {{- if $cover -}}
+              {{- $src = $cover.Permalink }}
+          {{- end -}}
+
+          {{- $prefix = (printf "<p><img src=\"%s\" alt=\"%s\" loading=\"lazy\"></p>" $src $alt) }}
+        {{- end }}
+        <content:encoded>{{ (printf "<![CDATA[%s%s]]>" $prefix .Content) | safeHTML }}</content:encoded>
       {{- end }}
     </item>
     {{- end }}
