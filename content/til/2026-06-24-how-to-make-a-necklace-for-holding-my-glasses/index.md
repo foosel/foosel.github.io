@@ -1,6 +1,7 @@
 ---
 title: "How to make a necklace for holding my glasses"
 date: 2026-06-24
+lastmod: 2026-06-26
 tags:
 - making
 - paracord
@@ -25,6 +26,12 @@ Aaaand done!
 ![The holder around my neck, my regular glasses hooked onto it](glasses-holder-2.jpg)
 
 Holds my regular glasses or my sunglasses just fine, can be adjusted in length to easily get over my head but also not wiggle around too much. Somewhat fashionable too, but most importantly functional. I might make another one out of leather, but for now my problem is solved.
+
+***Update from 2026-06-26**: I've made another one using a black leather cord and a metal o-ring and now it almost looks like a fashion accessory vs a practical solution to a problem. It turns out that this is also a nice fidget toy.*
+
+![The second holder around my neck: a black leather cord and a dark metal o-ring.](glasses-holder-3.jpg)
+
+*I'm quite happy with that!*
 
 [^1]: Which given temperatures of 35°C+ I currently avoid like the plague, but errands don't run themselves.
 [^2]: Having a ton of hobbies and interests can come in handy sometimes...
